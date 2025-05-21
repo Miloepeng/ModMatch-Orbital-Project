@@ -5,7 +5,7 @@ import { calculateCAP } from "../utils/grades";
 import CAPDisplay from "./CAPDisplay";
 
 export default function Calculator() {
-  const [modules, setModules] = useState<Module[]>([]);
+  const [userModules, setModules] = useState<Module[]>([]);
   const [idCounter, setIdCounter] = useState(0); //counter state
   const [suLimit, setSuLimit] = useState<number>(0);; 
 
@@ -25,7 +25,7 @@ export default function Calculator() {
 
   //handles selecting module name in modulecard
   const handleUpdateModule = (id: string, updated: Module) => {
-  const isDuplicate = modules.some(
+  const isDuplicate = userModules.some(
     (mod) => mod.id !== id && mod.name === updated.name
   );
 
@@ -44,13 +44,13 @@ export default function Calculator() {
     setModules((prev) => prev.filter((mod) => mod.id !== id));
   };
 
-  const currentSUUsed = modules.filter((m) => m.su).length;
+  const currentSUUsed = userModules.filter((m) => m.su).length;
 
   return (
     <div className="calculatorContainer">
       <h1 className="CAPCalculator">GPA / CAP Calculator</h1>
         {/*Display CAP */}
-        <CAPDisplay modules={modules} />
+        <CAPDisplay modules={userModules} />
 
         {/*User input no. of SU */}
         <div className="numSUContainer">
@@ -77,7 +77,7 @@ export default function Calculator() {
       </button>
 
       <div className="moduleCardContainer">
-        {modules.map((mod) => (
+        {userModules.map((mod) => (
           <ModuleCard
             key={mod.id}
             module={mod}
