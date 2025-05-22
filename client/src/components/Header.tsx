@@ -12,14 +12,16 @@ export default function Header() {
       </div>
     </header>*/
 
-    <header className="headerContainer">
-      <div className = "headerCenter">
+    <header>
+      <div className = "container">
         <img src = {logo} width="50" />
-        <div className="box">Home</div>
-        <div className="box">Search</div>
-        <div className="box">Degree Requirement</div>
-        <div className="box">Timetable</div>
-        <div className="box"></div>
+        <div className="container right">
+          <div className="box">Home</div>
+          <div className="box">Search</div>
+          <div className="box">Degree Requirement</div>
+          <div className="box">Timetable</div>
+          <div className="box"></div>
+        </div>
       </div>
     </header>
   );
