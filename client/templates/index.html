@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <div class = "container right">
+                <div class="box">Home</div>
+                <div class="box">Search</div>
+                <div class="box">Degree Requirement</div>
+                <div class="box">Timetable</div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div>
+            <h1>Home</h1>
+        </div>
+        <div class="calculator">
+            <div class="calculator-screen">CAP:</div>
+            <div id="modules">
+                <button type="button" onclick="createMod()">+</button>
+
+            </div>
+        </div>
+
+        <script>
+            function createMod() {
+                const newMod = document.createElement("div");
+                newMod.className = "mod";
+                newMod.textContent = "Mod";
+
+                const modCode = document.createElement("div");
+                const modList = ["CS1101S", "CS2030S", "CS2040S"];
+                modCode.className = "subject-code editableDiv";
+                modCode.textContent = "SUB1000";
+                makeEditable(modCode, modList);
+                newMod.appendChild(modCode);
+
+                const grade = document.createElement("div");
+                const gradeList = ["A+", "A", "A-"];
+                grade.className = "grade editableDiv";
+                grade.textContent = "Grade"
+                makeEditable(grade, gradeList);
+                newMod.appendChild(grade);
+                
+                const modules = document.getElementById("modules");
+                const button = modules.querySelector("button");
+                modules.insertBefore(newMod, button);
+            }
+
+            function makeEditable(editableDiv, optionList) {
+                editableDiv.addEventListener("dblclick", () => {
+                    //const gradeList = ["A+", "A", "A-"];
+                    const dropdown = document.createElement("div");
+                    dropdown.id = "dropdown-list";
+                    //dropdown.textContent = "Select grade below:";
+
+                    const input = document.createElement("input");
+                    //const defValue = editableDiv.textContent;
+                    input.type = "text";
+                    dropdown.appendChild(input);
+
+                    for (i = 0; i < optionList.length; i++) {
+                        const curr = document.createElement("div");
+                        curr.className = "dropdown-options";
+                        curr.textContent = optionList[i];
+                        dropdown.appendChild(curr);
+                    }
+
+                    editableDiv.textContent = "";
+                    editableDiv.appendChild(dropdown);
+                    selectOption(dropdown);
+                    input.focus();
+
+                    input.addEventListener("input", () => {
+                            const filter = input.value.toLowerCase();
+                            const options = dropdown.querySelectorAll(".dropdown-options");
+                            options.forEach(option => {
+                                if (option.textContent.toLowerCase().includes(filter)) {
+                                    option.style.display = "block";
+                                } else {
+                                    option.style.display = "none";
+                                }
+                            });
+                    });
+
+                    /*const input = document.createElement("input");
+                    const defValue = editableDiv.textContent;
+                    input.type = "text";
+
+                    editableDiv.textContent = "";
+                    editableDiv.appendChild(input);
+                    input.focus();
+
+                    function save() {
+                        editableDiv.textContent = defValue;
+                        if (input.value != "") {
+                            editableDiv.textContent = input.value;
+                        }
+                    }
+
+                    input.addEventListener("blur", save);*/
+                });
+            }
+
+            function selectOption(Dropdown) {
+                const allOptions = Dropdown.querySelectorAll(".dropdown-options");
+                for (i = 0; i < allOptions.length; i++) {
+                    const currOption = allOptions[i];
+                    currOption.addEventListener("click", () => {
+                        Dropdown.textContent = currOption.textContent;
+                    });
+                }
+                
+            }
+        </script>
+    </body>
+</html>
