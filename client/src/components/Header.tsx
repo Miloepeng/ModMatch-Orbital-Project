@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/Logo1.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -11,18 +12,22 @@ export default function Header() {
         <div className="navBar">navBar test change</div>
       </div>
     </header>*/
+    <>
+     
+
 
     <header>
       <div className = "container">
         <img src = {logo} width="50" />
         <div className="container right">
-          <div className="box">Home</div>
-          <div className="box">Search</div>
-          <div className="box">Degree Requirement</div>
-          <div className="box">Timetable</div>
+          <Link to ="./Home" className = "box"> Home </Link>
+          <Link to= "./Search" className="box">Search</Link>
+          <Link to ="./DegreeRequirement" className ="box">Degree Requirement</Link>
+          <Link to ="./Timetable" className = "box">Timtable</Link>
           <div className="box"></div>
         </div>
       </div>
     </header>
+    </>
   );
 }
