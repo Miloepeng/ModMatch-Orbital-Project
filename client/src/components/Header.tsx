@@ -20,10 +20,10 @@ export default function Header() {
       <div className = "container">
         <img src = {logo} width="50" />
         <div className="container right">
-          <Link to ="./Home" className = "box"> Home </Link>
-          <Link to= "./Search" className="box">Search</Link>
-          <Link to ="./DegreeRequirement" className ="box">Degree Requirement</Link>
-          <Link to ="./Timetable" className = "box">Timtable</Link>
+          <Link to ="./Home" className = "links"> Home </Link>
+          <Link to= "./Search" className="links">Search</Link>
+          <Link to ="./DegreeRequirement" className ="links">Degree Requirement</Link>
+          <Link to ="./Timetable" className = "links">Timtable</Link>
           <div className="box"></div>
         </div>
       </div>

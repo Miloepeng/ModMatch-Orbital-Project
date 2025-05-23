@@ -56,8 +56,10 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
       </label>
 
       {/* SU toggle */}
-      <label className="SUContainer">
-        SU:
+      <div>
+      <span>SU:  </span>
+      <label className="switch">
+        
         <input
           type="checkbox"
           checked={module.su}
@@ -65,18 +67,23 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
           className="SUToggle"
           disabled = {disableSU}
         />
+        <span className ="slider"></span>
       </label>
+      </div>
 
       {/* 2MC toggle */}
-      <label className="mcContainer">
-        2MC:
+      <div>
+      <span>2MC:  </span>
+      <label className="switch">
         <input
           type="checkbox"
           checked={module.is2MC}
           onChange={(e) => handleChange("is2MC", e.target.checked)} // Update is2MC on toggle
           className="mcSelector"
         />
+        <span className ="slider"></span>
       </label>
+      </div>
 
       {/* Remove button */}
       <button onClick={onDelete} className="removeButton">
