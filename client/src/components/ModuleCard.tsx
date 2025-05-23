@@ -26,19 +26,19 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
     return (
     <div className="moduleCard">
      {/* Module name selector */}
-    <label className="modSelectorContainer">
-    Module:
-    <Select
-        className="modSelector"
-        options={modules}
-        value={modules.find((opt) => opt.value === module.name)}
-        onChange={(selected) =>
-        handleChange("name", selected ? selected.value : "")
-        }
-        isClearable
-        placeholder="Select module..."
-    />
-    </label>
+      <label className="modSelectorContainer">
+      Module:
+      <Select
+          className="modSelector"
+          options={modules}
+          value={modules.find((opt) => opt.value === module.name)}
+          onChange={(selected) =>
+          handleChange("name", selected ? selected.value : "")
+          }
+          isClearable
+          placeholder="Select module..."
+      />
+      </label>
 
       {/* Grade selector */}
       <label className="gradeSelectorContainer">
@@ -56,8 +56,8 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
       </label>
 
       {/* SU toggle */}
-      <div>
-      <span>SU:  </span>
+      <div className="toggle-row">
+      <span className="toggle-desc">SU:  </span>
       <label className="switch">
         
         <input
@@ -72,8 +72,8 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
       </div>
 
       {/* 2MC toggle */}
-      <div>
-      <span>2MC:  </span>
+      <div className="toggle-row">
+      <span className="toggle-desc">2MC:  </span>
       <label className="switch">
         <input
           type="checkbox"
