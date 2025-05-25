@@ -1,6 +1,20 @@
+.calculatorContainer {
+  border: 3px solid black;
+  border-radius: 50px;
+  margin: 20px;
+  min-width: 1000px;
+}
+
+.CAPValue {
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 20px;
+}
+
 .moduleCardContainer {
   display:grid;
   grid-template-columns: repeat(5, 1fr);
+  
 }
 
 .moduleCard {

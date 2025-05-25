@@ -49,32 +49,26 @@ export default function Calculator() {
   return (
     <div className="calculatorContainer">
       <h1 className="CAPCalculator">GPA / CAP Calculator</h1>
-        {/*Display CAP */}
-        <CAPDisplay modules={userModules} />
 
-        {/*User input no. of SU */}
-        <div className="numSUContainer">
-            <label className="numSU">Max SUs allowed:</label>
-            <input
-                type="number"
-                value={suLimit}
-                onChange={(e) => setSuLimit(Number(e.target.value))}
-                className="numSUInput"
-                min={0}
-            />
-        </div>
+      {/*Display CAP */}
+      <CAPDisplay modules={userModules} />
 
-        {/*No. of SU used */}
-        <div className="SUUsedContainer">
-            {currentSUUsed} / {suLimit} SUs used
-        </div>
+      {/*User input no. of SU */}
+      <div className="numSUContainer">
+        <label className="numSU">Max SUs allowed:</label>
+        <input
+          type="number"
+          value={suLimit}
+          onChange={(e) => setSuLimit(Number(e.target.value))}
+          className="numSUInput"
+          min={0}
+        />
+      </div>
 
-      <button
-        onClick={handleAddModule}
-        className="addModButton"
-      >
-        + Add Module
-      </button>
+      {/*No. of SU used */}
+      <div className="SUUsedContainer">
+        {currentSUUsed} / {suLimit} SUs used
+      </div>
 
       <div className="moduleCardContainer">
         {userModules.map((mod) => (
@@ -86,6 +80,12 @@ export default function Calculator() {
             disableSU = {!mod.su && currentSUUsed >= suLimit}
           />
         ))}
+        <button
+        onClick={handleAddModule}
+        className="addModButton"
+        >
+          + Add Module
+        </button>
       </div>
 
 

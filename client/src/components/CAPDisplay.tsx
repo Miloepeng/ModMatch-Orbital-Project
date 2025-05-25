@@ -19,13 +19,13 @@ export default function CAPDisplay({ modules }: Props) {
 
   return (
     <div className="CAPContainer">
-      <h2 className="CAPTitle">Summary</h2>
+      {/*<h2 className="CAPTitle">Summary</h2>*/}
 
       <div className="CAPValue">
-        <p>🎯 <strong>CAP:</strong> {cap}</p>
-        <p>📚 <strong>Modules:</strong> {totalModules}</p>
-        <p>📏 <strong>Total MCs (excluding SU):</strong> {totalMCs}</p>
-        <p>🧮 <strong>SU Used:</strong> {totalSUUsed}</p>
+        <p> <strong>CAP:</strong> {cap}</p>
+        <p> <strong>Modules:</strong> {totalModules}</p>
+        {/*<p> <strong>Total MCs (excluding SU):</strong> {totalMCs}</p>*/}
+        {/*<p> <strong>SU Used:</strong> {totalSUUsed}</p>*/}
       </div>
     </div>
   );
