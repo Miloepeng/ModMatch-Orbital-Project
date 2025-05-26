@@ -10,6 +10,7 @@ import Search from "./pages/Search"
 import DegreeRequirement from "./pages/DegreeRequirement"
 import Timetable from "./pages/Timetable"
 import Home from "./pages/Home"
+import Login from "./pages/Login"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/DegreeRequirement" element={<DegreeRequirement />} />
         <Route path="/Timetable" element={<Timetable />} />
         <Route path="/Home" element={<Home />} />
+        <Route path ="/Login" element={<Login />} />
       </Routes>
     </Router>
     </>

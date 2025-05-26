@@ -24,6 +24,7 @@ export default function Header() {
           <Link to= "./Search" className="header-links">Search</Link>
           <Link to ="./DegreeRequirement" className ="header-links">Degree Requirement</Link>
           <Link to ="./Timetable" className = "header-links">Timetable</Link>
+          <Link to ="./Login" className = "header-links">Login</Link>
           <div></div>
         </div>
       </div>
