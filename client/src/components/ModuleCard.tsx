@@ -1,5 +1,5 @@
 import React from "react";
-import Select from "react-select";
+import Select, { StylesConfig } from "react-select";
 import { Module } from "../types";  //Import module interface, each module card contains a module object
 import { modules } from "../utils/modules";
 
@@ -10,6 +10,11 @@ type Props = {
     onDelete: () => void;
     disableSU: boolean;
 }
+
+type OptionType = {
+  value: string;
+  label: string;
+};
 
 //List of grades to map to
 const grades = [
@@ -23,6 +28,25 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
         onChange({ ...module, [field]: value });
   };
 
+    const customStyles: StylesConfig<OptionType, false> = {
+      clearIndicator: (provided) => ({
+        ...provided,
+        padding: '3px',        
+        svg: {
+          height: '20px',
+          width: '2.5vh',
+        }
+      }),
+      dropdownIndicator: (provided) => ({
+        ...provided,
+        padding: '3px',
+        svg: {
+          height: '20px',
+          width: '2.5vh',
+        },
+      }),
+    };
+
     return (
     <div className="moduleCard">
      {/* Module name selector */}
@@ -35,6 +59,7 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
           onChange={(selected) =>
           handleChange("name", selected ? selected.value : "")
           }
+          styles={customStyles}
           isClearable
           placeholder="Select module..."
       />
