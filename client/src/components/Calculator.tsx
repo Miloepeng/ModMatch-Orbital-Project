@@ -3,11 +3,71 @@ import ModuleCard from "./ModuleCard";
 import { Module } from "../types";
 import { calculateCAP } from "../utils/grades";
 import CAPDisplay from "./CAPDisplay";
+import { useEffect, useCallback } from "react";
+import { supabase } from "../supabaseClient";
+
 
 export default function Calculator() {
   const [userModules, setModules] = useState<Module[]>([]);
   const [idCounter, setIdCounter] = useState(0); //counter state
   const [suLimit, setSuLimit] = useState<number>(0);; 
+
+  //retrieve user data
+  useEffect(() => {
+  const checkUserAndLoad = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+
+    if (!user) {
+      console.log("No user logged in. Skipping load.");
+      return;
+    }
+
+    const { data, error } = await supabase
+      .from("module_selections")
+      .select("modules_json")
+      .eq("user_id", user.id)
+      .single();
+
+    if (data?.modules_json) {
+      setModules(data.modules_json);
+      setIdCounter(data.modules_json.length);
+    }
+
+    if (error) {
+      console.warn("Error loading modules:", error.message);
+    }
+  };
+
+  checkUserAndLoad();
+}, []);
+
+
+//autosave
+useEffect(() => {
+  const saveModules = async () => {
+    const user = await supabase.auth.getUser();
+    if (!user.data.user) return;
+
+    const { error } = await supabase
+      .from("module_selections")
+      .upsert([
+        {
+          user_id: user.data.user.id,
+          modules_json: userModules,
+          updated_at: new Date().toISOString(),
+        },
+      ], { onConflict: "user_id" });
+
+    if (error) {
+      console.error("Auto-save failed:", error.message);
+    }
+  };
+
+  // Avoid saving on first render with empty modules array
+  if (userModules.length > 0) {
+    saveModules();
+  }
+}, [userModules]);
 
     
 //Adds a new modulecard
