@@ -22,8 +22,8 @@ export default function CAPDisplay({ modules }: Props) {
       {/*<h2 className="CAPTitle">Summary</h2>*/}
 
       <div className="CAPValue">
-        <p> <strong>CAP:</strong> {cap}</p>
-        <p> <strong>Modules:</strong> {totalModules}</p>
+        <p className="lcd-text"> <strong>CAP:</strong> {cap}</p>
+        <p className="lcd-text"> <strong>Modules:</strong> {totalModules}</p>
         {/*<p> <strong>Total MCs (excluding SU):</strong> {totalMCs}</p>*/}
         {/*<p> <strong>SU Used:</strong> {totalSUUsed}</p>*/}
       </div>

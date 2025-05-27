@@ -48,29 +48,34 @@ export default function Calculator() {
 
   return (
     <div className="calculatorContainer">
-      <h1 className="CAPCalculator">GPA / CAP Calculator</h1>
+      {/*<h1 className="CAPCalculator">GPA / CAP Calculator</h1>*/}
 
       {/*Display CAP */}
       <CAPDisplay modules={userModules} />
 
       {/*User input no. of SU */}
-      <div className="numSUContainer">
-        <label className="numSU">Max SUs allowed:</label>
-        <input
-          type="number"
-          value={suLimit}
-          onChange={(e) => setSuLimit(Number(e.target.value))}
-          className="numSUInput"
-          min={0}
-        />
+      <div className="calc-input-container container gridContainer">
+        <div className="moduleCard">
+          <label className="numSU">Max SUs:</label>
+          <input
+            type="number"
+            value={suLimit}
+            onChange={(e) => setSuLimit(Number(e.target.value))}
+            className="numSUInput"
+            min={0}
+          />
+        </div>
+        <div className="moduleCard">
+          {currentSUUsed} / {suLimit} SUs used
+        </div>
       </div>
 
-      {/*No. of SU used */}
+      {/*No. of SU used 
       <div className="SUUsedContainer">
         {currentSUUsed} / {suLimit} SUs used
-      </div>
+      </div>*/}
 
-      <div className="moduleCardContainer">
+      <div className="gridContainer">
         {userModules.map((mod) => (
           <ModuleCard
             key={mod.id}
@@ -81,10 +86,10 @@ export default function Calculator() {
           />
         ))}
         <button
-        onClick={handleAddModule}
-        className="addModButton"
+        onClick={handleAddModule} 
+        id="addModButton"
         >
-          + Add Module
+          +
         </button>
       </div>
 

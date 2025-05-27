@@ -1,20 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
+
+.lcd-text {
+  font-family: "DS-Digital", monospace;
+  margin: 20px;
+}
+
 .calculatorContainer {
   border: 3px solid black;
-  border-radius: 50px;
-  margin: 20px;
+  border-radius: 70px;
+  margin: 50px;
   min-width: 1000px;
+  padding: 30px;
 }
 
 .CAPValue {
   border: 3px solid black;
   border-radius: 20px;
-  margin: 20px;
+  margin: 30px;
+  margin-bottom: 10px;
+  text-shadow: 
+    0 0 5px #00ff00,
+    0 0 10px #00ff00,
+    0 0 20px #00ff00;
+  background-color: #4CAF50;
+  font-size: 30px;
 }
 
-.moduleCardContainer {
+.numSUInput {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.gridContainer {
   display:grid;
   grid-template-columns: repeat(5, 1fr);
-  
 }
 
 .moduleCard {
@@ -23,7 +42,9 @@
   border-radius: 20px;
   padding: 16px;
   min-width: 100px;
-  margin: 20px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
   font-family: sans-serif;
 }
@@ -93,4 +114,17 @@ input:checked + .slider {
 
 input:checked + .slider::before {
   transform: translateX(22px);
+}
+
+#addModButton {
+  height: 170px;
+  padding: 16px;
+  min-width: 100px;
+  margin: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 100px;
+  border: none;
+  background-color: inherit;
 }
