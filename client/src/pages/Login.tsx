@@ -73,9 +73,6 @@ const handleResendConfirmation = async () => {
   const { error } = await supabase.auth.resend({
     type: "signup",
     email: emailPrompt,
-    options: {
-      emailRedirectTo: `https://modmatch.netlify.app/ResetPassword`,
-    },
   });
 
   if (error) {
