@@ -11,6 +11,8 @@ import DegreeRequirement from "./pages/DegreeRequirement"
 import Timetable from "./pages/Timetable"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
+import { Navigate } from "react-router-dom";
+
 
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
     <>
       {useLocation().pathname !== "/Login" && <Header />}
       <Routes>
-        <Route path="/" element={<Login/>} />
+        <Route path="/" element={<Navigate to ="/Login" replace/>} />
         <Route path="/Search" element={<Search />} />
         <Route path="/DegreeRequirement" element={<DegreeRequirement />} />
         <Route path="/Timetable" element={<Timetable />} />
