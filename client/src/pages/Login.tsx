@@ -74,7 +74,7 @@ const handleResendConfirmation = async () => {
     type: "signup",
     email: emailPrompt,
     options: {
-      emailRedirectTo: `${window.location.origin}/reset-password`,
+      emailRedirectTo: `https://modmatch.netlify.app/ResetPassword`,
     },
   });
 
