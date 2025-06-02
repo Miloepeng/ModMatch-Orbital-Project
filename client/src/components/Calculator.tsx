@@ -115,7 +115,7 @@ useEffect(() => {
 
       {/*User input no. of SU */}
       <div className="calc-input-container container gridContainer">
-        <div className="moduleCard">
+        <div className="calc-button calc-input">
           <label className="numSU">Max SUs:</label>
           <input
             type="number"
@@ -125,7 +125,7 @@ useEffect(() => {
             min={0}
           />
         </div>
-        <div className="moduleCard">
+        <div className="calc-button calc-input">
           {currentSUUsed} / {suLimit} SUs used
         </div>
       </div>

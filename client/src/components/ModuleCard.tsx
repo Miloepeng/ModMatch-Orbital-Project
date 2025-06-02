@@ -48,7 +48,7 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
     };
 
     return (
-    <div className="moduleCard">
+    <div className="calc-button moduleCard">
      {/* Module name selector */}
       <label className="modSelectorContainer">
       Module:
