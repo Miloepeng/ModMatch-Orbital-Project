@@ -25,6 +25,8 @@ function App() {
         <Route path="/Timetable" element={<Timetable />} />
         <Route path="/Home" element={<Home />} />
         <Route path ="/Login" element={<Login />} />
+        <Route path="/ResetPassword" element={<ResetPassword />} />
+
       </Routes>
     </>
   );
