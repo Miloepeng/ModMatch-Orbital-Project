@@ -26,7 +26,10 @@ const Login: React.FC = () => {
 
   if (isRegistering) {
       // Register new user
-      const { error } = await supabase.auth.signUp({ email, password });
+      const { error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
       if (error) {
         setErrorMsg(error.message);
       } else {
@@ -53,7 +56,7 @@ const Login: React.FC = () => {
   if (!emailPrompt) return;
 
   const { error } = await supabase.auth.resetPasswordForEmail(emailPrompt, {
-    redirectTo: `${window.location.origin}/reset-password`,
+    redirectTo: `https://modmatch.netlify.app/ResetPassword`,
   });
 
   if (error) {
@@ -63,13 +66,31 @@ const Login: React.FC = () => {
   }
 };
 
+const handleResendConfirmation = async () => {
+  const emailPrompt = prompt("Enter your email to resend confirmation link:");
+  if (!emailPrompt) return;
+
+  const { error } = await supabase.auth.resend({
+    type: "signup",
+    email: emailPrompt,
+    options: {
+      emailRedirectTo: `${window.location.origin}/reset-password`,
+    },
+  });
+
+  if (error) {
+    alert("Failed to resend confirmation: " + error.message);
+  } else {
+    alert("Confirmation email resent! Check your inbox.");
+  }
+};
 
 
   return (
      <div className="login-container">
     <form onSubmit={handleSubmit} className="login-form">
       <div className="form-row">
-        <label>Username</label>
+        <label>Email</label>
         <input
           type="email"
           placeholder=""
@@ -91,6 +112,7 @@ const Login: React.FC = () => {
         <span className="forgot-password" onClick={handleResetPassword}>
           Forget password
         </span>
+
       </div>
 
       {errorMsg && <p className="error-msg">{errorMsg}</p>}
@@ -119,9 +141,19 @@ const Login: React.FC = () => {
       )}
 
       {isRegistering && (
+        <>
         <p className="register-text">
           <span onClick={() => setIsRegistering(false)}>Already have an account? Login</span>
         </p>
+         <button
+            type="button"
+            onClick={handleResendConfirmation}
+            className="rounded-button"
+            style={{ marginTop: "10px" }}
+          >
+      Resend Confirmation Email
+    </button>
+        </>
       )}
     </form>
   </div>
