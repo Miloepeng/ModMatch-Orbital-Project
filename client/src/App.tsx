@@ -18,7 +18,6 @@ function App() {
   return (
     <>
       {useLocation().pathname !== "/Login"  && <Header />}
-      {useLocation().pathname !== "/ResetPassword" && <Header />}
       <Routes>
         <Route path="/" element={<Login/>} />
         <Route path="/Search" element={<Search />} />
