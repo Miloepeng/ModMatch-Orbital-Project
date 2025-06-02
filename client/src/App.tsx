@@ -17,8 +17,7 @@ import ResetPassword from './pages/ResetPassword';
 function App() {
   return (
     <>
-      {useLocation().pathname !== "/Login"  && <Header />}
-      {useLocation().pathname !== "/ResetPassword"  && <Header />}
+      {!["/Login", "/ResetPassword"].includes(useLocation().pathname)  && <Header />}
       <Routes>
         <Route path="/" element={<Login/>} />
         <Route path="/Search" element={<Search />} />
