@@ -6,6 +6,7 @@ import CAPDisplay from "./CAPDisplay";
 import { useEffect, useCallback } from "react";
 import { supabase } from "../supabaseClient";
 
+const isGuest = localStorage.getItem("guest") === "true";
 
 export default function Calculator() {
   const [userModules, setModules] = useState<Module[]>([]);
@@ -14,6 +15,7 @@ export default function Calculator() {
 
   //retrieve user data
   useEffect(() => {
+  if (isGuest) return;
   const checkUserAndLoad = async () => {
     const { data: { user } } = await supabase.auth.getUser();
 
@@ -44,6 +46,7 @@ export default function Calculator() {
 
 //autosave
 useEffect(() => {
+  if (isGuest) return;
   const saveModules = async () => {
     const user = await supabase.auth.getUser();
     if (!user.data.user) return;

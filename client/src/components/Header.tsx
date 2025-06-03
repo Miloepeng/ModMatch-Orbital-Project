@@ -1,8 +1,15 @@
 import React from "react";
 import logo from "../assets/Logo1.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { supabase } from "../supabaseClient";
 
 export default function Header() {
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    localStorage.clear(); 
+    navigate("/Login")
+  }
   return (
     /*<header className="headerContainer">
       <div className="headerCenter">
@@ -14,7 +21,7 @@ export default function Header() {
     </header>*/
     <>
      
-
+    
 
     <header>
       <div className = "container">
@@ -24,7 +31,7 @@ export default function Header() {
           <Link to= "./Search" className="header-links">Search</Link>
           <Link to ="./DegreeRequirement" className ="header-links">Degree Requirement</Link>
           <Link to ="./Timetable" className = "header-links">Timetable</Link>
-          <Link to ="./Login" className = "header-links">Login</Link>
+          <Link to ="./Login" className="header-links" onClick={handleLogout}>Logout</Link>
           <div></div>
         </div>
       </div>
