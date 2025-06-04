@@ -13,7 +13,7 @@ import Login from "./pages/Login"
 import ResetPassword from './pages/ResetPassword';
 
 
-function App() {
+function App() {  
   return (
     <>
       {!["/Login", "/ResetPassword"].includes(useLocation().pathname) && <Header />}

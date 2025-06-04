@@ -1,0 +1,37 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.forgot-password {
+    color: grey;
+    opacity: 0.8;
+    margin-left: 20px;
+}
+
+.register-text {
+    color: blue;
+    text-decoration: underline;
+}
+
+.rounded-button {
+    border-radius: 8px;
+    background-color: white;
+}
+
+.logo{
+    width:200px;
+    height:400x;
+    margin-bottom: 30px;
+}
+
+.input-email {
+    margin-left: 48.5px;
+}
+
+.input-password{
+    margin-left: 20px;
+}
