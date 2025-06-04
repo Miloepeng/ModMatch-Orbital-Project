@@ -2,22 +2,22 @@ import React, {useState} from "react";
 import axios from "axios";
 
 export default function Search() {
-    const [moduleDesc, setModuleDesc] = useState("");
-    const [recommendation, setRecommendation] = useState("");
-    const [loading, setLoading] = useState(false);
+  const [moduleDesc, setModuleDesc] = useState("");
+  const [recommendation, setRecommendation] = useState("");
+  const [loading, setLoading] = useState(false);
 
-    const handleRecommend = async () => {
+  const handleRecommend = async () => {
     setLoading(true);
-    setRecommendation("");
+    setRecommendation('');
 
     try {
-      const response = await axios.post("http://127.0.0.1:5051/api/recommend", {
+      const response = await axios.post('http://127.0.0.1:5051/api/recommend', {
         module_description: moduleDesc,
       });
 
-      setRecommendation(response.data.recommendation);
+      setRecommendation(response.data.recommendation || 'No recommendation returned.');
     } catch (error) {
-      setRecommendation("Error fetching recommendation.");
+      setRecommendation('Error fetching recommendation.');
       console.error(error);
     }
 
@@ -25,31 +25,22 @@ export default function Search() {
   };
 
   return (
-    <div style={{ padding: "2rem", fontFamily: "Arial" }}>
-      <h2>NUS Module Recommender</h2>
-
+    <div style={{ padding: '20px', maxWidth: '500px' }}>
+      <h2>Module Recommender</h2>
       <textarea
-        rows={6}
-        cols={60}
-        placeholder="Enter a module description (e.g., CS3243 covers AI, search, ML...)"
+        rows={4}
+        cols={50}
+        placeholder="Enter module description..."
         value={moduleDesc}
         onChange={(e) => setModuleDesc(e.target.value)}
-        style={{ padding: "0.5rem", marginBottom: "1rem" }}
       />
-
       <br />
-
-      <button onClick={handleRecommend} disabled={loading} style={{ padding: "0.5rem 1rem" }}>
-        {loading ? "Loading..." : "Recommend Similar Modules"}
+      <button onClick={handleRecommend} disabled={loading}>
+        {loading ? 'Loading...' : 'Get Recommendation'}
       </button>
-
-      <div style={{ marginTop: "1.5rem", whiteSpace: "pre-wrap" }}>
-        {recommendation && (
-          <>
-            <h4>Recommendation:</h4>
-            <p>{recommendation}</p>
-          </>
-        )}
+      <div style={{ marginTop: '20px' }}>
+        <strong>Recommendation:</strong>
+        <p>{recommendation}</p>
       </div>
     </div>
   );

@@ -1,86 +1,57 @@
-##from flask import Flask, render_template
-##
-##app = Flask(__name__)
-##
-##@app.route("/")
-##def home():
-##    return render_template("index.html")
-##
-##if __name__ == "__main__":
-##    app.run(port=5051, debug=True)
-
 from flask import Flask, request, jsonify
-import requests
 from flask_cors import CORS
-import os
+from sentence_transformers import SentenceTransformer, util
+import ModScrape
 
 app = Flask(__name__)
-CORS(app)  # Allow React frontend to call this
+CORS(app)
 
-# Replace with your Hugging Face API key
-HUGGINGFACE_API_KEY = "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"
+model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
-# Choose an appropriate instruct model
-HF_API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
+modules = ["CS1101S", "CS2030S", "CS2040S", "CS2100", "CS1231S", "MA1521", "MA1522"]
+module_info = []
 
-headers = {
-    "Authorization": f"Bearer {HUGGINGFACE_API_KEY}",
-    "Content-Type": "application/json"
-}
+for mod in modules:
+    entry = {}
+    entry["code"] = mod
+    entry["comments"] = ModScrape.moduleScrape(mod)
+    module_info.append(entry)
 
 
 @app.route("/api/recommend", methods=["POST"])
 def recommend():
-    data = request.json
-    module_desc = data.get("module_description", "")
-    mods = ["CS1101S", "CS1231S", "CS2030S", "CS2040S", "CS2100", "CS2101", "CS2103T", "CS2106", "CS2109S", "CS3230"]
+    data = request.get_json()
+    user_input = data.get("module_description")
 
-    prompt = (f"Suggest 3 NUS modules that are similar to the following module that is not itself and from the list {mods} :\n\n{module_desc}\n\n"
-              "Only list the module names only. They must be real modules you can find on https://nusmods.com/modules")
+    if not user_input:
+        return jsonify({"recommendation": "No input provided."})
 
-    try:
-        response = requests.post(
-            HF_API_URL,
-            headers=headers,
-            json={"inputs": prompt}
-        )
+    user_embedding = model.encode(user_input, convert_to_tensor=True)
+    module_embeddings = model.encode([m["comments"] for m in module_info], convert_to_tensor=True)
 
-        print("Raw response:", response.text)  # Debug print
+    similarities = util.pytorch_cos_sim(user_embedding, module_embeddings)[0]
 
-        if response.status_code != 200:
-            return jsonify({"error": "Hugging Face API error", "details": response.text}), 500
+    # Check if input exactly matches a module code, ignore case
+    input_module_code = user_input.strip().upper()
+    exclude_idx = None
+    for idx, mod in enumerate(module_info):
+        if mod["code"].upper() == input_module_code:
+            exclude_idx = idx
+            break
 
-        result = response.json()
+    # Create a list of (index, similarity) excluding the matched module itself
+    filtered = [(i, similarities[i].item()) for i in range(len(module_info)) if i != exclude_idx]
 
-        # Some models return list of dicts, others a string
-        if isinstance(result, list) and "generated_text" in result[0]:
-            reply = result[0]["generated_text"]
-        else:
-            reply = result
+    # Sort by similarity descending
+    filtered.sort(key=lambda x: x[1], reverse=True)
 
-        return jsonify({"recommendation": reply})
+    # Pick top 3
+    top_3 = filtered[:3]
 
-    except Exception as e:
-        print("Error during recommendation:", str(e))
-        return jsonify({"error": "Internal server error"}), 500
+    recommendations = [module_info[i]["code"] for i, _ in top_3]
+
+    return jsonify({"recommendation": ", ".join(recommendations)})
+
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5051)
-
-##import requests
-##
-##API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
-##
-##headers = {
-##    "Authorization": f"Bearer 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"
-##}
-##
-##payload = {
-##    "inputs": "Explain the theory of relativity."
-##}
-##
-##response = requests.post(API_URL, headers=headers, json=payload)
-##
-##print("Status Code:", response.status_code)
-##print("Response:", response.text)
-
+    app.run(port=5051)
