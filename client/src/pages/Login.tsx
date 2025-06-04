@@ -1,6 +1,8 @@
 import React, { useState, FormEvent, useEffect } from "react";
 import { supabase } from "../supabaseClient";
 import { useNavigate } from "react-router-dom";
+import './Login.css';
+import logo from '../assets/Logo3.png';
 
 
 const Login: React.FC = () => {
@@ -84,7 +86,9 @@ const handleResendConfirmation = async () => {
 
 
   return (
-     <div className="login-container">
+    <>
+    <div className="login-container">
+    <img src={logo} className="logo"/>
     <form onSubmit={handleSubmit} className="login-form">
       <div className="form-row">
         <label>Email</label>
@@ -94,6 +98,7 @@ const handleResendConfirmation = async () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          className="input-email"
         />
       </div>
 
@@ -105,6 +110,7 @@ const handleResendConfirmation = async () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          className ="input-password"
         />
         <span className="forgot-password" onClick={handleResetPassword}>
           Forget password
@@ -154,6 +160,7 @@ const handleResendConfirmation = async () => {
       )}
     </form>
   </div>
+  </>
   );
 };
 
