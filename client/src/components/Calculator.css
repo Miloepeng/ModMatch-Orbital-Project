@@ -7,28 +7,28 @@
 
 .calculatorContainer {
   border: 3px solid black;
-  border-radius: 70px;
-  margin: 50px;
+  border-radius: 5vw;
+  margin: 5vh;
   min-width: 1000px;
-  padding: 30px;
+  padding: 2%;
 }
 
 .CAPValue {
   border: 3px solid black;
   border-radius: 20px;
-  margin: 30px;
+  margin: 2vh 0;
   margin-bottom: 10px;
   text-shadow: 
     0 0 5px #00ff00,
     0 0 10px #00ff00,
     0 0 20px #00ff00;
   background-color: #4CAF50;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .numSUInput {
-  width: 30px;
-  margin-left: 10px;
+  width: 1.8em;
+  margin-left: 0.5vw;
 }
 
 .gridContainer {
@@ -39,12 +39,12 @@
 .calc-button {
   background-color: white;
   border: 3px solid black;
-  border-radius: 20px;
-  padding: 16px;
-  min-width: 100px;
-  margin: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  border-radius: 1.5em;
+  padding: 1em;
+  min-width: 10vw;
+  margin: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   text-align: center;
   font-family: sans-serif;
 }

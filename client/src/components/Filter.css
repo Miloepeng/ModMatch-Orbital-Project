@@ -1,0 +1,15 @@
+.filter-box {
+    border-radius: 8px;
+    background-color: white;
+    margin-left: 1.5%;
+}
+
+.search-box {
+    margin-left: 1%;
+}
+
+.modules-list{
+    border: 1px solid;
+    margin-left: 0.5%;
+    margin-right: 45%;
+}
