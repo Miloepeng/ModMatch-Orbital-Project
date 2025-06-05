@@ -90,7 +90,7 @@ const handleResendConfirmation = async () => {
     <div className="login-container">
     <img src={logo} className="logo"/>
     <form onSubmit={handleSubmit} className="login-form">
-      <div className="form-row">
+      <div className="email-row">
         <label>Email</label>
         <input
           type="email"
@@ -102,7 +102,7 @@ const handleResendConfirmation = async () => {
         />
       </div>
 
-      <div className="form-row password-row">
+      <div className="password-row">
         <label>Password</label>
         <input
           type="password"
