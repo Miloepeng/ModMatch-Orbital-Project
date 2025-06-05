@@ -1,21 +1,30 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from sentence_transformers import SentenceTransformer, util
-import ModScrape
+import csv
+import sys
+csv.field_size_limit(10_000_000)
+#import ModScrape
 
 app = Flask(__name__)
 CORS(app)
 
 model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
-modules = ["CS1101S", "CS2030S", "CS2040S", "CS2100", "CS1231S", "MA1521", "MA1522"]
+#modules = ["CS1101S", "CS2030S", "CS2040S", "CS2100", "CS1231S", "MA1521", "MA1522"]
 module_info = []
 
-for mod in modules:
-    entry = {}
-    entry["code"] = mod
-    entry["comments"] = ModScrape.moduleScrape(mod)
-    module_info.append(entry)
+##for mod in modules:
+##    entry = {}
+##    entry["code"] = mod
+##    entry["comments"] = ModScrape.moduleScrape(mod)
+##    module_info.append(entry)
+
+with open("Module_Data.csv", "r", newline="", encoding="utf-8") as csvfile:
+    reader = csv.DictReader(csvfile)
+
+    for row in reader:
+        module_info.append(row)
 
 
 @app.route("/api/recommend", methods=["POST"])
@@ -27,7 +36,7 @@ def recommend():
         return jsonify({"recommendation": "No input provided."})
 
     user_embedding = model.encode(user_input, convert_to_tensor=True)
-    module_embeddings = model.encode([m["comments"] for m in module_info], convert_to_tensor=True)
+    module_embeddings = model.encode([m["description"] for m in module_info], convert_to_tensor=True)
 
     similarities = util.pytorch_cos_sim(user_embedding, module_embeddings)[0]
 

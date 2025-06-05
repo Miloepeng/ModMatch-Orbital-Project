@@ -8,7 +8,7 @@ import time
 import re
 
 def moduleScrape(module_code):
-    # --- Setup headless Chrome ---
+    # Setup headless Chrome
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--no-sandbox")
@@ -16,23 +16,17 @@ def moduleScrape(module_code):
 
     driver = webdriver.Chrome(options=options)
 
-    # --- Load the module page ---
-    ##module_code = "CS1101S"
+    # Load the module page
     url = f"https://nusmods.com/modules/{module_code}"
     driver.get(url)
 
-    # --- Wait for iframes to load ---
+    # Wait for iframes to load
     WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.TAG_NAME, "iframe"))
     )
 
-    # --- Find and switch to the first iframe (likely the comment one) ---
+    # Find and switch to the first iframe (likely the comment one)
     iframes = driver.find_elements(By.TAG_NAME, "iframe")
-    #print(f"Found {len(iframes)} iframes.")
-
-    # Optional: You can inspect `iframe.get_attribute('src')` to pick the right one
-##    for idx, iframe in enumerate(iframes):
-##        print(f"Iframe {idx} src: {iframe.get_attribute('src')}")
 
     # Try the first one that looks like a comment iframe
     driver.switch_to.frame(iframes[0])  # Adjust index if needed
@@ -43,19 +37,18 @@ def moduleScrape(module_code):
             load_more_button = WebDriverWait(driver, 5).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "a.load-more-refresh__button"))
             )
-            #print("Clicking 'Load more comments'...")
             load_more_button.click()
-            time.sleep(2)  # Give time for comments to load
+            time.sleep(2)  
         except:
             #print("No more 'Load more' button found.")
             break
 
-    # --- Wait for posts to appear inside the iframe ---
+    # Wait for posts to appear inside the iframe
     WebDriverWait(driver, 15).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, "li.post"))
     )
 
-    # --- Parse iframe content with BeautifulSoup ---
+    # Parse iframe content with BeautifulSoup
     soup = BeautifulSoup(driver.page_source, "html.parser")
     comments = soup.select("li.post")
 
@@ -76,4 +69,22 @@ def moduleScrape(module_code):
     for item in output:
         answer += " " + item
     return answer
+
+def descScrape(module_code):
+    # Setup headless Chrome
+    options = Options()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(options=options)
+
+    # Load the module page
+    url = f"https://nusmods.com/modules/{module_code}"
+    driver.get(url)
+    
+    p_element = WebDriverWait(driver, 15).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, "section.row div p")))
+    #print(type(p_element.text))
+    return p_element.text
 
