@@ -32,17 +32,15 @@ export default function Calculator() {
 
     if (data?.modules_json) {
       setModules(data.modules_json);
-      setIdCounter(data.modules_json.length);
-    }
-
-    if (error) {
-      console.warn("Error loading modules:", error.message);
+      const maxId = data.modules_json.reduce((max: number, mod: Module) => {
+      const idNum = Number(mod.id);
+      return !isNaN(idNum) && idNum > max ? idNum : max;
+      }, -1);
+    setIdCounter(maxId + 1);
     }
   };
-
   checkUserAndLoad();
 }, []);
-
 
 //autosave
 useEffect(() => {
