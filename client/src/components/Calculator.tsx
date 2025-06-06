@@ -86,7 +86,10 @@ useEffect(() => {
 
   //handles selecting module name in modulecard
   const handleUpdateModule = (id: string, updated: Module) => {
-  const isDuplicate = userModules.some(
+    const updatedName = updated.name.toUpperCase().trim();
+    const isDuplicate = 
+    updatedName &&
+    userModules.some(
     (mod) => mod.id !== id && mod.name === updated.name
   );
 

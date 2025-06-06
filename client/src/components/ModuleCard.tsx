@@ -1,7 +1,5 @@
 import React from "react";
-import Select, { StylesConfig } from "react-select";
 import { Module } from "../types";  //Import module interface, each module card contains a module object
-import { modules } from "../utils/modules";
 
 //Initialize properties of component i.e. what inputs it expects to receive
 type Props = {
@@ -10,11 +8,6 @@ type Props = {
     onDelete: () => void;
     disableSU: boolean;
 }
-
-type OptionType = {
-  value: string;
-  label: string;
-};
 
 //List of grades to map to
 const grades = [
@@ -28,40 +21,18 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
         onChange({ ...module, [field]: value });
   };
 
-    const customStyles: StylesConfig<OptionType, false> = {
-      clearIndicator: (provided) => ({
-        ...provided,
-        padding: '3px',        
-        svg: {
-          height: '20px',
-          width: '2.5vh',
-        }
-      }),
-      dropdownIndicator: (provided) => ({
-        ...provided,
-        padding: '3px',
-        svg: {
-          height: '20px',
-          width: '2.5vh',
-        },
-      }),
-    };
 
     return (
     <div className="calc-button moduleCard">
      {/* Module name selector */}
       <label className="modSelectorContainer">
       Module:
-      <Select
-          className="modSelector"
-          options={modules}
-          value={modules.find((opt) => opt.value === module.name)}
-          onChange={(selected) =>
-          handleChange("name", selected ? selected.value : "")
-          }
-          styles={customStyles}
-          isClearable
-          placeholder="Select module..."
+      <input
+        className="modSelector"
+        type="text"
+        placeholder="Enter module code..."
+        value={module.name}
+        onChange={(e) => handleChange("name", e.target.value.toUpperCase())}
       />
       </label>
 
