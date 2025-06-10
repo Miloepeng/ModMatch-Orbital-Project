@@ -1,0 +1,1845 @@
+{
+    "acadYear": "2024/2025",
+    "preclusion": "If undertaking an Undergraduate Degree THEN must not have completed GES1035 at a grade of at least CS",
+    "preclusionRule": "PROGRAM_TYPES IF_IN Undergraduate Degree THEN COURSES GES1035:CS",
+    "description": "As an economically-developed nation with a diverse population, Singapore now confronts a range of socioeconomic issues, a rapidly ageing population, declining fertility rates, widening income inequality, and rising living costs amidst increasing global competition, technological advancements, and security threats. Singaporeans have also become a people with a greater propensity to participate in the decisions that affect the nation. This course aims to encourage undergraduates to reflect on Singapore\u2019s post-independence history, imagine the kind of Singapore they would like to co-create, and deliberate on the ways to achieve the future visions they have for Singapore. All lectures will be mounted online.",
+    "title": "Singapore: Imagining the Next 50 Years",
+    "additionalInformation": "",
+    "department": "Sociology and Anthropology",
+    "faculty": "Arts and Social Science",
+    "workload": [
+        1,
+        1,
+        0,
+        3,
+        5
+    ],
+    "gradingBasisDescription": "Completed Satisfactory/Unsatisfactory",
+    "moduleCredit": "4",
+    "moduleCode": "GESS1025",
+    "attributes": {
+        "mpes1": true,
+        "mpes2": true
+    },
+    "aliases": [
+        "GES1035"
+    ],
+    "semesterData": [
+        {
+            "semester": 1,
+            "timetable": [
+                {
+                    "classNo": "D10",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D14",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D46",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D6",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR6",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D16",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D21",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR6",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D18",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D27",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D38",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D7",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D23",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D24",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D29",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D17",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D4",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D13",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D15",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D19",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR6",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D25",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D30",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D47",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D26",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D20",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D31",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D34",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-GLR",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D22",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D1",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D11",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D48",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D3",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D9",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR6",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D36",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-GLR",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D33",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D41",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR9CAM",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D42",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D43",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D32",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D8",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-GLR",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D39",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR9CAM",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D45",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR9CAM",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D50",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "TP-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D5",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D35",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D44",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D12",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D2",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "TP-SR9",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D40",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR6",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D49",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR6",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D37",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D28",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 16,
+                    "covidZone": "A"
+                }
+            ],
+            "covidZones": [
+                "A"
+            ]
+        },
+        {
+            "semester": 2,
+            "timetable": [
+                {
+                    "classNo": "D37",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D5",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D36",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D38",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D48",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "TP-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D50",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "TP-SR9",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D2",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D1",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D28",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D13",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D21",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D29",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D11",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D39",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D49",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D16",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D41",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D9",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR6",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D20",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D34",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D17",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "TP-SR9",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D18",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D8",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D27",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D32",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-GLR",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D33",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D35",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D4",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D42",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR7",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D6",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR10",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D46",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-GLR",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D47",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR6",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D43",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D30",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D40",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR8",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D3",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D22",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D19",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D44",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D31",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D7",
+                    "startTime": "1800",
+                    "endTime": "2000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D26",
+                    "startTime": "1400",
+                    "endTime": "1600",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D14",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Wednesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D12",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D25",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D45",
+                    "startTime": "1200",
+                    "endTime": "1400",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Monday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D24",
+                    "startTime": "1000",
+                    "endTime": "1200",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR8",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D10",
+                    "startTime": "0800",
+                    "endTime": "1000",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR11",
+                    "day": "Thursday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D23",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "ERC-SR9CAM",
+                    "day": "Tuesday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                },
+                {
+                    "classNo": "D15",
+                    "startTime": "1600",
+                    "endTime": "1800",
+                    "weeks": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13
+                    ],
+                    "venue": "UTSRC-SR9",
+                    "day": "Friday",
+                    "lessonType": "Tutorial",
+                    "size": 19,
+                    "covidZone": "A"
+                }
+            ],
+            "covidZones": [
+                "A"
+            ]
+        }
+    ]
+}
