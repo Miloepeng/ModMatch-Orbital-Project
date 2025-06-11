@@ -2,556 +2,667 @@
   {
     "value": "GEC1000",
     "label": "GEC1000 Globalisation and New Media",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1001",
     "label": "GEC1001 Chinese Music, Language and Literature (In English)",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1002",
     "label": "GEC1002 Nations & Nationalism in South Asia",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1003",
     "label": "GEC1003 Pirates, Oceans and The Maritime World",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1004",
     "label": "GEC1004 Samurai, Geisha, Yakuza as Self or Other",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1005",
     "label": "GEC1005 Cultural Borrowing: Japan And China",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1006",
     "label": "GEC1006 Understanding Consumption",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1007",
     "label": "GEC1007 Geopolitics: Geographies of War & Peace",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1008",
     "label": "GEC1008 Exploring Chinese Cinema: Shanghai-Hong Kong-Singapore",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1009",
     "label": "GEC1009 Drugs and Society",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1010",
     "label": "GEC1010 Clean Energy and Storage",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1011",
     "label": "GEC1011 Microbes Which Changed Human History",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1012",
     "label": "GEC1012 Understanding Globalisation",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1013",
     "label": "GEC1013 World Religions",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1014",
     "label": "GEC1014 Social and Cultural Studies Through Music",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1015",
     "label": "GEC1015 Public Health in Action",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1016",
     "label": "GEC1016 Plants and Society",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1017",
     "label": "GEC1017 Film Art and Human Concerns",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1018",
     "label": "GEC1018 Names as Markers of Socio-Cultural Identity",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1019",
     "label": "GEC1019 Religion and Film",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1020",
     "label": "GEC1020 Cultural Diversity in The Contemporary World",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1021",
     "label": "GEC1021 The Theatre Experience",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1022",
     "label": "GEC1022 Living in The Nuclear World",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "GEC1023",
     "label": "GEC1023 Social History of The Piano",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1024",
     "label": "GEC1024 Ghosts and Spirits in Society and Culture",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1025",
     "label": "GEC1025 The Life Aquatic: Machines and The Making of The Ocean",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1026",
     "label": "GEC1026 Art in Asia: Through Media, Style, Space and Time",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1027",
     "label": "GEC1027 Culture in Action",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1028",
     "label": "GEC1028 Luck",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1029",
     "label": "GEC1029 Worlds of Football",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1030",
     "label": "GEC1030 Metropolis: The City in World History",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1031",
     "label": "GEC1031 Whatever It Takes? Making War on Civilians",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1032",
     "label": "GEC1032 Home",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1033",
     "label": "GEC1033 Maverick or Mahatma? Gandhi's Life & Legacy",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1034",
     "label": "GEC1034 Understanding the Changing Global Economic Landscape",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1034T",
     "label": "GEC1034T Understanding the Changing Global Economic Landscape",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1035",
     "label": "GEC1035 Patrons of The Arts",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1036",
     "label": "GEC1036 Radiation-Scientific Understanding and Public Perception",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1037",
     "label": "GEC1037 Big Picture History",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1038",
     "label": "GEC1038 Asian Cinema: The Silent Era",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1039",
     "label": "GEC1039 International Relations of Asia",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1040",
     "label": "GEC1040 A Culture of Sustainability",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1040T",
     "label": "GEC1040T A Culture of Sustainability",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1041",
     "label": "GEC1041 Crime Fiction and Film across Space & Time",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1042",
     "label": "GEC1042 Fashion: East and West",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1043",
     "label": "GEC1043 Feasting and Fasting: Global Histories of Food",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1044",
     "label": "GEC1044 Chinese Medicine: Theory and Practice",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1045",
     "label": "GEC1045 Forbidden Romance in Modern Times: East and West",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1046",
     "label": "GEC1046 Magic, Myths and Society in Southeast Asia",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1048",
     "label": "GEC1048 Death and Dying in the Human Experience",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1049",
     "label": "GEC1049 Powerful Court Women from Qing China and Other Cultures",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1050",
     "label": "GEC1050 Skyscapes: Cultural Interpretations of the Sky",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1051",
     "label": "GEC1051 Merchants, Guns and Money: The Economics of War",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1052",
     "label": "GEC1052 From Traveller to Tourist",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEC1053",
     "label": "GEC1053 Rome and the Genealogy of Urban Life",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "HSA1000",
     "label": "HSA1000 Asian Interconnections",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "NGT2001%",
     "label": "NGT2001% Global Social Thought",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2098",
     "label": "NHS2098 Regeneration: Paradigm & Practice for Planetary Health",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "RVC1000",
     "label": "RVC1000 How in The World Do We Get Along?",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "RVC1001",
     "label": "RVC1001 The Rocky Road to SDGs",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "RVC2000",
     "label": "RVC2000 Culture and Sustainability in Southeast Asia",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UHB2204",
     "label": "UHB2204 Virtue and Leadership",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2019",
     "label": "NHS2019 Virtue and Leadership",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UHB2206",
     "label": "UHB2206 Leadership in a Complex World",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2020",
     "label": "NHS2020 Leadership in a Complex World",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UHB2207",
     "label": "UHB2207 Language, Cognition, and Culture",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2021",
     "label": "NHS2021 Language, Cognition, and Culture",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UHB2208",
     "label": "UHB2208 Immigration and the City",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2022",
     "label": "NHS2022 Immigration and the City",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UHB2209",
     "label": "UHB2209 Polycentric Governance: Possibilities and Pitfalls",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2023",
     "label": "NHS2023 Polycentric Governance: Possibilities and Pitfalls",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UHB2210",
     "label": "UHB2210 Emotion in Daily Life",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2024",
     "label": "NHS2024 Emotion in Daily Life",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UHB2211",
     "label": "UHB2211 Welcome to the Anthropocene: Agency in the era of climate change",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2025",
     "label": "NHS2025 Welcome to the Anthropocene: Agency in the era of climate change",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UHB2214",
     "label": "UHB2214 Effective Decision Making",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2028",
     "label": "NHS2028 Effective Decision Making",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "USE2209",
     "label": "USE2209 Globalizing Asian-Pacific Identities",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2029",
     "label": "NHS2029 Globalizing Asian-Pacific Identities",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "USE2305",
     "label": "USE2305 Southeast Asia: The Making of a Region",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2031",
     "label": "NHS2031 Southeast Asia: The Making of a Region",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USE2306",
     "label": "USE2306 Disasters and Responses",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2032",
     "label": "NHS2032 Disasters and Responses",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "USE2307",
     "label": "USE2307 HIV/AIDS: From Microbes to Nations",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2033",
     "label": "NHS2033 HIV/AIDS: From Microbes to Nations",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "USE2308",
     "label": "USE2308 New Media and Politics",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2034",
     "label": "NHS2034 New Media and Politics",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "USE2309",
     "label": "USE2309 Ordinary Politics",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2035",
     "label": "NHS2035 Ordinary Politics",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "USE2310",
     "label": "USE2310 Questioning Sustainable Development",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2036",
     "label": "NHS2036 Questioning Sustainable Development",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USE2313",
     "label": "USE2313 Understanding Law and Social Change",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2039",
     "label": "NHS2039 Understanding Law and Social Change",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USE2314",
     "label": "USE2314 Politics and Emotion",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2040",
     "label": "NHS2040 Politics and Emotion",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "USE2315",
     "label": "USE2315 Participatory Social Development in Southeast Asia",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2041",
     "label": "NHS2041 Participatory Social Development in Southeast Asia",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USE2316",
     "label": "USE2316 Satires and (Un)Serious Histories",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2042",
     "label": "NHS2042 Satires and (Un)Serious Histories",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "USE2319",
     "label": "USE2319 Social Movements, Law, and Society",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2045",
     "label": "NHS2045 Social Movements, Law, and Society",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USE2322",
     "label": "USE2322 Situating Singapore in the Wider World",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2048",
     "label": "NHS2048 Situating Singapore in the Wider World",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USE2323",
     "label": "USE2323 Culture and Technology",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2049",
     "label": "NHS2049 Culture and Technology",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USE2324",
     "label": "USE2324 Gender and Ecology in Asia",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2050",
     "label": "NHS2050 Gender and Ecology in Asia",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USE2325",
     "label": "USE2325 Democracy and Inequality",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2051",
     "label": "NHS2051 Democracy and Inequality",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "USP3501",
     "label": "USP3501 The Problematic Concept of \"Gender\"",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS3001",
     "label": "NHS3001 The Problematic Concept of \"Gender\"",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   }
 ]

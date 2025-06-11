@@ -14,8 +14,9 @@ export default function Filter() {
         const matchesSearch = module.label.toUpperCase().includes(searchQuery.toUpperCase());
         /*const matchesExam = examFilter === 'all' || module.exam === examFilter;*/
         const matchesSU = SUFilter === 'all' || module.canSU === SUFilter;
+        const matchesGraded = gradedFilter ==='all' || module.passFail === gradedFilter;
         
-        return matchesSearch && matchesSU;
+        return matchesSearch && matchesSU && matchesGraded;
     })
 
     /*Split filteredModules into 10 modules a page*/
@@ -43,15 +44,28 @@ export default function Filter() {
             onChange={(e) => setSearchQuery(e.target.value)}
             />
             </div>
+            <div className="filter-container">
+            <label className="can-su">SU:</label>
             <select value={SUFilter} onChange = {(e) => setSUFilter(e.target.value)} className="filter-box">
                 <option value='all'>All</option>
                 <option value='True'>True</option>
                 <option value='False'>False</option>
             </select>
+            </div>
+
+            <div className="filter-container">
+            <label className="graded">Pass/Fail:</label>
+            <select value={gradedFilter} onChange = {(e) => setGradedFilter(e.target.value)} className="filter-box">
+                <option value='all'>All</option>
+                <option value='True'>True</option>
+                <option value='False'>False</option>
+            </select>
+            </div>
+            
 
             <ol className="modules-list">
                 {currentModules.map((module) => (
-                    <li>{module.value} - {module.canSU}</li>
+                    <li>{module.value} | {module.canSU} | {module.passFail}</li>
                 ))}
             </ol>
 

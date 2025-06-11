@@ -2,736 +2,883 @@
   {
     "value": "GEX1000",
     "label": "GEX1000 Framing Bollywood: Unpacking the Magic",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1001",
     "label": "GEX1001 Representation and Media",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1002",
     "label": "GEX1002 Life, Disrupted: The Sharing Revolution",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1003",
     "label": "GEX1003 Seeing the World Through Maps",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1004",
     "label": "GEX1004 Bridging East and West: Exploring Chinese Communication",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1005",
     "label": "GEX1005 Public Speaking and Critical Reasoning",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1005T",
     "label": "GEX1005T Public Speaking and Critical Reasoning",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1006",
     "label": "GEX1006 The Art of Science, The Science of Art",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1007",
     "label": "GEX1007 Darwin And Evolution",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1009",
     "label": "GEX1009 Understanding Your Brain",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1010",
     "label": "GEX1010 Thinking Like An Economist",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1011",
     "label": "GEX1011 Science Fiction and Philosophy",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1012",
     "label": "GEX1012 Effective Reasoning",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1013",
     "label": "GEX1013 Reason and Persuasion",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1014",
     "label": "GEX1014 Logic",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1015",
     "label": "GEX1015 Life, The Universe, And Everything",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1016",
     "label": "GEX1016 Building Relationship : Theories and Practice",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1017",
     "label": "GEX1017 Communication and Critical Thinking for Community Leadership",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1018",
     "label": "GEX1018 Critical Perspectives in Advertising",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1019",
     "label": "GEX1019 The Logic of Language",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1020",
     "label": "GEX1020 Communication in Small Groups",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1021",
     "label": "GEX1021 What, When and Where Is Art?",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1022",
     "label": "GEX1022 Communicating About the Arts",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1023",
     "label": "GEX1023 Disney And the Theme Park World",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1024",
     "label": "GEX1024 Universe, Big Bang, And Unsolved Mysteries",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1025",
     "label": "GEX1025 Structures of Conversation",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1026",
     "label": "GEX1026 I Do Not Think Therefore I Am",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1027",
     "label": "GEX1027 Art and Identity",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1028",
     "label": "GEX1028 Science: From Thinking to Narratives",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "GEX1029",
     "label": "GEX1029 Narrative",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1030",
     "label": "GEX1030 Standard English Across Cultures",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1031",
     "label": "GEX1031 Hollywood Cinema: Constructing the Realistic",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "GEX1032",
     "label": "GEX1032 \u201cFake News\u201d In the Public Sphere",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "ES2631",
     "label": "ES2631 Critique and Communication of Thinking and Design",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "ES2660",
     "label": "ES2660 Communicating in the Information Age",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "HSH1000",
     "label": "HSH1000 The Human Condition",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "MUH1101",
     "label": "MUH1101 Critical Approaches to Musical Discovery",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "NGN2001%",
     "label": "NGN2001% Global Narratives",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "RVX1000",
     "label": "RVX1000 Citizen Speak: Persuasion and Polarization in Society",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "RVX1001",
     "label": "RVX1001 Science Fiction and Society",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "RVX1002",
     "label": "RVX1002 What Do You Mean? Meaning and Communication in Intercultural Contexts",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "RVX1003",
     "label": "RVX1003 Print to Screen: Analysing Film Adaptation",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "RVX1004",
     "label": "RVX1004 Cultural Expressions of Science, Technology and Warfare",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "RVX1005",
     "label": "RVX1005 Intersectionality, Identity and Inequality in Asia",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UWC2101A",
     "label": "UWC2101A Cosmopolitanism and Global Citizenship",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2001",
     "label": "NTW2001 Cosmopolitanism and Global Citizenship",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101B",
     "label": "UWC2101B Civic Discourse in a Fractious World",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2002",
     "label": "NTW2002 Civic Discourse in a Fractious World",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101C",
     "label": "UWC2101C Monuments, Memorials, and Commemoration",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2003",
     "label": "NTW2003 Monuments, Memorials, and Commemoration",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101D",
     "label": "UWC2101D Narrative in Everyday Life",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2004",
     "label": "NTW2004 Narrative in Everyday Life",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101E",
     "label": "UWC2101E Literature and Ethics",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2005",
     "label": "NTW2005 Literature and Ethics",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101F",
     "label": "UWC2101F Human Trafficking and Labour Migration",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2006",
     "label": "NTW2006 Human Trafficking and Labour Migration",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101G",
     "label": "UWC2101G Apocalyptic Cultures",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2007",
     "label": "NTW2007 Apocalyptic Cultures",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101H",
     "label": "UWC2101H Power, Space and Pleasure",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2008",
     "label": "NTW2008 Power, Space and Pleasure",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101I",
     "label": "UWC2101I Interpreting Consumerism",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2009",
     "label": "NTW2009 Interpreting Consumerism",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101J",
     "label": "UWC2101J Sites of Tourism",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2010",
     "label": "NTW2010 Sites of Tourism",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101K",
     "label": "UWC2101K Questioning Evolution And Progress",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2011",
     "label": "NTW2011 Questioning Evolution And Progress",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101L",
     "label": "UWC2101L Conditions of Happiness",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2012",
     "label": "NTW2012 Conditions of Happiness",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101M",
     "label": "UWC2101M Scholarly Pursuits",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2013",
     "label": "NTW2013 Scholarly Pursuits",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101N",
     "label": "UWC2101N Clothing Identities",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2014",
     "label": "NTW2014 Clothing Identities",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101P",
     "label": "UWC2101P News and the Public",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2015",
     "label": "NTW2015 News and the Public",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101Q",
     "label": "UWC2101Q Civility in the World City",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2016",
     "label": "NTW2016 Civility in the World City",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101R",
     "label": "UWC2101R Multidisciplinary Perspectives on \u201cMind\u201d",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2017",
     "label": "NTW2017 Multidisciplinary Perspectives on \u201cMind\u201d",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101S",
     "label": "UWC2101S Danger and National Security",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2018",
     "label": "NTW2018 Danger and National Security",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101T",
     "label": "UWC2101T The Politics And Rhetoric Of Green",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2019",
     "label": "NTW2019 The Politics And Rhetoric Of Green",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101U",
     "label": "UWC2101U Technologies of Home",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2020",
     "label": "NTW2020 Technologies of Home",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101V",
     "label": "UWC2101V Language, Culture and 'Native' Peoples",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2021",
     "label": "NTW2021 Language, Culture and 'Native' Peoples",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101W",
     "label": "UWC2101W Genocide and Memory",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2022",
     "label": "NTW2022 Genocide and Memory",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101X",
     "label": "UWC2101X The Idea of the University",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2023",
     "label": "NTW2023 The Idea of the University",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101Y",
     "label": "UWC2101Y Issues in and Around Justice",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2024",
     "label": "NTW2024 Issues in and Around Justice",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101Z",
     "label": "UWC2101Z Vice, the State & Society",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2025",
     "label": "NTW2025 Vice, the State & Society",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101AA",
     "label": "UWC2101AA Religion in Public Life",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2026",
     "label": "NTW2026 Religion in Public Life",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101AB",
     "label": "UWC2101AB What is Wisdom?",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2027",
     "label": "NTW2027 What is Wisdom?",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UWC2101AC",
     "label": "UWC2101AC The Social Life of Science",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2028",
     "label": "NTW2028 The Social Life of Science",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2029",
     "label": "NTW2029 Evolutionary Psychology and Art",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2030",
     "label": "NTW2030 Art as Action: Caring about the Climate Crisis in SEA",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2031",
     "label": "NTW2031 Equity and Education",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2032",
     "label": "NTW2032 The Self in Health and Longevity",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2033",
     "label": "NTW2033 Conceptions of Human Nature",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2034",
     "label": "NTW2034 Wild and Simple: Living and Thinking Sustainably",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2035",
     "label": "NTW2035 Art and the Attention Economy",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2036",
     "label": "NTW2036 Space, Place and the Human Experience",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2037",
     "label": "NTW2037 Absences: Beyond the Edges of the Material World",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2038",
     "label": "NTW2038 Screening Historical Trauma",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NTW2039",
     "label": "NTW2039 Videogame Theory and Analysis",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UAR2206",
     "label": "UAR2206 Creating 'Reality'",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2008",
     "label": "NHS2008 Creating 'Reality'",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UAR2207",
     "label": "UAR2207 Intercultural Exchanges Through Theatre",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2009",
     "label": "NHS2009 Intercultural Exchanges Through Theatre",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UAR2208",
     "label": "UAR2208 From Lab to Stage: Writing the Science Play",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2010",
     "label": "NHS2010 From Lab to Stage: Writing the Science Play",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "ULT2298D",
     "label": "ULT2298D Representing War",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2001",
     "label": "NHS2001 Representing War",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "ULT2299A",
     "label": "ULT2299A Understanding Irony",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2002",
     "label": "NHS2002 Understanding Irony",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "ULT2299C",
     "label": "ULT2299C The Subject of Reading",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2003",
     "label": "NHS2003 The Subject of Reading",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "ULT2299D",
     "label": "ULT2299D The Politics of Language and Literacy in Singapore",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2004",
     "label": "NHS2004 The Politics of Language and Literacy in Singapore",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "ULT2299E",
     "label": "ULT2299E Appealing Arguments: Logos, Pathos, and Ethos",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2005",
     "label": "NHS2005 Appealing Arguments: Logos, Pathos, and Ethos",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "ULT2299F",
     "label": "ULT2299F Close Reading and Its Vicissitudes",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2006",
     "label": "NHS2006 Close Reading and Its Vicissitudes",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "ULT2299G",
     "label": "ULT2299G The Modern History of Southeast Asia through Fiction",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2007",
     "label": "NHS2007 The Modern History of Southeast Asia through Fiction",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UPI2205",
     "label": "UPI2205 Ethics and the Environment",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2011",
     "label": "NHS2011 Ethics and the Environment",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UPI2207",
     "label": "UPI2207 Ethics and Aesthetics: The Moral Value of Representational Art",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2012",
     "label": "NHS2012 Ethics and Aesthetics: The Moral Value of Representational Art",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UPI2208",
     "label": "UPI2208 Imagining Animals",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2013",
     "label": "NHS2013 Imagining Animals",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UPI2210",
     "label": "UPI2210 Arts of Memory: Public Recollection & Memory Training",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2014",
     "label": "NHS2014 Arts of Memory: Public Recollection & Memory Training",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UPI2211",
     "label": "UPI2211 Utopia: Ideal Places from Plato's to the Smart City",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2015",
     "label": "NHS2015 Utopia: Ideal Places from Plato's to the Smart City",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "UPI2212",
     "label": "UPI2212 Technologies of the Self: from Socrates to Self-Help",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2016",
     "label": "NHS2016 Technologies of the Self: from Socrates to Self-Help",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UPI2213",
     "label": "UPI2213 Making Sense of Colonial Ideology and Its Legacies",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2017",
     "label": "NHS2017 Making Sense of Colonial Ideology and Its Legacies",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   },
   {
     "value": "UPI2214",
     "label": "UPI2214 Multidisciplinary Inquiries Into the Mystery Of \"Minds\"",
-    "canSU": "False"
+    "canSU": "False",
+    "passFail": "False"
   },
   {
     "value": "NHS2018",
     "label": "NHS2018 Multidisciplinary Inquiries Into the Mystery Of \"Minds\"",
-    "canSU": "True"
+    "canSU": "True",
+    "passFail": "False"
   }
 ]
