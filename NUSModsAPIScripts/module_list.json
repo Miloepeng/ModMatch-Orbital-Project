@@ -3,78 +3,91 @@
     "value": "MA1521",
     "label": "MA1521",
     "exam": "mcq",
-    "canSU": "True"
+    "canSU": "True",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS1101S",
     "label": "CS1101S",
     "exam": "mcq",
-    "canSU": "True"
+    "canSU": "True",
+    "hasGroupProject": "True"
   },
   {
     "value": "CS2030S",
     "label": "CS2030S",
     "exam": "mcq",
-    "canSU": "False"
+    "canSU": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS2040S",
     "label": "CS2040S",
     "exam": "mcq",
-    "canSU": "False"
+    "canSU": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS2100",
     "label": "CS2100",
     "exam": "mcq",
-    "canSU": "False"
+    "canSU": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS2103T",
     "label": "CS2103T",
     "exam": "mcq",
-    "canSU": "False"
+    "canSU": "False",
+    "hasGroupProject": "True"
   },
   {
     "value": "CS2101",
     "label": "CS2101",
     "exam": "mcq",
-    "canSU": "True"
+    "canSU": "True",
+    "hasGroupProject": "True"
   },
   {
     "value": "MA1522",
     "label": "MA1522",
     "exam": "mcq",
-    "canSU": "True"
+    "canSU": "True",
+    "hasGroupProject": "False"
   },
   {
     "value": "ST2334",
     "label": "ST2334",
     "exam": "mcq",
-    "canSU": "False"
+    "canSU": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "ES2660",
     "label": "ES2660",
     "exam": "mixed",
-    "canSU": "True"
+    "canSU": "True",
+    "hasGroupProject": "True"
   },
   {
     "value": "CS2106",
     "label": "CS2106",
     "exam": "mixed",
-    "canSU": "False"
+    "canSU": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS2109",
     "label": "CS2109",
     "exam": "openended",
-    "canSU": "False"
+    "canSU": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS2107",
     "label": "CS2107",
     "exam": "mixed",
-    "canSU": "False"
+    "canSU": "False",
+    "hasGroupProject": "False"
   }
 ]

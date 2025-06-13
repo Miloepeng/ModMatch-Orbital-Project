@@ -7,6 +7,7 @@ export default function Filter() {
     const [examFilter, setExamFilter] = useState("all");
     const [gradedFilter, setGradedFilter] = useState("all");
     const [SUFilter, setSUFilter] = useState("all");
+    const [groupFilter, setGroupFilter] = useState('all');
 
     const allModules = [Modules, GEN, CD, ID, GEI, GEA, GEX, GEC, GESS].flat();
 
@@ -15,8 +16,9 @@ export default function Filter() {
         /*const matchesExam = examFilter === 'all' || module.exam === examFilter;*/
         const matchesSU = SUFilter === 'all' || module.canSU === SUFilter;
         const matchesGraded = gradedFilter ==='all' || module.passFail === gradedFilter;
+        const matchesGroup = groupFilter === 'all' || module.hasGroupProject === groupFilter;
         
-        return matchesSearch && matchesSU && matchesGraded;
+        return matchesSearch && matchesSU && matchesGraded && matchesGroup;
     })
 
     /*Split filteredModules into 10 modules a page*/
@@ -61,11 +63,20 @@ export default function Filter() {
                 <option value='False'>False</option>
             </select>
             </div>
+
+            <div className="filter-container">
+            <label className="grp-projs">group projs:</label>
+            <select value={groupFilter} onChange = {(e) => setGroupFilter(e.target.value)} className="filter-box">
+                <option value='all'>All</option>
+                <option value='True'>True</option>
+                <option value='False'>False</option>
+            </select>
+            </div>
             
 
             <ol className="modules-list">
                 {currentModules.map((module) => (
-                    <li>{module.value} | {module.canSU} |   {module.passFail}</li>
+                    <li>{module.value} | {module.canSU} |   {module.passFail} | {module.hasGroupProject}</li>
                 ))}
             </ol>
 

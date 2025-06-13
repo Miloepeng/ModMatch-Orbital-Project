@@ -3,54 +3,63 @@
     "value": "BT1101",
     "label": "BT1101 Introduction to Business Analytics",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "True"
   },
   {
     "value": "DSA1101",
     "label": "DSA1101 Introduction to Data Science",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "True"
   },
   {
     "value": "DSE1101",
     "label": "DSE1101 Introductory Data Science for Economics",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "IE1111R",
     "label": "IE1111R Industrial and Systems Engineering Principles and Practice I",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "SPH1904",
     "label": "SPH1904 Data Literacy for Healthcare",
     "canSU": "False",
-    "passFail": "True"
+    "passFail": "True",
+    "hasGroupProject": "False"
   },
   {
     "value": "ST1131",
     "label": "ST1131 Introduction to Statistics and Statistical Computing",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "True"
   },
   {
     "value": "TCX2002",
     "label": "TCX2002 Introduction to Business Analytics",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "GEA1000",
     "label": "GEA1000 Quantitative Reasoning with Data",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "True"
   },
   {
     "value": "GEA1000N",
     "label": "GEA1000N Quantitative Reasoning with Data",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   }
 ]

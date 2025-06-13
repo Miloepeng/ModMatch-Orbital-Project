@@ -6,21 +6,18 @@ import pandas as pd
 #from sentence_transformers import SentenceTransformer, util
 
 
-
-moduleCode = "IS2103"
-
 def preprocess_review(review):
     irrelevant_keywords = ["grade", "marks", "score", "gpa", "difficulty","lecture","workload"]
     # Remove irrelevant keywords and their surrounding context
     cleaned_review = ' '.join([word for word in review.split() if word.lower() not in irrelevant_keywords])
     return cleaned_review
 
-review = preprocess_review(moduleScrape(moduleCode))
+
 
 #Spacy model
 nlp = spacy.load("en_core_web_sm")
 #process with spacy
-review = nlp(review)
+
 
 group_keywords = ["group project", "group work", "team project", "group assignment"]
 negation = ['no', 'not', 'without', 'none']
@@ -40,17 +37,26 @@ def extract_group(review):
             if keyword in np.text.lower():
                 return True
     return False
+'''
+moduleCode = "ES2660"
+review = preprocess_review(moduleScrape(moduleCode))
+review = nlp(review)
+print(extract_group(review))
+'''
 
-df = pd.read_csv('')
+df = pd.read_csv('Module_Data.csv')
 
-with open("GEN.json", "r", encoding='utf-8') as f:
+with open("Modules.json", "r", encoding='utf-8') as f:
     modules = json.load(f)
 
 module_list =[]
 
 for mod in modules:
     code = mod['value']
-    reviews = df[df['name'] == code].iloc[0]['comments']
+    reviews = df[df['code'] == code]['comments'].dropna().tolist()
+    reviews = "".join(reviews)
+    reviews = preprocess_review(reviews)
+    reviews = nlp(reviews)
     has_group_project = extract_group(reviews)        #uses reviews to catch keywords
 
     #create new list
@@ -60,10 +66,10 @@ for mod in modules:
     })
 
 #Stores into new / current json file
-with open("GEN.json", "w") as f:
+with open("Modules.json", "w") as f:
     json.dump(module_list, f, indent=2)
 
-print("modules saved to GEN.json")
+print("modules saved to Modules.json")
 
 '''
 #Load model

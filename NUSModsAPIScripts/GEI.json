@@ -3,138 +3,161 @@
     "value": "GEI1000",
     "label": "GEI1000 Computational Thinking",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "GEI1001",
     "label": "GEI1001 Computational Reasoning",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "True"
   },
   {
     "value": "GEI1002",
     "label": "GEI1002 Computers and the Humanities",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "AR2524",
     "label": "AR2524 Spatial Computational Thinking",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CM3267",
     "label": "CM3267 Computational Thinking and Programming in Chemistry",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "COS1000",
     "label": "COS1000 Computational Thinking for Scientists",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS1010E",
     "label": "CS1010E Programming Methodology",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS1010S",
     "label": "CS1010S Programming Methodology",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS1101S",
     "label": "CS1101S Programming Methodology",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "True"
   },
   {
     "value": "CS2030",
     "label": "CS2030 Programming Methodology II",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS2030S",
     "label": "CS2030S Programming Methodology II",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "CS2113",
     "label": "CS2113 Software Engineering & Object-Oriented Programming",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "True"
   },
   {
     "value": "CS2113T",
     "label": "CS2113T Software Engineering & Object-Oriented Programming",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "ID2116",
     "label": "ID2116 Computing for Design",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "LSM2302",
     "label": "LSM2302 Computational Thinking for Life Sciences",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "ZB2201",
     "label": "ZB2201 Computational Thinking for Life Sciences",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "NM2207",
     "label": "NM2207 Computational Media Literacy",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "SP2273",
     "label": "SP2273 Working on Interdisciplinary Science, Pythonically",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "TCN1005",
     "label": "TCN1005 MATLAB Programming for Chemical Engineers",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "TCX2001",
     "label": "TCX2001 Data Structures and Algorithms",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "TEE2101",
     "label": "TEE2101 Programming Methodology",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "TIC2001",
     "label": "TIC2001 Data Structures and Algorithms",
     "canSU": "False",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   },
   {
     "value": "TIE2030",
     "label": "TIE2030 Programming Methodology with Python",
     "canSU": "True",
-    "passFail": "False"
+    "passFail": "False",
+    "hasGroupProject": "False"
   }
 ]
