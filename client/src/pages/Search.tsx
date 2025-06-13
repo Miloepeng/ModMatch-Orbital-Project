@@ -72,24 +72,32 @@ export default function Search() {
 
         const recs: { recommended: string; basedOn: string }[] = [];
 
-        for (const mod of top3Modules) {
-          const response = await axios.post(
-            "http://127.0.0.1:5051/api/recommend",
-            {
-              module_description: mod.name,
-            }
-          );
+        const { data: { session } } = await supabase.auth.getSession();
 
-          const recommendation =
-            response.data?.recommendation || "No recommendation found";
-
-          recs.push({
-            recommended: recommendation,
-            basedOn: mod.name,
-          });
+        if (!session || !session.access_token) {
+          console.error("User is not logged in or session is expired.");
+          return; // Stop further execution if no session or invalid session
         }
 
-        setRecommendations(recs);
+        const moduleDescriptions = top3Modules.map((mod) => mod.name);  // Collect all module names
+
+        const response = await axios.post(
+          "http://127.0.0.1:5051/api/recommend",  // Backend to handle all modules
+          {
+            module_descriptions: moduleDescriptions,  // Send the array of module names
+          },
+          {
+            headers: {
+              Authorization: `Bearer ${session.access_token}`,
+            }
+          }
+        );
+
+        const recommendations = response.data?.recommendations || [];  // Array of recommendations for all modules
+        setRecommendations(recommendations);  // Set all recommendations at once
+
+
+
       } catch (err) {
         console.error(err);
         setError("Failed to fetch recommendations.");

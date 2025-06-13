@@ -4,6 +4,37 @@ from sentence_transformers import SentenceTransformer, util
 import csv
 import sys
 csv.field_size_limit(10_000_000)
+from dotenv import load_dotenv
+import os
+import jwt
+
+def get_user_id_from_token(token: str):
+    try:
+        # Decode the JWT token with audience validation disabled
+        payload = jwt.decode(token, SUPABASE_JWT_SECRET, algorithms=["HS256"], options={"verify_aud": False})
+
+        #print(f"Decoded payload: {payload}")  # Log the decoded payload for debugging
+        return payload["sub"]  # 'sub' contains the user_id
+    except jwt.ExpiredSignatureError:
+        #print("Token has expired.")
+        return None
+    except jwt.exceptions.PyJWTError as e:
+        #print(f"JWT decoding error: {e}")
+        return None
+
+load_dotenv(dotenv_path="client/.env.backend")
+
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_JWT_SECRET = os.getenv("SUPABASE_JWT_SECRET")
+
+##print("SUPABASE_URL:", SUPABASE_URL)
+##print("SUPABASE_KEY:", SUPABASE_KEY)
+
+from supabase import create_client, Client
+
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
 #import ModScrape
 
 app = Flask(__name__)
@@ -29,37 +60,72 @@ with open("Module_Data.csv", "r", newline="", encoding="utf-8") as csvfile:
 
 @app.route("/api/recommend", methods=["POST"])
 def recommend():
-    data = request.get_json()
-    user_input = data.get("module_description")
+    # Extract JWT token from Authorization header
+    auth_header = request.headers.get("Authorization", "")
+    token = auth_header.replace("Bearer ", "")  # Remove 'Bearer ' prefix
 
-    if not user_input:
+##    print(f"Received token: {token}")
+##    token_parts = token.split(".")
+##    print(f"Token parts: {len(token_parts)}") 
+
+    # Decode the token to get the user_id
+    user_id = get_user_id_from_token(token)
+
+    if not user_id:
+        return jsonify({"error": "Invalid or expired token"}), 401  # Unauthorized if token is invalid
+    
+    data = request.get_json()
+    module_descriptions = data.get("module_descriptions")
+    #print(user_id)
+
+    if not module_descriptions:
         return jsonify({"recommendation": "No input provided."})
 
-    user_embedding = model.encode(user_input, convert_to_tensor=True)
-    module_embeddings = model.encode([m["description"] for m in module_info], convert_to_tensor=True)
+    response = supabase.table("module_selections").select("*").eq("user_id", user_id).execute()
+    if response.data is None:
+        return jsonify({"error": response.error.message}), 500
+    ##print(response.data[0]["modules_json"])
+    db_list = []
+    for entry in response.data[0]["modules_json"]:
+        ##print(entry["name"])
+        db_list.append(entry["name"])
+    print(db_list)
 
-    similarities = util.pytorch_cos_sim(user_embedding, module_embeddings)[0]
+    recommendations = []
+    for user_input in module_descriptions:
+        # Your existing recommendation logic for each user_input (module description)
+        user_embedding = model.encode(user_input, convert_to_tensor=True)
 
-    # Check if input exactly matches a module code, ignore case
-    input_module_code = user_input.strip().upper()
-    exclude_idx = None
-    for idx, mod in enumerate(module_info):
-        if mod["code"].upper() == input_module_code:
-            exclude_idx = idx
-            break
+        descriptions = [m["description"] for m in module_info]
+        module_embeddings = model.encode(descriptions, convert_to_tensor=True)
 
-    # Create a list of (index, similarity) excluding the matched module itself
-    filtered = [(i, similarities[i].item()) for i in range(len(module_info)) if i != exclude_idx]
+        similarities = util.pytorch_cos_sim(user_embedding, module_embeddings)[0]
 
-    # Sort by similarity descending
-    filtered.sort(key=lambda x: x[1], reverse=True)
+        input_module_code = user_input.strip().upper()
+        exclude_idx = None
+        for i in range(len(module_info)):
+            if module_info[i]["code"].upper() == input_module_code:
+                exclude_idx = i
+                break
 
-    # Pick top 3
-    top_3 = filtered[:3]
+        filtered = [(i, similarities[i].item()) for i in range(len(module_info)) if i != exclude_idx]
+        filtered.sort(key=lambda x: x[1], reverse=True)
 
-    recommendations = [module_info[i]["code"] for i, _ in top_3]
+        for i in range(len(filtered)):
+            if module_info[filtered[i][0]]["code"] in db_list:
+                print(module_info[filtered[i][0]]["code"])
+                continue
+            else:
+                top_few = [filtered[i]]
+                break
+        recommendation = module_info[top_few[0][0]]["code"]
 
-    return jsonify({"recommendation": ", ".join(recommendations)})
+        recommendations.append({
+            "recommended": recommendation,
+            "basedOn": user_input
+        })
+
+    return jsonify({"recommendations": recommendations})  # Return all recommendations at once
 
 
 if __name__ == "__main__":

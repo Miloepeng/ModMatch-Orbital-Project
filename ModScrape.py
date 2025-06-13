@@ -21,7 +21,7 @@ def moduleScrape(module_code):
     driver.get(url)
 
     # Wait for iframes to load
-    WebDriverWait(driver, 15).until(
+    WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.TAG_NAME, "iframe"))
     )
 
@@ -44,7 +44,7 @@ def moduleScrape(module_code):
             break
 
     # Wait for posts to appear inside the iframe
-    WebDriverWait(driver, 15).until(
+    WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, "li.post"))
     )
 
@@ -83,7 +83,7 @@ def descScrape(module_code):
     url = f"https://nusmods.com/modules/{module_code}"
     driver.get(url)
     
-    p_element = WebDriverWait(driver, 15).until(
+    p_element = WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, "section.row div p")))
     #print(type(p_element.text))
     return p_element.text
