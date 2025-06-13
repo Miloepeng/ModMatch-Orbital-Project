@@ -65,7 +65,7 @@ export default function Filter() {
 
             <ol className="modules-list">
                 {currentModules.map((module) => (
-                    <li>{module.value} | {module.canSU} | {module.passFail}</li>
+                    <li>{module.value} | {module.canSU} |   {module.passFail}</li>
                 ))}
             </ol>
 

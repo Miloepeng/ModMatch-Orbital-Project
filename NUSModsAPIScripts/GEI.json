@@ -24,12 +24,6 @@
     "passFail": "False"
   },
   {
-    "value": "BMI1101%",
-    "label": "BMI1101% Digital Literacy for Healthcare (only offered to students in the healthcare disciplines)",
-    "canSU": "False",
-    "passFail": "False"
-  },
-  {
     "value": "CM3267",
     "label": "CM3267 Computational Thinking and Programming in Chemistry",
     "canSU": "False",
@@ -39,12 +33,6 @@
     "value": "COS1000",
     "label": "COS1000 Computational Thinking for Scientists",
     "canSU": "True",
-    "passFail": "False"
-  },
-  {
-    "value": "CS1010%",
-    "label": "CS1010% Programming Methodology",
-    "canSU": "False",
     "passFail": "False"
   },
   {
@@ -147,12 +135,6 @@
     "value": "TIE2030",
     "label": "TIE2030 Programming Methodology with Python",
     "canSU": "True",
-    "passFail": "False"
-  },
-  {
-    "value": "NPS2001%",
-    "label": "NPS2001% Computational Problem Solving",
-    "canSU": "False",
     "passFail": "False"
   }
 ]

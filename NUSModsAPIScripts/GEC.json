@@ -336,12 +336,6 @@
     "passFail": "False"
   },
   {
-    "value": "NGT2001%",
-    "label": "NGT2001% Global Social Thought",
-    "canSU": "False",
-    "passFail": "False"
-  },
-  {
     "value": "NHS2098",
     "label": "NHS2098 Regeneration: Paradigm & Practice for Planetary Health",
     "canSU": "True",

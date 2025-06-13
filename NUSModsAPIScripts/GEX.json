@@ -222,12 +222,6 @@
     "passFail": "False"
   },
   {
-    "value": "NGN2001%",
-    "label": "NGN2001% Global Narratives",
-    "canSU": "False",
-    "passFail": "False"
-  },
-  {
     "value": "RVX1000",
     "label": "RVX1000 Citizen Speak: Persuasion and Polarization in Society",
     "canSU": "True",

@@ -270,12 +270,6 @@
     "passFail": "True"
   },
   {
-    "value": "NSW2001%",
-    "label": "NSW2001% Understanding the Social World: Singapore & Beyond",
-    "canSU": "False",
-    "passFail": "False"
-  },
-  {
     "value": "RVSS1000",
     "label": "RVSS1000 Exploring Sense of Place",
     "canSU": "True",
