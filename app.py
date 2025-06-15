@@ -44,6 +44,7 @@ model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 #modules = ["CS1101S", "CS2030S", "CS2040S", "CS2100", "CS1231S", "MA1521", "MA1522"]
 module_info = []
+indexing = {}
 
 ##for mod in modules:
 ##    entry = {}
@@ -54,8 +55,13 @@ module_info = []
 with open("Module_Data.csv", "r", newline="", encoding="utf-8") as csvfile:
     reader = csv.DictReader(csvfile)
 
+    count = 0
     for row in reader:
-        module_info.append(row)
+        if row["code"] not in indexing and row["description"] != "":
+            module_info.append(row)
+            indexing[row["code"]] = count
+            count += 1
+        
 
 
 @app.route("/api/recommend", methods=["POST"])
@@ -92,14 +98,15 @@ def recommend():
     print(db_list)
 
     recommendations = []
+    descriptions = [m["description"] for m in module_info]
+    module_embeddings = model.encode(descriptions, convert_to_tensor=True)
+        
     for user_input in module_descriptions:
         # Your existing recommendation logic for each user_input (module description)
-        user_embedding = model.encode(user_input, convert_to_tensor=True)
+        #user_embedding = model.encode(user_input, convert_to_tensor=True)
+        mod_idx = indexing[user_input]
 
-        descriptions = [m["description"] for m in module_info]
-        module_embeddings = model.encode(descriptions, convert_to_tensor=True)
-
-        similarities = util.pytorch_cos_sim(user_embedding, module_embeddings)[0]
+        similarities = util.pytorch_cos_sim(module_embeddings[mod_idx], module_embeddings)[0]
 
         input_module_code = user_input.strip().upper()
         exclude_idx = None
@@ -111,9 +118,20 @@ def recommend():
         filtered = [(i, similarities[i].item()) for i in range(len(module_info)) if i != exclude_idx]
         filtered.sort(key=lambda x: x[1], reverse=True)
 
+        number_idx = -1
+        for i in range(len(user_input)):
+            if user_input[i].isnumeric():
+                number_idx = i
+                break
+
         for i in range(len(filtered)):
+            #print(module_info[filtered[i][0]]["code"][:number_idx + 4])
+            #print(user_input[:number_idx + 4])
             if module_info[filtered[i][0]]["code"] in db_list:
-                print(module_info[filtered[i][0]]["code"])
+                #print(module_info[filtered[i][0]]["code"])
+                continue
+            #not a good fix, but if first 6/7 chars are same then skip
+            elif module_info[filtered[i][0]]["code"][:number_idx + 4] == user_input[:number_idx + 4]:
                 continue
             else:
                 top_few = [filtered[i]]
