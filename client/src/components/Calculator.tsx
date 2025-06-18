@@ -111,53 +111,57 @@ useEffect(() => {
   const currentSUUsed = userModules.filter((m) => m.su).length;
 
   return (
-    <div className="calculatorContainer">
-      {/*<h1 className="CAPCalculator">GPA / CAP Calculator</h1>*/}
+    <>
+      <div className = "mid-section">
+        <h1 className = "mid-section-title">Home</h1>
+        <p className = "mid-section-content">Input your results and calculate your CAP</p>
+      </div>
+      <div className="calculatorContainer">
+        {/*<h1 className="CAPCalculator">GPA / CAP Calculator</h1>*/}
 
-      {/*Display CAP */}
-      <CAPDisplay modules={userModules} />
+        {/*Display CAP */}
+        <CAPDisplay modules={userModules} />
 
-      {/*User input no. of SU */}
-      <div className="calc-input-container container gridContainer">
-        <div className="calc-button calc-input">
-          <label className="numSU">Max SUs:</label>
-          <input
-            type="number"
-            value={suLimit}
-            onChange={(e) => setSuLimit(Number(e.target.value))}
-            className="numSUInput"
-            min={0}
-          />
+        {/*User input no. of SU */}
+        <div className="calc-input-container gridContainer">
+          <div className="calc-button calc-input">
+            <label className="numSU">Max SUs:</label>
+            <input
+              type="number"
+              value={suLimit}
+              onChange={(e) => setSuLimit(Number(e.target.value))}
+              className="numSUInput"
+              min={0}
+            />
+          </div>
+          <div className="calc-button calc-input">
+            {currentSUUsed} / {suLimit} SUs used
+          </div>
         </div>
-        <div className="calc-button calc-input">
+
+        {/*No. of SU used 
+        <div className="SUUsedContainer">
           {currentSUUsed} / {suLimit} SUs used
+        </div>*/}
+
+        <div className="gridContainer">
+          {userModules.map((mod) => (
+            <ModuleCard
+              key={mod.id}
+              module={mod}
+              onChange={(updated) => handleUpdateModule(mod.id, updated)}
+              onDelete={() => handleDeleteModule(mod.id)}
+              disableSU = {!mod.su && currentSUUsed >= suLimit}
+            />
+          ))}
+          <button
+          onClick={handleAddModule} 
+          id="addModButton"
+          >
+            +
+          </button>
         </div>
-      </div>
-
-      {/*No. of SU used 
-      <div className="SUUsedContainer">
-        {currentSUUsed} / {suLimit} SUs used
-      </div>*/}
-
-      <div className="gridContainer">
-        {userModules.map((mod) => (
-          <ModuleCard
-            key={mod.id}
-            module={mod}
-            onChange={(updated) => handleUpdateModule(mod.id, updated)}
-            onDelete={() => handleDeleteModule(mod.id)}
-            disableSU = {!mod.su && currentSUUsed >= suLimit}
-          />
-        ))}
-        <button
-        onClick={handleAddModule} 
-        id="addModButton"
-        >
-          +
-        </button>
-      </div>
-
-
     </div>
+    </>
   );
 }

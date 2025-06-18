@@ -58,7 +58,10 @@
 }
 
 .modSelector {
+  margin-top: 5px;
   margin-bottom: 5px;
+  width: 25vh;
+  height: 25px;
 }
 
 .gradeSelector {
@@ -135,4 +138,9 @@ input:checked + .slider::before {
   font-size: 100px;
   border: none;
   background-color: inherit;
+}
+
+#addModButton:hover {
+  cursor: pointer;
+  color: #004aad;
 }

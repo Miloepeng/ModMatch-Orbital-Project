@@ -120,16 +120,19 @@ const handleResendConfirmation = async () => {
 
       {errorMsg && <p className="error-msg">{errorMsg}</p>}
 
-      <button type="submit" className="rounded-button">
-        {isRegistering ? "Register" : "Login"}
-      </button>
+      <div className="center-align">
+        <button type="submit" className="rounded-button">
+          {isRegistering ? "Register" : "Login"}
+        </button>
+      </div>
 
+      <div className="center-align">
       {!isRegistering && (
         <>
           <p className="register-text">
             <span onClick={() => setIsRegistering(true)}>Register here</span>
           </p>
-          <p>or</p>
+          <p className="or">or</p>
           <button
             type="button"
             onClick={() => {
@@ -142,6 +145,7 @@ const handleResendConfirmation = async () => {
           </button>
         </>
       )}
+      </div>
 
       {isRegistering && (
         <>
