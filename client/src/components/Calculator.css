@@ -60,7 +60,8 @@
 .modSelector {
   margin-top: 5px;
   margin-bottom: 5px;
-  width: 25vh;
+  width: 12vw;
+  min-width: 140px;
   height: 25px;
 }
 
