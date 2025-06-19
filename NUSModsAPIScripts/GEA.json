@@ -4,62 +4,80 @@
     "label": "BT1101 Introduction to Business Analytics",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "GEA",
+    "hasMCQ": "True"
   },
   {
     "value": "DSA1101",
     "label": "DSA1101 Introduction to Data Science",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "GEA",
+    "hasMCQ": "True"
   },
   {
     "value": "DSE1101",
     "label": "DSE1101 Introductory Data Science for Economics",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "GEA",
+    "hasMCQ": "False"
   },
   {
     "value": "IE1111R",
     "label": "IE1111R Industrial and Systems Engineering Principles and Practice I",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "GEA",
+    "hasMCQ": "False"
   },
   {
     "value": "SPH1904",
     "label": "SPH1904 Data Literacy for Healthcare",
     "canSU": "False",
     "passFail": "True",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "GEA",
+    "hasMCQ": "False"
   },
   {
     "value": "ST1131",
     "label": "ST1131 Introduction to Statistics and Statistical Computing",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "GEA",
+    "hasMCQ": "True"
   },
   {
     "value": "TCX2002",
     "label": "TCX2002 Introduction to Business Analytics",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "GEA",
+    "hasMCQ": "False"
   },
   {
     "value": "GEA1000",
     "label": "GEA1000 Quantitative Reasoning with Data",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "GEA",
+    "hasMCQ": "True"
   },
   {
     "value": "GEA1000N",
     "label": "GEA1000N Quantitative Reasoning with Data",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "GEA",
+    "hasMCQ": "False"
   }
 ]

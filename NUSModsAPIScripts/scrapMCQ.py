@@ -37,7 +37,36 @@ def extract_group(review):
                 return True
     return False
 
+'''
 moduleCode = "HSI1000"
 review = preprocess_review(moduleScrape(moduleCode))
 review = nlp(review)
 print(extract_group(review))
+'''
+
+df = pd.read_csv('Module_Data.csv')
+
+with open("ID.json", "r", encoding='utf-8') as f:
+    modules = json.load(f)
+
+module_list =[]
+
+for mod in modules:
+    code = mod['value']
+    reviews = df[df['code'] == code]['comments'].dropna().tolist()
+    reviews = "".join(reviews)
+    reviews = preprocess_review(reviews)
+    reviews = nlp(reviews)
+    has_group_project = extract_group(reviews)        #uses reviews to catch keywords
+
+    #create new list
+    module_list.append({
+        **mod,
+        "hasMCQ" : str(has_group_project)
+    })
+
+#Stores into new / current json file
+with open("ID.json", "w") as f:
+    json.dump(module_list, f, indent=2)
+
+print("modules saved to ID.json")

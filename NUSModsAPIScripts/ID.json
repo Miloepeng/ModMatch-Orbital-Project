@@ -4,174 +4,224 @@
     "label": "CDE2501 Liveable Cities",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "EG2501",
     "label": "EG2501 Liveable Cities",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "DTK1234",
     "label": "DTK1234 Design Thinking",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "EG1311",
     "label": "EG1311 Design and Make",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "IE2141",
     "label": "IE2141 Systems Thinking and Dynamics",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "PF1101",
     "label": "PF1101 Fundamentals of Project Management",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "IS1128",
     "label": "IS1128 IT, Management and Organisation",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "IS2218",
     "label": "IS2218 Digital Platforms for Businesses",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "IS2238",
     "label": "IS2238 Economics of IT and AI",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSH1000",
     "label": "HSH1000 The Human Condition",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSS1000",
     "label": "HSS1000 Understanding Social Complexity",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "HSA1000",
     "label": "HSA1000 Asian Interconnections",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "HSI1000",
     "label": "HSI1000 How Science Works, Why Science Works (*Pre-requisite for HSI2xxx courses)",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSI2001",
     "label": "HSI2001 Scientific Inquiry & Health: Good Science, Bad Science",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "HSI2002",
     "label": "HSI2002 Inquiry into Current Sporting Beliefs and Practices",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "HSI2003",
     "label": "HSI2003 From DNA to Gene Therapy",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "HSI2004",
     "label": "HSI2004 Cell Based Proteins for a Sustainable Future",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSI2005",
     "label": "HSI2005 Our Science Stories and You",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "HSI2007",
     "label": "HSI2007 Deconstructing Food",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSI2008",
     "label": "HSI2008 A Brief History of Science & Why Things Often Go Wrong",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSI2009",
     "label": "HSI2009 What is a Planet?",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSI2010",
     "label": "HSI2010 New Worlds Beyond Earth",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSI2011",
     "label": "HSI2011 The World of Quantum",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSI2013",
     "label": "HSI2013 The Science of Music",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "HSI2014",
     "label": "HSI2014 Science. Medical Technology and Society",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   }
 ]

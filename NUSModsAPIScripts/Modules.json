@@ -4,1000 +4,1286 @@
     "label": "CS1231S Discrete Structures",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS2030S",
     "label": "CS2030S Programming Methodology II",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS2040S",
     "label": "CS2040S Data Structures and Algorithms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS2100",
     "label": "CS2100 Computer Organisation",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS2101",
     "label": "CS2101 Effective Communication for Computing Professionals2",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS2103T",
     "label": "CS2103T Software Engineering 2",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS2106",
     "label": "CS2106 Introduction to Operating Systems",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS2109S",
     "label": "CS2109S Introduction to AI and Machine Learning",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3230",
     "label": "CS3230 Design and Analysis of Algorithms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3231",
     "label": "CS3231 Theory of Computation",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3236",
     "label": "CS3236 Introduction to Information Theory",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4231",
     "label": "CS4231 Parallel and Distributed Algorithms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4234",
     "label": "CS4234 Optimisation Algorithms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3233",
     "label": "CS3233 Competitive Programming",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4257",
     "label": "CS4257 Algorithmic Foundations of Privacy",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4261",
     "label": "CS4261 Algorithmic Mechanism Design",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4268",
     "label": "CS4268 Quantum Computing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4269",
     "label": "CS4269 Fundamentals of Logic in Computer Science",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4330",
     "label": "CS4330 Combinatorial Methods in Bioinformatics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5230",
     "label": "CS5230 Computational Complexity",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5234",
     "label": "CS5234 Algorithms at Scale",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5236",
     "label": "CS5236 Advanced Automata Theory",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5237",
     "label": "CS5237 Computational Geometry and Applications",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5238",
     "label": "CS5238 Advanced Combinatorial Methods in Bioinformatics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5330",
     "label": "CS5330 Randomized Algorithms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3243",
     "label": "CS3243 Introduction to Artificial Intelligence",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3244",
     "label": "CS3244 Machine Learning",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3263",
     "label": "CS3263 Foundations of Artificial Intelligence",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3264",
     "label": "CS3264 Foundations of Machine Learning",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4243",
     "label": "CS4243 Computer Vision and Pattern Recognition",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4244",
     "label": "CS4244 Knowledge Representation and Reasoning",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4246",
     "label": "CS4246 AI Planning and Decision Making",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4248",
     "label": "CS4248 Natural Language Processing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4220",
     "label": "CS4220 Knowledge Discovery Methods in Bioinformatics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4261",
     "label": "CS4261 Algorithmic Mechanism Design",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4269",
     "label": "CS4269 Fundamentals of Logic in Computer Science",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4277",
     "label": "CS4277 3D Computer Vision",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4278",
     "label": "CS4278 Intelligent Robots: Algorithms and Systems",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5215",
     "label": "CS5215 Constraint Processing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5228",
     "label": "CS5228 Knowledge Discovery and Data Mining",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS5242",
     "label": "CS5242 Neural Networks and Deep Learning",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS5260",
     "label": "CS5260 Neural Networks and Deep Learning II",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5340",
     "label": "CS5340 Uncertainty Modelling in AI",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5339",
     "label": "CS5339 Theory and Algorithms for Machine Learning",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3241",
     "label": "CS3241 Computer Graphics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3242",
     "label": "CS3242 3D Modelling and Animation",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3247",
     "label": "CS3247 Game Development",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4247",
     "label": "CS4247 Graphics Rendering Techniques",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4350",
     "label": "CS4350 Game Development Project",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3218",
     "label": "CS3218 Multimodal Processing in Mobile Platforms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3240",
     "label": "CS3240 Interaction Design",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3249",
     "label": "CS3249 User Interface Development",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4240",
     "label": "CS4240 Interaction Design for Virtual and Augmented Reality",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4243",
     "label": "CS4243 Computer Vision and Pattern Recognition",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4249",
     "label": "CS4249 Phenomena and Theories of HCI",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4351",
     "label": "CS4351 Real-time Graphics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5237",
     "label": "CS5237 Computational Geometry and Applications",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5240",
     "label": "CS5240 Theoretical Foundation of Multimedia",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5343",
     "label": "CS5343 Advanced Computer Animation",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5346",
     "label": "CS5346 Information Visualisation",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3235",
     "label": "CS3235 Computer Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4236",
     "label": "CS4236 Cryptography Theory and Practice",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4230",
     "label": "CS4230 Foundations of Modern Cryptography",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4238",
     "label": "CS4238 Computer Security Practice",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4239",
     "label": "CS4239 Software Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3221",
     "label": "CS3221 Operating Systems Design and Pragmatics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4257",
     "label": "CS4257 Algorithmic Foundations of Privacy",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4276",
     "label": "CS4276 IoT Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5231",
     "label": "CS5231 Systems Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5250",
     "label": "CS5250 Advanced Operating Systems",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5321",
     "label": "CS5321 Network Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5322",
     "label": "CS5322 Database Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5331",
     "label": "CS5331 Web Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5332",
     "label": "CS5332 Biometric Authentication",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "IFS4101",
     "label": "IFS4101 Legal Aspects of Information Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "IFS4102",
     "label": "IFS4102 Digital Forensics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "IFS4103",
     "label": "IFS4103 Penetration Testing Practice",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS2102",
     "label": "CS2102 Database Systems",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3223",
     "label": "CS3223 Database Systems Implementation",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4221",
     "label": "CS4221 Database Applications Design and Tuning",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4224",
     "label": "CS4224 Distributed Databases",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4225",
     "label": "CS4225 Big Data Systems for Data Science",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4220",
     "label": "CS4220 Knowledge Discovery Methods in Bioinformatics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5226",
     "label": "CS5226 Database Tuning",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5228",
     "label": "CS5228 Knowledge Discovery and Data Mining",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS5322",
     "label": "CS5322 Database Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS2108",
     "label": "CS2108 Introduction to Media Computing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3245",
     "label": "CS3245 Information Retrieval",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4242",
     "label": "CS4242 Social Media Computing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4248",
     "label": "CS4248 Natural Language Processing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4347",
     "label": "CS4347 Sound and Music Computing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5246",
     "label": "CS5246 Text Mining",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS5241",
     "label": "CS5241 Speech Processing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS2105",
     "label": "CS2105 Introduction to Computer Networks (CFC)",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3103",
     "label": "CS3103 Computer Networks Practice",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4222",
     "label": "CS4222 Wireless Networking",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4226",
     "label": "CS4226 Internet Architecture",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4231",
     "label": "CS4231 Parallel and Distributed Algorithms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3237",
     "label": "CS3237 Introduction to Internet of Things",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4344",
     "label": "CS4344 Networked and Mobile Gaming",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5223",
     "label": "CS5223 Distributed Systems",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5224",
     "label": "CS5224 Cloud Computing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS5229",
     "label": "CS5229 Advanced Computer Networks",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5248",
     "label": "CS5248 Systems Support for Continuous Media",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5321",
     "label": "CS5321 Network Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3210",
     "label": "CS3210 Parallel Computing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3211",
     "label": "CS3211 Parallel and Concurrent Programming",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4231",
     "label": "CS4231 Parallel and Distributed Algorithms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4223",
     "label": "CS4223 Multi-core Architecture",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5222",
     "label": "CS5222 Advanced Computer Architectures",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5223",
     "label": "CS5223 Distributed Systems",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5224",
     "label": "CS5224 Cloud Computing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS5239",
     "label": "CS5239 Computer System Performance Analysis",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS5250",
     "label": "CS5250 Advanced Operating Systems",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS2104",
     "label": "CS2104 Programming Language Concepts",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3211",
     "label": "CS3211 Parallel and Concurrent Programming",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4212",
     "label": "CS4212 Compiler Design",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4215",
     "label": "CS4215 Programming Language Implementation",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS3234",
     "label": "CS3234 Logic for Proofs and Programs",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4216",
     "label": "CS4216 Constraint Logic Programming",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5232",
     "label": "CS5232 Formal Specification & Design Techniques",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5215",
     "label": "CS5215 Constraint Processing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5218",
     "label": "CS5218 Principles and Practice of Program Analysis",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3213",
     "label": "CS3213 Foundations of Software Engineering",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3219",
     "label": "CS3219 Software Engineering Principles and Patterns",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4211",
     "label": "CS4211 Formal Methods for Software Engineering",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS4218",
     "label": "CS4218 Software Testing",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "CS4239",
     "label": "CS4239 Software Security",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3203",
     "label": "CS3203 Software Engineering Project*",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3281",
     "label": "CS3281 Thematic Systems Project I*",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3282",
     "label": "CS3282 Thematic Systems Project II*",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3216",
     "label": "CS3216 Software Development on Evolving Platforms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3217",
     "label": "CS3217 Software Engineering on Modern Application Platforms",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3226",
     "label": "CS3226 Web Programming and Applications",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS3234",
     "label": "CS3234 Logic for Proofs and Programs",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5219",
     "label": "CS5219 Automatic Software Validation",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5232",
     "label": "CS5232 Formal Specification & Design Techniques",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5272",
     "label": "CS5272 Embedded Software Design",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS2220",
     "label": "CS2220 Introduction to Computational Biology",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "CS5233",
     "label": "CS5233 Simulation and Modeling Techniques",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "MA1521",
     "label": "MA1521 Calculus for Computing",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   },
   {
     "value": "MA1522",
     "label": "Linear Algebra for Computing",
     "canSU": "True",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
   },
   {
     "value": "ST2334",
     "label": "Probability and Statistics",
     "canSU": "False",
     "passFail": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
   }
 ]
