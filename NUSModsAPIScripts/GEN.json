@@ -1,0 +1,92 @@
+[
+  {
+    "value": "GEN2050X",
+    "label": "GEN2050X Teach SG",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2060X",
+    "label": "GEN2060X Reconnect SeniorsSG",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2061X",
+    "label": "GEN2061X Support Healthy AgeingSG",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2062X",
+    "label": "GEN2062X Community Activities for Seniors with SG Cares",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2070X",
+    "label": "GEN2070X Community Link (Comlink) Befrienders",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2050Y",
+    "label": "GEN2050Y Teach SG",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2060Y",
+    "label": "GEN2060Y Reconnect SeniorsSG",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2061Y",
+    "label": "GEN2061Y Support Healthy AgeingSG",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2062Y",
+    "label": "GEN2062Y Community Activities for Seniors with SG Cares",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GEN2070Y",
+    "label": "GEN2070Y Community Link (Comlink) Befrienders",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GEN",
+    "hasMCQ": "False"
+  }
+]

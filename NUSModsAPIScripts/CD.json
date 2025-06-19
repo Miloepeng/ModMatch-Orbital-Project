@@ -1,0 +1,164 @@
+[
+  {
+    "value": "ACC1701X",
+    "label": "ACC1701X Accounting for Decision Makers",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "DAO2703",
+    "label": "DAO2703 Operations and Technology Management",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "MNO1706X",
+    "label": "MNO1706X Organisational Behavior",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "SC1101E",
+    "label": "SC1101E Making Sense of Society",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "EL1101E",
+    "label": "EL1101E The Nature of Language",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "PE2101P",
+    "label": "PE2101P Introduction to Philosophy, Politics and Economics",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GE2103",
+    "label": "GE2103 Our Planet: An Earth System Science Perspective",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "XD3103",
+    "label": "XD3103 Planet Earth",
+    "canSU": "False",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GE3253",
+    "label": "GE3253 Weather and Climate",
+    "canSU": "False",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GE3255",
+    "label": "GE3255 Aquatic, Riparian and Coastal Systems",
+    "canSU": "False",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GE3256",
+    "label": "GE3256 Earth Surface Processes, Landforms and Ecosystems",
+    "canSU": "False",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "SPH2002",
+    "label": "SPH2002 Public Health and Epidemiology",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "SC2226",
+    "label": "SC2226 Sociology of Mental Health",
+    "canSU": "False",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "NUR1113A",
+    "label": "NUR1113A Healthy Ageing and Well-being",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "CDE2300",
+    "label": "CDE2300 Product Design and Innovation",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "CDE2310",
+    "label": "CDE2310 Fundamentals of Systems Design",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "EG2201A",
+    "label": "EG2201A User-Centred Collaborative Design (replaced by CDE2300)",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "EG2310",
+    "label": "EG2310 Fundamentals of Systems Design (replaced by CDE2310)",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "NIL",
+    "hasMCQ": "False"
+  }
+]

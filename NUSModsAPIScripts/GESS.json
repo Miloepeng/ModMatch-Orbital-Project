@@ -1,0 +1,515 @@
+[
+  {
+    "value": "GESS1000",
+    "label": "GESS1000 Global EC Dimensions of Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "GESS1000T",
+    "label": "GESS1000T Global EC Dimensions of Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1001",
+    "label": "GESS1001 Changing Landscapes of Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1002",
+    "label": "GESS1002 The Biophysical Env of S'pore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1003",
+    "label": "GESS1003 Everyday Life of Chinese Singaporeans: Past & Present (Taught in English)",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1004",
+    "label": "GESS1004 Singapore And India: Emerging Relations",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1005",
+    "label": "GESS1005 South Asia In Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1006",
+    "label": "GESS1006 Ethnicity and Nation-Building: Singapore And Malaysia",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1007",
+    "label": "GESS1007 Singapore's Business History",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1008",
+    "label": "GESS1008 Nation-Building in Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1009",
+    "label": "GESS1009 The Evolution of a Global City-State",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1010",
+    "label": "GESS1010 Popular Culture in Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1011",
+    "label": "GESS1011 Singapore Urban History & Architecture",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1012",
+    "label": "GESS1012 Islam And Contemporary Malay Society",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1013",
+    "label": "GESS1013 Singapore And Japan: Historical and Contemporary Relationships",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1014",
+    "label": "GESS1014 Managing Singapore's Built Environment",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1015",
+    "label": "GESS1015 Western Music Within a Singaporean Context",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1016",
+    "label": "GESS1016 Natural Heritage of Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1017",
+    "label": "GESS1017 Representing Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1018",
+    "label": "GESS1018 Real Estate Development & Investment Law",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1019",
+    "label": "GESS1019 Urban Planning in Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1020",
+    "label": "GESS1020 Singapore Society",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1021",
+    "label": "GESS1021 Singapore Film: Performance of Identity",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1022",
+    "label": "GESS1022 Culture and Communication in Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "GESS1023",
+    "label": "GESS1023 Who Moved My OB Markers?",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1024",
+    "label": "GESS1024 We the Citizens - Understanding Singapore's Politics",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1025",
+    "label": "GESS1025 Singapore: Imagining the Next 50 Years",
+    "canSU": "False",
+    "passFail": "True",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "GESS1026",
+    "label": "GESS1026 A History of Singapore In Ten Objects",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1027",
+    "label": "GESS1027 La Kopi: Forging of The Chinese Singaporean Community",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1028",
+    "label": "GESS1028 Cultural Performance and Practices in Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1029",
+    "label": "GESS1029 Everyday Ethics in Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "GESS1030",
+    "label": "GESS1030 Public Health in Singapore: Challenges and Changes",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1031",
+    "label": "GESS1031 State of The Art: A Current View of Music in Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1032",
+    "label": "GESS1032 Prominent Chinese in Colonial Singapore",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1033",
+    "label": "GESS1033 The Singlish Controversy",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1034",
+    "label": "GESS1034 Singapore Literature in English: Selected Texts",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1035",
+    "label": "GESS1035 Singapore and the Sea",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1036",
+    "label": "GESS1036 Singapore Employment Law and Policies",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1036T",
+    "label": "GESS1036T Singapore Employment Law and Policies",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "GESS1037",
+    "label": "GESS1037 Gender and Sexuality: A Singaporean History",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "GESS1038",
+    "label": "GESS1038 The Arts in Singapore Today",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "CDE2501",
+    "label": "CDE2501 Liveable Cities",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "True"
+  },
+  {
+    "value": "HSS1000",
+    "label": "HSS1000 Understanding Social Complexity",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "LC1025",
+    "label": "LC1025 Singapore Law in Context",
+    "canSU": "False",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "SPH1901",
+    "label": "SPH1901 Social and Behavioural Determinants of Health (only for BPharm students in AY2022/23 cohort)",
+    "canSU": "False",
+    "passFail": "True",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "RVSS1000",
+    "label": "RVSS1000 Exploring Sense of Place",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "RVSS1001",
+    "label": "RVSS1001 Imagining Wakanda: Cities for Work, Life, And Play",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "RVSS1002",
+    "label": "RVSS1002 Feeding the Belly of a Nation",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "RVSS1003",
+    "label": "RVSS1003 Communicating the Value of Singapore\u2019s Natural Heritage",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "True",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "RVSS1004",
+    "label": "RVSS1004 Uniquely Singapore: Regardless of Race",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "NHS2052",
+    "label": "NHS2052 The Politics of Heritage: Singapore and the Region*",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "NHS2026",
+    "label": "NHS2026 Singaporean Nostalgia*",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "NST2026",
+    "label": "NST2026 Pollution Control Engineering in Singapore*",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "NHS2030",
+    "label": "NHS2030 Singapore Studies: Singapore: The Making of a Nation*",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "NHS2037",
+    "label": "NHS2037 Singapore Studies: Archives, Biography, Memory*",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "NHS2043",
+    "label": "NHS2043 Multiculturalism in Singapore and Its Contested Meanings*",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  },
+  {
+    "value": "NHS2046",
+    "label": "NHS2046 Transitional Justice and War Crime Trials: Case Studies from Singapore and Asia*",
+    "canSU": "True",
+    "passFail": "False",
+    "hasGroupProject": "False",
+    "GEPillar": "GESS",
+    "hasMCQ": "False"
+  }
+]
