@@ -154,13 +154,6 @@
     "hasGroupProject": "True"
   },
   {
-    "value": "GEC1022",
-    "label": "GEC1022 Living in The Nuclear World",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "GEC1023",
     "label": "GEC1023 Social History of The Piano",
     "canSU": "True",
@@ -420,23 +413,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "UHB2204",
-    "label": "UHB2204 Virtue and Leadership",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2019",
     "label": "NHS2019 Virtue and Leadership",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2206",
-    "label": "UHB2206 Leadership in a Complex World",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -448,37 +427,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "UHB2207",
-    "label": "UHB2207 Language, Cognition, and Culture",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2021",
     "label": "NHS2021 Language, Cognition, and Culture",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2208",
-    "label": "UHB2208 Immigration and the City",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2022",
-    "label": "NHS2022 Immigration and the City",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2209",
-    "label": "UHB2209 Polycentric Governance: Possibilities and Pitfalls",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -490,135 +441,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "UHB2210",
-    "label": "UHB2210 Emotion in Daily Life",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2024",
-    "label": "NHS2024 Emotion in Daily Life",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2211",
-    "label": "UHB2211 Welcome to the Anthropocene: Agency in the era of climate change",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2025",
-    "label": "NHS2025 Welcome to the Anthropocene: Agency in the era of climate change",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2214",
-    "label": "UHB2214 Effective Decision Making",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2028",
-    "label": "NHS2028 Effective Decision Making",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2209",
-    "label": "USE2209 Globalizing Asian-Pacific Identities",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2029",
-    "label": "NHS2029 Globalizing Asian-Pacific Identities",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2305",
-    "label": "USE2305 Southeast Asia: The Making of a Region",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2031",
     "label": "NHS2031 Southeast Asia: The Making of a Region",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2306",
-    "label": "USE2306 Disasters and Responses",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2032",
-    "label": "NHS2032 Disasters and Responses",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2307",
-    "label": "USE2307 HIV/AIDS: From Microbes to Nations",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2033",
-    "label": "NHS2033 HIV/AIDS: From Microbes to Nations",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2308",
-    "label": "USE2308 New Media and Politics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2034",
-    "label": "NHS2034 New Media and Politics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2309",
-    "label": "USE2309 Ordinary Politics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2035",
-    "label": "NHS2035 Ordinary Politics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2310",
-    "label": "USE2310 Questioning Sustainable Development",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -630,37 +455,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2313",
-    "label": "USE2313 Understanding Law and Social Change",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2039",
     "label": "NHS2039 Understanding Law and Social Change",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2314",
-    "label": "USE2314 Politics and Emotion",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2040",
-    "label": "NHS2040 Politics and Emotion",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2315",
-    "label": "USE2315 Participatory Social Development in Southeast Asia",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -672,37 +469,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2316",
-    "label": "USE2316 Satires and (Un)Serious Histories",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2042",
-    "label": "NHS2042 Satires and (Un)Serious Histories",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2319",
-    "label": "USE2319 Social Movements, Law, and Society",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2045",
     "label": "NHS2045 Social Movements, Law, and Society",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2322",
-    "label": "USE2322 Situating Singapore in the Wider World",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -714,23 +483,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2323",
-    "label": "USE2323 Culture and Technology",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2049",
     "label": "NHS2049 Culture and Technology",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2324",
-    "label": "USE2324 Gender and Ecology in Asia",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -742,23 +497,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2325",
-    "label": "USE2325 Democracy and Inequality",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2051",
     "label": "NHS2051 Democracy and Inequality",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USP3501",
-    "label": "USP3501 The Problematic Concept of \"Gender\"",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },

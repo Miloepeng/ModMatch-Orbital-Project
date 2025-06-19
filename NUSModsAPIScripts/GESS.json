@@ -350,23 +350,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "UCV2207",
-    "label": "UCV2207 The Politics of Heritage: Singapore and the Region*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2052",
     "label": "NHS2052 The Politics of Heritage: Singapore and the Region*",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2212",
-    "label": "UHB2212 Singaporean Nostalgia*",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -378,37 +364,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "ULT2299D",
-    "label": "ULT2299D The Politics of Language and Literacy in Singapore*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2004",
-    "label": "NHS2004 The Politics of Language and Literacy in Singapore*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UPC2209",
-    "label": "UPC2209 Pollution Control Engineering in Singapore*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NST2026",
     "label": "NST2026 Pollution Control Engineering in Singapore*",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2304",
-    "label": "USE2304 Singapore Studies: Singapore: The Making of a Nation*",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -420,37 +378,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2311",
-    "label": "USE2311 Singapore Studies: Archives, Biography, Memory*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2037",
     "label": "NHS2037 Singapore Studies: Archives, Biography, Memory*",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2312",
-    "label": "USE2312 Nationalism and the Arts*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2038",
-    "label": "NHS2038 Nationalism and the Arts*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2317",
-    "label": "USE2317 Multiculturalism in Singapore and Its Contested Meanings*",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -462,58 +392,9 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2318",
-    "label": "USE2318 Managing Cultural Difference: Theorizing the Spore Model*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2044",
-    "label": "NHS2044 Managing Cultural Difference: Theorizing the Spore Model*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2320",
-    "label": "USE2320 Transitional Justice and War Crime Trials: Case Studies from Singapore and Asia*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2046",
     "label": "NHS2046 Transitional Justice and War Crime Trials: Case Studies from Singapore and Asia*",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2321",
-    "label": "USE2321 Examining Local Lives*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2047",
-    "label": "NHS2047 Examining Local Lives*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USP3505",
-    "label": "USP3505 Asianism and Singapore*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS3002",
-    "label": "NHS3002 Asianism and Singapore*",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   }

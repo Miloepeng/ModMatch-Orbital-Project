@@ -14,7 +14,7 @@ export const modules = [
     {value: "CS2107", label: "CS2107", exam:"mixed"}
 ]
 
-export const GEN = [
+export const GEN =[
   {
     "value": "GEN2050X",
     "label": "GEN2050X Teach SG",
@@ -557,7 +557,6 @@ export const GEI = [
     "hasGroupProject": "False"
   }
 ]
-
 export const GEA =[
   {
     "value": "BT1101",
@@ -623,7 +622,6 @@ export const GEA =[
     "hasGroupProject": "False"
   }
 ]
-
 export const GEX = [
   {
     "value": "GEX1000",
@@ -822,13 +820,6 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "GEX1028",
-    "label": "GEX1028 Science: From Thinking to Narratives",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "GEX1029",
     "label": "GEX1029 Narrative",
     "canSU": "True",
@@ -927,50 +918,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101A",
-    "label": "UWC2101A Cosmopolitanism and Global Citizenship",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2001",
     "label": "NTW2001 Cosmopolitanism and Global Citizenship",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101B",
-    "label": "UWC2101B Civic Discourse in a Fractious World",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2002",
-    "label": "NTW2002 Civic Discourse in a Fractious World",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101C",
-    "label": "UWC2101C Monuments, Memorials, and Commemoration",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2003",
-    "label": "NTW2003 Monuments, Memorials, and Commemoration",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101D",
-    "label": "UWC2101D Narrative in Everyday Life",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -983,36 +932,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101E",
-    "label": "UWC2101E Literature and Ethics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2005",
-    "label": "NTW2005 Literature and Ethics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101F",
-    "label": "UWC2101F Human Trafficking and Labour Migration",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2006",
     "label": "NTW2006 Human Trafficking and Labour Migration",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101G",
-    "label": "UWC2101G Apocalyptic Cultures",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1025,36 +946,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101H",
-    "label": "UWC2101H Power, Space and Pleasure",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2008",
     "label": "NTW2008 Power, Space and Pleasure",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101I",
-    "label": "UWC2101I Interpreting Consumerism",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2009",
-    "label": "NTW2009 Interpreting Consumerism",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101J",
-    "label": "UWC2101J Sites of Tourism",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1067,50 +960,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101K",
-    "label": "UWC2101K Questioning Evolution And Progress",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2011",
-    "label": "NTW2011 Questioning Evolution And Progress",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101L",
-    "label": "UWC2101L Conditions of Happiness",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2012",
     "label": "NTW2012 Conditions of Happiness",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101M",
-    "label": "UWC2101M Scholarly Pursuits",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2013",
-    "label": "NTW2013 Scholarly Pursuits",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101N",
-    "label": "UWC2101N Clothing Identities",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1123,36 +974,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101P",
-    "label": "UWC2101P News and the Public",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2015",
-    "label": "NTW2015 News and the Public",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101Q",
-    "label": "UWC2101Q Civility in the World City",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2016",
     "label": "NTW2016 Civility in the World City",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101R",
-    "label": "UWC2101R Multidisciplinary Perspectives on \u201cMind\u201d",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1165,22 +988,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101S",
-    "label": "UWC2101S Danger and National Security",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2018",
     "label": "NTW2018 Danger and National Security",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101T",
-    "label": "UWC2101T The Politics And Rhetoric Of Green",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1193,22 +1002,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101U",
-    "label": "UWC2101U Technologies of Home",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2020",
     "label": "NTW2020 Technologies of Home",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101V",
-    "label": "UWC2101V Language, Culture and 'Native' Peoples",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1221,36 +1016,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101W",
-    "label": "UWC2101W Genocide and Memory",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2022",
-    "label": "NTW2022 Genocide and Memory",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101X",
-    "label": "UWC2101X The Idea of the University",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2023",
     "label": "NTW2023 The Idea of the University",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101Y",
-    "label": "UWC2101Y Issues in and Around Justice",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1263,27 +1030,6 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101Z",
-    "label": "UWC2101Z Vice, the State & Society",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2025",
-    "label": "NTW2025 Vice, the State & Society",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101AA",
-    "label": "UWC2101AA Religion in Public Life",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2026",
     "label": "NTW2026 Religion in Public Life",
     "canSU": "False",
@@ -1291,22 +1037,8 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UWC2101AB",
-    "label": "UWC2101AB What is Wisdom?",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NTW2027",
     "label": "NTW2027 What is Wisdom?",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UWC2101AC",
-    "label": "UWC2101AC The Social Life of Science",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1321,13 +1053,6 @@ export const GEX = [
   {
     "value": "NTW2029",
     "label": "NTW2029 Evolutionary Psychology and Art",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NTW2030",
-    "label": "NTW2030 Art as Action: Caring about the Climate Crisis in SEA",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -1396,51 +1121,9 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UAR2206",
-    "label": "UAR2206 Creating 'Reality'",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2008",
-    "label": "NHS2008 Creating 'Reality'",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UAR2207",
-    "label": "UAR2207 Intercultural Exchanges Through Theatre",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2009",
-    "label": "NHS2009 Intercultural Exchanges Through Theatre",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UAR2208",
-    "label": "UAR2208 From Lab to Stage: Writing the Science Play",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2010",
     "label": "NHS2010 From Lab to Stage: Writing the Science Play",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "ULT2298D",
-    "label": "ULT2298D Representing War",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -1452,23 +1135,9 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "ULT2299A",
-    "label": "ULT2299A Understanding Irony",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2002",
     "label": "NHS2002 Understanding Irony",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "ULT2299C",
-    "label": "ULT2299C The Subject of Reading",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -1480,93 +1149,9 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "ULT2299D",
-    "label": "ULT2299D The Politics of Language and Literacy in Singapore",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2004",
-    "label": "NHS2004 The Politics of Language and Literacy in Singapore",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "ULT2299E",
-    "label": "ULT2299E Appealing Arguments: Logos, Pathos, and Ethos",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2005",
-    "label": "NHS2005 Appealing Arguments: Logos, Pathos, and Ethos",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "ULT2299F",
-    "label": "ULT2299F Close Reading and Its Vicissitudes",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2006",
     "label": "NHS2006 Close Reading and Its Vicissitudes",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "ULT2299G",
-    "label": "ULT2299G The Modern History of Southeast Asia through Fiction",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2007",
-    "label": "NHS2007 The Modern History of Southeast Asia through Fiction",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UPI2205",
-    "label": "UPI2205 Ethics and the Environment",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2011",
-    "label": "NHS2011 Ethics and the Environment",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UPI2207",
-    "label": "UPI2207 Ethics and Aesthetics: The Moral Value of Representational Art",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2012",
-    "label": "NHS2012 Ethics and Aesthetics: The Moral Value of Representational Art",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UPI2208",
-    "label": "UPI2208 Imagining Animals",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -1578,41 +1163,6 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UPI2210",
-    "label": "UPI2210 Arts of Memory: Public Recollection & Memory Training",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2014",
-    "label": "NHS2014 Arts of Memory: Public Recollection & Memory Training",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UPI2211",
-    "label": "UPI2211 Utopia: Ideal Places from Plato's to the Smart City",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2015",
-    "label": "NHS2015 Utopia: Ideal Places from Plato's to the Smart City",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UPI2212",
-    "label": "UPI2212 Technologies of the Self: from Socrates to Self-Help",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2016",
     "label": "NHS2016 Technologies of the Self: from Socrates to Self-Help",
     "canSU": "True",
@@ -1620,23 +1170,9 @@ export const GEX = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UPI2213",
-    "label": "UPI2213 Making Sense of Colonial Ideology and Its Legacies",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2017",
     "label": "NHS2017 Making Sense of Colonial Ideology and Its Legacies",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UPI2214",
-    "label": "UPI2214 Multidisciplinary Inquiries Into the Mystery Of \"Minds\"",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -1803,13 +1339,6 @@ export const GEC = [
     "canSU": "True",
     "passFail": "False",
     "hasGroupProject": "True"
-  },
-  {
-    "value": "GEC1022",
-    "label": "GEC1022 Living in The Nuclear World",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
   },
   {
     "value": "GEC1023",
@@ -2071,23 +1600,9 @@ export const GEC = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UHB2204",
-    "label": "UHB2204 Virtue and Leadership",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2019",
     "label": "NHS2019 Virtue and Leadership",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2206",
-    "label": "UHB2206 Leadership in a Complex World",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2099,37 +1614,9 @@ export const GEC = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UHB2207",
-    "label": "UHB2207 Language, Cognition, and Culture",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2021",
     "label": "NHS2021 Language, Cognition, and Culture",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2208",
-    "label": "UHB2208 Immigration and the City",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2022",
-    "label": "NHS2022 Immigration and the City",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2209",
-    "label": "UHB2209 Polycentric Governance: Possibilities and Pitfalls",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2141,135 +1628,9 @@ export const GEC = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UHB2210",
-    "label": "UHB2210 Emotion in Daily Life",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2024",
-    "label": "NHS2024 Emotion in Daily Life",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2211",
-    "label": "UHB2211 Welcome to the Anthropocene: Agency in the era of climate change",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2025",
-    "label": "NHS2025 Welcome to the Anthropocene: Agency in the era of climate change",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2214",
-    "label": "UHB2214 Effective Decision Making",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2028",
-    "label": "NHS2028 Effective Decision Making",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2209",
-    "label": "USE2209 Globalizing Asian-Pacific Identities",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2029",
-    "label": "NHS2029 Globalizing Asian-Pacific Identities",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2305",
-    "label": "USE2305 Southeast Asia: The Making of a Region",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2031",
     "label": "NHS2031 Southeast Asia: The Making of a Region",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2306",
-    "label": "USE2306 Disasters and Responses",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2032",
-    "label": "NHS2032 Disasters and Responses",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2307",
-    "label": "USE2307 HIV/AIDS: From Microbes to Nations",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2033",
-    "label": "NHS2033 HIV/AIDS: From Microbes to Nations",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2308",
-    "label": "USE2308 New Media and Politics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2034",
-    "label": "NHS2034 New Media and Politics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2309",
-    "label": "USE2309 Ordinary Politics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2035",
-    "label": "NHS2035 Ordinary Politics",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2310",
-    "label": "USE2310 Questioning Sustainable Development",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2281,37 +1642,9 @@ export const GEC = [
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2313",
-    "label": "USE2313 Understanding Law and Social Change",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2039",
     "label": "NHS2039 Understanding Law and Social Change",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2314",
-    "label": "USE2314 Politics and Emotion",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2040",
-    "label": "NHS2040 Politics and Emotion",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2315",
-    "label": "USE2315 Participatory Social Development in Southeast Asia",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2323,37 +1656,9 @@ export const GEC = [
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2316",
-    "label": "USE2316 Satires and (Un)Serious Histories",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2042",
-    "label": "NHS2042 Satires and (Un)Serious Histories",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2319",
-    "label": "USE2319 Social Movements, Law, and Society",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2045",
     "label": "NHS2045 Social Movements, Law, and Society",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2322",
-    "label": "USE2322 Situating Singapore in the Wider World",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2365,23 +1670,9 @@ export const GEC = [
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2323",
-    "label": "USE2323 Culture and Technology",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2049",
     "label": "NHS2049 Culture and Technology",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2324",
-    "label": "USE2324 Gender and Ecology in Asia",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2393,23 +1684,9 @@ export const GEC = [
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2325",
-    "label": "USE2325 Democracy and Inequality",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2051",
     "label": "NHS2051 Democracy and Inequality",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USP3501",
-    "label": "USP3501 The Problematic Concept of \"Gender\"",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2774,23 +2051,9 @@ export const GESS = [
     "hasGroupProject": "False"
   },
   {
-    "value": "UCV2207",
-    "label": "UCV2207 The Politics of Heritage: Singapore and the Region*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2052",
     "label": "NHS2052 The Politics of Heritage: Singapore and the Region*",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UHB2212",
-    "label": "UHB2212 Singaporean Nostalgia*",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2802,37 +2065,9 @@ export const GESS = [
     "hasGroupProject": "False"
   },
   {
-    "value": "ULT2299D",
-    "label": "ULT2299D The Politics of Language and Literacy in Singapore*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2004",
-    "label": "NHS2004 The Politics of Language and Literacy in Singapore*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "UPC2209",
-    "label": "UPC2209 Pollution Control Engineering in Singapore*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NST2026",
     "label": "NST2026 Pollution Control Engineering in Singapore*",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2304",
-    "label": "USE2304 Singapore Studies: Singapore: The Making of a Nation*",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2844,37 +2079,9 @@ export const GESS = [
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2311",
-    "label": "USE2311 Singapore Studies: Archives, Biography, Memory*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2037",
     "label": "NHS2037 Singapore Studies: Archives, Biography, Memory*",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2312",
-    "label": "USE2312 Nationalism and the Arts*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2038",
-    "label": "NHS2038 Nationalism and the Arts*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2317",
-    "label": "USE2317 Multiculturalism in Singapore and Its Contested Meanings*",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   },
@@ -2886,58 +2093,9 @@ export const GESS = [
     "hasGroupProject": "False"
   },
   {
-    "value": "USE2318",
-    "label": "USE2318 Managing Cultural Difference: Theorizing the Spore Model*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2044",
-    "label": "NHS2044 Managing Cultural Difference: Theorizing the Spore Model*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2320",
-    "label": "USE2320 Transitional Justice and War Crime Trials: Case Studies from Singapore and Asia*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "NHS2046",
     "label": "NHS2046 Transitional Justice and War Crime Trials: Case Studies from Singapore and Asia*",
     "canSU": "True",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USE2321",
-    "label": "USE2321 Examining Local Lives*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS2047",
-    "label": "NHS2047 Examining Local Lives*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "USP3505",
-    "label": "USP3505 Asianism and Singapore*",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "NHS3002",
-    "label": "NHS3002 Asianism and Singapore*",
-    "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
   }
@@ -3024,13 +2182,6 @@ export const Modules = [
   {
     "value": "CS4231",
     "label": "CS4231 Parallel and Distributed Algorithms",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "CS4232",
-    "label": "CS4232 Theory of Computation (no longer offered in AY2021-22)",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
@@ -3794,13 +2945,6 @@ export const Modules = [
   {
     "value": "CS5232",
     "label": "CS5232 Formal Specification & Design Techniques",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "CS5214",
-    "label": "CS5214 Design of Optimising Compilers",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"

@@ -84,13 +84,6 @@
     "hasGroupProject": "False"
   },
   {
-    "value": "CS4232",
-    "label": "CS4232 Theory of Computation (no longer offered in AY2021-22)",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
     "value": "CS4234",
     "label": "CS4234 Optimisation Algorithms",
     "canSU": "False",
@@ -849,13 +842,6 @@
   {
     "value": "CS5232",
     "label": "CS5232 Formal Specification & Design Techniques",
-    "canSU": "False",
-    "passFail": "False",
-    "hasGroupProject": "False"
-  },
-  {
-    "value": "CS5214",
-    "label": "CS5214 Design of Optimising Compilers",
     "canSU": "False",
     "passFail": "False",
     "hasGroupProject": "False"
