@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { motion } from "framer-motion";
 import axios from "axios";
 import { supabase } from "../supabaseClient";
 import { Module } from "../types";
+import '../components/Recommender.css';
 
 export default function Search() {
   const [recommendations, setRecommendations] = useState<
@@ -109,26 +111,58 @@ export default function Search() {
     fetchModulesAndRecommend();
   }, []);
 
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: number) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: direction * 460, // Adjust scroll distance
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <div style={{ padding: "20px", maxWidth: "600px" }}>
-      <h2>Recommended Modules Based on Your Best Modules</h2>
-      {loading && <p>Loading recommendations...</p>}
-      {error && <p style={{ color: "red" }}>{error}</p>}
+    <>
+      <div className = "mid-section">
+        <h1 className = "mid-section-title">Search</h1>
+        <p className = "mid-section-content">Filter for modules you like, or take a look at our recommendations</p>
+      </div>
+      <div style={{ padding: "20px", maxWidth: "600px" }}>
+        <h2>Recommended Modules Based on Your Best Modules</h2>
+        {loading && <p>Loading recommendations...</p>}
+        {error && <p style={{ color: "red" }}>{error}</p>}
 
-      {!loading && !error && recommendations.length === 0 && (
-        <p>No recommendations available.</p>
-      )}
+        {!loading && !error && recommendations.length === 0 && (
+          <p>No recommendations available.</p>
+        )}
 
-      {!loading && !error && recommendations.length > 0 && (
-        <ul>
-          {recommendations.map((rec, idx) => (
-            <li key={idx}>
-              Recommended <strong>{rec.recommended}</strong> because you did
-              well in <em>{rec.basedOn}</em>.
-            </li>
-          ))}
-        </ul>
-      )}
+        {!loading && !error && recommendations.length > 0 && (
+  <div className="horizontal-scroll-wrapper">
+    <button className="scroll-btn left" onClick={() => scroll(-1)}>◀</button>
+
+    <div className="scrollable-container" ref={scrollRef}>
+      {recommendations.map((rec, idx) => (
+        <motion.div
+          key={idx}
+          className="scroll-card"
+          initial={{ opacity: 0.5, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: false }}
+        >
+          Recommended <strong>{rec.recommended}</strong> because you did well in{" "}
+          <em>{rec.basedOn}</em>.
+        </motion.div>
+      ))}
     </div>
+
+    <button className="scroll-btn right" onClick={() => scroll(1)}>▶</button>
+  </div>
+
+)}
+
+      </div>
+    </>
   );
 }

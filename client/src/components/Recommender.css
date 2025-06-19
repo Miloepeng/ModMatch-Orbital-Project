@@ -1,0 +1,41 @@
+.horizontal-scroll-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 520px;
+}
+
+.scrollable-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  max-width: 100%;
+  scrollbar-width: none;
+}
+
+.scrollable-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-card {
+  width: 410px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  user-select: none;
+}
+
+.scroll-btn:focus {
+  outline: none;
+}
