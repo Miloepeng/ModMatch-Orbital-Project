@@ -1,5 +1,24 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-255');
+
+.header-logo {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
 .header-links {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-decoration: none;
   color: inherit;
+  font-family: "Helvetica";
+  padding: 20px;
+  padding-top: 10px;
+  border-right: 1px solid;
+  height: 10px;
+}
+
+.header-separator {
+  margin-top: 13px;
+  font-size: 25px;
+  font-family: "Helvetica";
 }

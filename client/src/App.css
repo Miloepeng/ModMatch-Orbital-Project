@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-255');
+@import url('https://fonts.cdnfonts.com/css/bricolage-grotesque');
+
 .container {
   display: flex;
 }
@@ -6,3 +9,22 @@
   margin-left: auto;
 }
 
+.mid-section {
+  background-color: #004aad;
+  color: white;
+  padding: 15px;
+  padding-left: 25px;
+}
+
+.mid-section-title {
+  margin: 0px;
+  font-family: "Bricolage Grotesque";
+  font-size: 35px;
+}
+
+.mid-section-content {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Helvetica";
+}
