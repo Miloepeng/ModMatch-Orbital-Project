@@ -1,27 +1,50 @@
 .filter-box {
-    border-radius: 8px;
-    background-color: white;
-    margin-left: 1.5%;
+    border-radius: 5px;
+    margin-left: 5px;
+    text-align: center;
+    width: 80px;
 }
 
 .filter-container {
   display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 20px;
-  border: 3px solid black;
-  border-radius: 9999px;
-  background-color: white;
-  width: fit-content;
-  margin: 20px auto;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  padding: 10px;
+  width: 18vw;
+  min-width: 200px;
+  justify-content: center;
 }
 
-.search-box {
-    margin-left: 1%;
+.mod-search-box {
+    margin: 20px;
+    margin-left: 15px;
+    height: 30px;
+    width: 61vw;
 }
 
-.modules-list{
-    border: 1px solid;
-    margin-left: 0.5%;
-    margin-right: 45%;
+.modules-list {
+    margin-top: 30px;
+}
+
+.search-module-item {
+    margin: 10px;
+}
+
+.pagination {
+    margin-left: 20px;
+}
+
+.search-navigate {
+    margin: 15px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    min-width: 50px;
+    min-height: 30px;
+}
+
+.search-navigate:hover {
+    cursor: pointer;
 }

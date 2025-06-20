@@ -5,7 +5,7 @@ export default function () {
     return (
         <>
         <header>Degree Requirement</header>
-        <Filter/>
+        {/*<Filter/>*/}
         </>
     )
 }

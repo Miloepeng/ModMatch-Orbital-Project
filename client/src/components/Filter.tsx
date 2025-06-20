@@ -42,46 +42,46 @@ export default function Filter() {
         <div>
             <div>
             <input
-            className = "search-box"
+            className = "mod-search-box"
             type="text"
-            placeholder='Search...'
+            placeholder='Search for a module...'
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             />
             </div>
             <div className="filter-container">
-            <label className="can-su">SU:</label>
+            <label className="can-su">Can S/U:</label>
             <select value={SUFilter} onChange = {(e) => setSUFilter(e.target.value)} className="filter-box">
                 <option value='all'>All</option>
-                <option value='True'>True</option>
-                <option value='False'>False</option>
+                <option value='True'>Yes</option>
+                <option value='False'>No</option>
             </select>
             </div>
 
             <div className="filter-container">
-            <label className="graded">Pass/Fail:</label>
+            <label className="graded">Grading Basis:</label>
             <select value={gradedFilter} onChange = {(e) => setGradedFilter(e.target.value)} className="filter-box">
                 <option value='all'>All</option>
-                <option value='True'>True</option>
-                <option value='False'>False</option>
+                <option value='True'>Pass/Fail</option>
+                <option value='False'>Graded</option>
             </select>
             </div>
 
             <div className="filter-container">
-            <label className="grp-projs">group projs:</label>
+            <label className="grp-projs">Assessments:</label>
             <select value={groupFilter} onChange = {(e) => setGroupFilter(e.target.value)} className="filter-box">
                 <option value='all'>All</option>
-                <option value='True'>True</option>
-                <option value='False'>False</option>
+                <option value='True'>Group</option>
+                <option value='False'>Individual</option>
             </select>
             </div>
 
             <div className="filter-container">
-            <label className="grp-projs">has MCQ:</label>
+            <label className="grp-projs">Exam Format:</label>
             <select value={MCQFilter} onChange = {(e) => setMCQFilter(e.target.value)} className="filter-box">
                 <option value='all'>All</option>
-                <option value='True'>True</option>
-                <option value='False'>False</option>
+                <option value='True'>MCQ</option>
+                <option value='False'>Open-ended</option>
             </select>
             </div>
 
@@ -102,15 +102,15 @@ export default function Filter() {
 
             <ol className="modules-list">
                 {currentModules.map((module) => (
-                    <li>{module.value} | {module.canSU} |   {module.passFail} | {module.hasGroupProject} | {module.hasMCQ} |
+                    <li className="search-module-item">{module.value} | {module.canSU} | {module.passFail} | {module.hasGroupProject} | {module.hasMCQ} |
                     {module.GEPillar} </li>
                 ))}
             </ol>
 
             <div className="pagination">
-          <button onClick={handlePrev} disabled={currentPage === 1}>Prev</button>
+          <button className="search-navigate" onClick={handlePrev} disabled={currentPage === 1}>Prev</button>
           <span>Page {currentPage} of {totalPages}</span>
-          <button onClick={handleNext} disabled={currentPage === totalPages}>Next</button>
+          <button className="search-navigate" onClick={handleNext} disabled={currentPage === totalPages}>Next</button>
             </div>
         </div>
         </>

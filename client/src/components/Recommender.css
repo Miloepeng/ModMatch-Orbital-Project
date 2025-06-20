@@ -1,8 +1,22 @@
+.search-container {
+  width: 70vw;
+  height: 69vh;
+}
+
+.reco-container {
+  margin-right: 30px;
+}
+
+.reco-title {
+  text-align: center;
+}
+
 .horizontal-scroll-wrapper {
   display: flex;
   align-items: center;
   position: relative;
-  width: 520px;
+  width: 320px;
+  height: 150px;
 }
 
 .scrollable-container {
@@ -12,6 +26,7 @@
   scroll-behavior: smooth;
   padding: 1rem 0;
   max-width: 100%;
+  height: inherit;
   scrollbar-width: none;
 }
 
@@ -20,7 +35,7 @@
 }
 
 .scroll-card {
-  width: 410px;
+  width: 215px;
   background-color: #f0f0f0;
   padding: 1rem;
   border-radius: 8px;
@@ -38,4 +53,13 @@
 
 .scroll-btn:focus {
   outline: none;
+}
+
+.recommend-text {
+  width: inherit;
+  text-align: center;
+}
+
+.module-attributes {
+  margin: 0px;
 }

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import { supabase } from "../supabaseClient";
 import { Module } from "../types";
+import Filter from "../components/Filter"
+import '../App.css';
 import '../components/Recommender.css';
 
 export default function Search() {
@@ -116,7 +118,7 @@ export default function Search() {
   const scroll = (direction: number) => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
-        left: direction * 460, // Adjust scroll distance
+        left: direction * 265, // Adjust scroll distance
         behavior: "smooth",
       });
     }
@@ -128,8 +130,13 @@ export default function Search() {
         <h1 className = "mid-section-title">Search</h1>
         <p className = "mid-section-content">Filter for modules you like, or take a look at our recommendations</p>
       </div>
-      <div style={{ padding: "20px", maxWidth: "600px" }}>
-        <h2>Recommended Modules Based on Your Best Modules</h2>
+      <div className = "container">
+        <div className = "search-container">
+          <Filter/>
+        </div>
+      
+      <div className = "right reco-container">
+        <h2 className = "reco-title">Recommendations</h2>
         {loading && <p>Loading recommendations...</p>}
         {error && <p style={{ color: "red" }}>{error}</p>}
 
@@ -138,30 +145,31 @@ export default function Search() {
         )}
 
         {!loading && !error && recommendations.length > 0 && (
-  <div className="horizontal-scroll-wrapper">
-    <button className="scroll-btn left" onClick={() => scroll(-1)}>◀</button>
+          <div className="horizontal-scroll-wrapper">
+            <button className="scroll-btn left" onClick={() => scroll(-1)}>◀</button>
 
-    <div className="scrollable-container" ref={scrollRef}>
-      {recommendations.map((rec, idx) => (
-        <motion.div
-          key={idx}
-          className="scroll-card"
-          initial={{ opacity: 0.5, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4 }}
-          viewport={{ once: false }}
-        >
-          Recommended <strong>{rec.recommended}</strong> because you did well in{" "}
-          <em>{rec.basedOn}</em>.
-        </motion.div>
-      ))}
-    </div>
+            <div className="scrollable-container" ref={scrollRef}>
+              {recommendations.map((rec, idx) => (
+                <motion.div
+                  key={idx}
+                  className="scroll-card"
+                  initial={{ opacity: 0.5, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4 }}
+                  viewport={{ once: false }}
+                >
+                  <p className = "recommend-text"><p><strong>{rec.recommended}</strong></p> because you did well in{" "}
+                  <em>{rec.basedOn}</em>.</p>
+                </motion.div>
+              ))}
+            </div>
 
-    <button className="scroll-btn right" onClick={() => scroll(1)}>▶</button>
-  </div>
+            <button className="scroll-btn right" onClick={() => scroll(1)}>▶</button>
+          </div>
 
-)}
+        )}
 
+      </div>
       </div>
     </>
   );
