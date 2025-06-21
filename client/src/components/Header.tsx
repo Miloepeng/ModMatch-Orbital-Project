@@ -18,11 +18,11 @@ export default function Header() {
             <img className= "header-logo" src = {logo} width="70" height="70"/>
           </Link>
           <div className="container right">
-            <Link to ="./Home" className = "header-links"> Home </Link>
+            <Link to ="./Home" className = "header-links right-border"> Home </Link>
             
-            <Link to= "./Search" className="header-links">Search</Link>
-            <Link to ="./DegreeRequirement" className ="header-links">Degree Requirement</Link>
-            <Link to ="./Timetable" className = "header-links">Timetable</Link>
+            <Link to= "./Search" className="header-links right-border">Search</Link>
+            <Link to ="./DegreeRequirement" className ="header-links right-border">Degree Requirement</Link>
+            <Link to ="./Timetable" className = "header-links right-border">Timetable</Link>
             <Link to ="./Login" className="header-links" onClick={handleLogout}>Logout</Link>
             <div></div>
           </div>
