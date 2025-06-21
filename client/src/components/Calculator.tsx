@@ -80,7 +80,7 @@ useEffect(() => {
       su: false,
       is2MC: false,
     };
-    setModules((prev) => [...prev, newModule]);
+    setModules((prev) => [newModule, ...prev]);
     setIdCounter((prev) => prev + 1); //increment for next use
   };
 
@@ -145,6 +145,12 @@ useEffect(() => {
         </div>*/}
 
         <div className="gridContainer">
+          <button
+          onClick={handleAddModule} 
+          id="addModButton"
+          >
+            +
+          </button>
           {userModules.map((mod) => (
             <ModuleCard
               key={mod.id}
@@ -154,12 +160,6 @@ useEffect(() => {
               disableSU = {!mod.su && currentSUUsed >= suLimit}
             />
           ))}
-          <button
-          onClick={handleAddModule} 
-          id="addModButton"
-          >
-            +
-          </button>
         </div>
     </div>
     </>
