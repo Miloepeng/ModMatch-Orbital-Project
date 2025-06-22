@@ -1,11 +1,11 @@
 import React from "react";
-import Filter from "../components/Filter"
+import DegReq from "../components/deg_req"
 
 export default function () {
     return (
         <>
         <header>Degree Requirement</header>
-        {/*<Filter/>*/}
+        <DegReq/>
         </>
     )
 }
