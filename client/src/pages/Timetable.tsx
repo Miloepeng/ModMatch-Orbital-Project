@@ -1,7 +1,11 @@
 import React from "react";
+import { TimetableComponent } from "../components/Timetable-component";
 
-export default function() {
+export default function Timetable() {
     return (
-        <header>Timetable</header>
+        <>
+            <header>Timetable</header>
+            <TimetableComponent/>
+        </>
     )
 }
