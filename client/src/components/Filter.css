@@ -94,3 +94,21 @@
 .module-meta p {
   margin: 4px 0;
 }
+
+.module-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5vw;
+}
+
+.module-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+  flex-shrink: 0;       
+}
+
+.module-header a {
+  color: blue;
+  text-decoration: underline;
+}

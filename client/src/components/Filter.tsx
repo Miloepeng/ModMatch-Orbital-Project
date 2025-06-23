@@ -103,7 +103,11 @@ export default function Filter() {
                 {currentModules.map((module) => (
                 <div key={module.value} className="module-card horizontal">
                     <div className="module-main">
-                        <h3>{module.value}</h3>
+                        <div className = "module-header">
+                            <h3>{module.value}</h3>
+                            <a href= {`https://nusmods.com/courses/${module.value}`} target="_blank" rel="noopener noreferrer">
+                            More information </a>
+                        </div>
                         <p className="module-desc">{module.desc}</p>
                     </div>
                     <div className="module-meta">
