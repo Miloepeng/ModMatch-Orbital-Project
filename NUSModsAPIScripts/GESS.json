@@ -6,7 +6,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course will introduce students to the dynamics of the world economy and the impact on Singapore in the last two centuries. It will demonstrate how Singapore grew through continual dependence on the rest of the world in different ways by focusing on major labour, capital and technological factors, in which threats are also seen as opportunities."
   },
   {
     "value": "GESS1000T",
@@ -15,7 +16,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course will introduce students to the dynamics of the world economy and the impact on Singapore in the last two centuries. It will demonstrate how Singapore grew through continual dependence on the rest of the world in different ways by focusing on major labour, capital and technological factors, in which threats are also seen as opportunities."
   },
   {
     "value": "GESS1001",
@@ -24,7 +26,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course attempts to understand the rationale of changes in Singapore's urban landscape. It places these changes within a framework that considers Singapore's efforts to globalise and examines how policies are formulated with the idea of sustaining an economy that has integral links sub-regionally with Southeast Asia while developing new spatial linkages that will strengthen its position in the global network. Emphasis is also given to recent discussions about how diversity and difference in the perception and use of space pose a challenge to the utilitarian and functional definition adopted by the state."
   },
   {
     "value": "GESS1002",
@@ -33,7 +36,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The course introduces the biophysical environments of the city-state of Singapore, covering geology, soils, aquatic resources, nature reserves, green areas, and land reclamation characterising both terrestrial and coastal areas. Environmental challenges such as biodiversity loss, flooding and pollution that arise from the rapid urbanization and development of a large tropical city within a limited area and their possible solutions are examined. This course focuses on current environmental conditions in Singapore in the context of past and projected future changes. Topics covered in the course are dealt with in greater depth in other courses forming the Geography programme at NUS. Please note that the course does not require an extensive science or mathematics background, but it does require a willingness to stretch yourself and learn outside your comfort zone."
   },
   {
     "value": "GESS1003",
@@ -42,7 +46,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Studies on the everyday life of ordinary people offer an important perspective for understanding human history. This course examines the daily life of Chinese Singaporeans during the late 19th to 20th centuries, focusing on their cultural expressions and social actions, revolving around eight geo\u2010cultural sites, namely, Singapore River, Chinatown, Chinese temples, clan associations, opera stages, amusement parks, hawker centres, and streets/roads. Students are asked to compare the past and present of these sites through oral history and fieldwork observation."
   },
   {
     "value": "GESS1004",
@@ -51,7 +56,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The course aims to examine the evolving economic linkages between Singapore and India in a post-Cold War setting and attempts to explain the factors that have led to their enhanced economic collaboration based on areas of complementarity. The course will use concepts like economic regionalism, Singapore's regionalization policy and India's \"Look East\" policies to explain the confluence of national interests that has enhanced bilateral economic ties between both countries. The target audiences are students from various Faculties who would like to have a better understanding of Singapore's evolving foreign policy in South Asia and the socio-cultural impact of the same."
   },
   {
     "value": "GESS1005",
@@ -60,7 +66,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The South Asian presence in Singapore is an important part of Singapore's multicultural society: in terms of the 'Indian' community and its economic and commercial influence; its religious and artistic impact; and its role in the everyday life of the nation (eg. cuisine, sport and entertainment). Students will be provided the opportunity to understand the nature of South Asian migration to Singapore, the significance of the South Asian community and its contributions to Singapore's development. Students will be provided with the necessary framework to study and analyse the historical and socio-economic development of the community and South Asian identity and concerns. The course will develop critical and analytical skills guiding students in the process of social scientific enquiry. The target students are undergraduates from all Faculties."
   },
   {
     "value": "GESS1006",
@@ -69,7 +76,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course examines policies and programmes dealing with ethnic relations based on the experiences of Singapore and Malaysia. It focuses on how these much talked about and debated policies, impact or affect the Malays in particular, who constitute a numerical minority in Singapore, but form the majority in Malaysia. The course examines major socio\u2010historical factors conditioning these policies and programmes and the processes by which they are materialised from the period of British colonialism to the present. How these efforts bear upon nation building and national integration will be explored."
   },
   {
     "value": "GESS1007",
@@ -78,7 +86,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course traces the business history of Singapore from its origins as an East India Company outpost, as an entrepot for regional and international trade routes to its current status as a global city and center for international finance and business. This course offers an introduction to business history and explores different case studies in the local context. These care studies range from 'rags to riches' stories of early migrant communities, popular local brands, and present day entrepreneurs. Major topics include: trading communities, commodities, networks and migration, entrepreneurship, business culture, heritage, globalization, state, politics and business."
   },
   {
     "value": "GESS1008",
@@ -87,7 +96,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course is about Singapore's emergence from British colonial rule and merger with Malaysia to independence and nation-building. It covers political events, the economy, education, national service, ethnic relations, and culture and national identity. Students are encouraged to think through issues central to these topics. The course is tailored for students in all Faculties at all levels."
   },
   {
     "value": "GESS1009",
@@ -96,7 +106,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The history of Singapore has traditionally been conceived along internal lines, based mainly, if not solely, on the traditional trajectories of administrative, political and national historical narratives. Yet, as we all know, the evolution of Singapore, from classical regional emporium to international port city and strategic naval base, has all along been defined by much larger regional and international forces. After its emergence as a sovereign state in 1965, Singapore continues to project itself as a 'global city-state'. Our local society has an 'international' make-up, being the product as it were of historical and current diasporic trends. This course provides an international framework for a study of the history of Singapore, and seeks to examine the historical evolution of Singapore against the contexts of regional and international changes and developments from the 14th to the 20th century. This course is open to all students throughout NUS interested in Singapore history/studies."
   },
   {
     "value": "GESS1010",
@@ -105,7 +116,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course is designed for both History and non-History students to explore the development and evolution of popular culture in Singapore from the colonial period to the present day. Students will learn diverse topics including Singapore's changing religious landscape, wedding and death rituals, as well as varied forms of popular entertainment from street opera, amusement parks to radio and cinema. Students should expect to gain a sensitivity to change and continuities within historical contexts, to better understand Singapore\u2019s rich cultural heritage and to hone their skills in critical thinking, writing and presentation."
   },
   {
     "value": "GESS1011",
@@ -114,7 +126,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This module introduces the urban history and architecture of Singapore from an inter-disciplinary perspective. It will cover the period from the ancient market and settlement of Tanma-hsi or Singapura, to the formation and development of a colonial town, and to the recent post-independence period, until the contemporary debates in Architecture and Urbanism in Singapore. The module, which is targeted at general audiences of undergraduate students, aims to stimulate intellectual discourse and critical thinking by using inter-disciplinary approaches to understanding the city and architecture."
   },
   {
     "value": "GESS1012",
@@ -123,7 +136,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course examines competing religious orientations that had evolved among the Malays of Singapore and socio-historical factors that had shaped such orientations. The ways in which these orientations condition their responses to the modern world are then discussed. The course analyses the contributions of Muslim religious thinkers to socio-economic reform of the community. A critical analysis of the phenomenon of Islamic resurgence and its impact on the community\u2019s progress will also be examined. A theme underlying the course is the relevance of Islamic values in facilitating Malays adaptation to the demands of social change and pluralistic society."
   },
   {
     "value": "GESS1013",
@@ -132,7 +146,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course aims to promote a better understanding of Singapore-Japan relations, combining historical, political, economic, social and cultural perspectives. Besides an examination of the history of interactions between people in Singapore and Japan from the late 19th century to the present, the course also helps students grasp issues affecting Singapore\u2018s position and perception in a wider geographical and cultural context by considering its relations with Japan. Students are actively encouraged to use oral history, fieldwork and internet for their projects."
   },
   {
     "value": "GESS1014",
@@ -141,7 +156,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces students to the rationale for, and process of, the emergence and growth of Singapore's built environment from a third world country to a world class city. It enables students to have an understanding and appreciation of the economic and social aspects and implications of how properties and infrastructure are developed and managed, given the constraints that Singapore faces. It also encourages them to develop alternative views on how the built environment can help Singapore continue to prosper and remain relevant in the region. This course is open to all undergraduates who are interested in Singapore's physical development."
   },
   {
     "value": "GESS1015",
@@ -150,7 +166,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course explores Singapore\u2019s historical and present-day relationship with Western music, examining its influences on and integration into our culture and society, and its role in our self-identification. Students will adopt socio-historical and contemporary perspectives through looking at various case studies. They will critically consider how Singapore and Singaporeans have shaped and been shaped by music from the West, and be empowered to make decisions in negotiating this cultural correspondence moving forward. Topics covered include historical overview of the arrival of Western music in Singapore and the various functions that music plays and has played in society."
   },
   {
     "value": "GESS1016",
@@ -159,7 +176,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Located within one of the global centres of biodiversity, Singapore is endowed with a rich natural heritage that is impacted by expanding urbanisation. Development poses a great challenge to nature conservation and Singapore is an excellent model to study how a balance can be achieved. Students will be introduced to the country's natural heritage, its historical, scientific and potential economic value. You will have the opportunity to explore important habitats, and to think critically about the issues of sustainable development and the nation's responsibility to posterity and to regional and international conventions related to biodiversity conservation."
   },
   {
     "value": "GESS1017",
@@ -168,7 +186,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "While drawing on methodologies and approaches used in literary studies, this course moves beyond the traditional confines of Singapore Literature. We will thus examine the representation of Singapore, and of contemporary issues of importance in Singapore, in a variety of different popular media. After an initial introduction to the critical reading of cultural representation, we will explore traditional genres such as poetry and drama, as well as more popular ones such as television, film, and popular autobiography. The course is open to all students."
   },
   {
     "value": "GESS1018",
@@ -177,7 +196,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces students to the law pertaining to real estate development and investment in Singapore. Students will acquire an understanding and appreciation of the policies, circumstances and legal principles which underpin and shape the law on the availability, ownership, development and usage of real estate in Singapore. Students will also gain insight into legal analysis and modes of legal reasoning. This course is targeted at all students across Faculties who have had no exposure to Real Estate Law and wish to acquire a broad understanding of the multiple legal issues that pertain to the built environment."
   },
   {
     "value": "GESS1019",
@@ -186,7 +206,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This module aims to give students an understanding of the nature of urban planning, basic planning models and theories. Urban planning will be discussed, in the context of urbanisation and globalisation, as an important force shaping the modern human settlements. A study of the institutional aspect of planning will relate to Singapore\u2019s planning system in which issues of planning implementation will be elaborated. Learning objectives: Understanding nature of urban planning; understanding urban planning processes; understanding urban planning principles. Major topics to be covered: Urbanisation history and its impact; Urban forms: organic growth of urban settlements; Utopian city/the garden city movement; The city beautiful movement/ Neighbourhood; New town; Urban design and conservation; Institutional Structure for planning; Concept Plan and Master Plan; Development control/planning implementation; Planning analysis: population and transportation; Public participation in planning."
   },
   {
     "value": "GESS1020",
@@ -195,7 +216,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course adopts an interdisciplinary approach to understanding key features of Singapore society such as government and politics, crime and deviance, education, social inequality, urbanization and the environment, migration, gender, and sexuality. Using conceptual and empirical insights from academic scholarship on Singapore society by political scientists, geographers, and sociologists, students will be taught to critically examine the structural complexities and challenges surrounding important social issues as well as their developments over the course of Singapore's recent history."
   },
   {
     "value": "GESS1021",
@@ -204,7 +226,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course explores the ways in which Singapore films constitute a national cinema. It explores a series of Singapore films from the golden age to the revival and key topics such as space, language, and history. Through a group creative project, students are challenged to make their own Singapore film or curate an online Singapore film festival that involves the practical application of critical ideas and enables students to participate in the ways that a national cinema performs and functions."
   },
   {
     "value": "GESS1022",
@@ -213,7 +236,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course introduces students to concepts in culture and communication in multiracial Singapore. It raises fundamental questions around what communication means, how it is practiced and enacted (disseminated, practised, consumed) in Singapore. In doing so, it considers the institutions, the history and the lens that we bring to understanding culture and communication, and how they in turn impact on our society. By understanding key sites of Singaporean culture, from hawker centres to shopping, this course asks how we may practice communication as citizens, consumers, and creators in a hyper-urban landscape that positions Singaporeans as global consumers and local citizens."
   },
   {
     "value": "GESS1023",
@@ -222,7 +246,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This module examines the topic of censorship in Singapore. It examines the origins and meaning of the term \u201cOB marker\u201d and Singapore\u2019s history of regulating media and speech to contextualise the perception of strict state control on speech. Contemporary events related to speech and expression are critically examined to assess if the perception of strict state controls on speech in Singapore is still valid."
   },
   {
     "value": "GESS1024",
@@ -231,7 +256,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The course initiates students into the workings of politics from the perspective of citizenship. What constitutes citizenship? What are the roles, duties and obligations of being a Singapore citizen? How do citizens interact and impact politics and decision making in Singapore? How have changes over the years, including (a) perspective of Singapore\u2019s political history, (b) imperatives shaping national politics, (c) the political system, (d) its key structures and approaches to nation building, affected national politics and in turn, led to the political elites responding to changing demands of citizens? The role of civic and civil society will also be discussed."
   },
   {
     "value": "GESS1025",
@@ -240,7 +266,8 @@
     "passFail": "True",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "As an economically-developed nation with a diverse population, Singapore now confronts a range of socioeconomic issues, a rapidly ageing population, declining fertility rates, widening income inequality, and rising living costs amidst increasing global competition, technological advancements, and security threats. Singaporeans have also become a people with a greater propensity to participate in the decisions that affect the nation. This course aims to encourage undergraduates to reflect on Singapore\u2019s post-independence history, imagine the kind of Singapore they would like to co-create, and deliberate on the ways to achieve the future visions they have for Singapore. All lectures will be mounted online."
   },
   {
     "value": "GESS1026",
@@ -249,7 +276,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course facilitates an introductory inquiry into Singaporean pasts based on a cache of 'objects', broadly defined. Students will be invited to make critical observations and bring to bear their imaginations on a variety of 'objects' from Singapore\u2019s pasts: sand, well, club, movie and sound card, among others. Students will then exercise their historical imaginations to generate interpretive possibilities pertaining to Singapore's past prompted by these objects, both individually and collectively. In reflecting on these objects and their possible connections to the past, students will emerge from this course with a broad, diverse, creative and concrete grasp of Singapore's histories."
   },
   {
     "value": "GESS1027",
@@ -258,7 +286,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces students to the forging of the Chinese Singaporean community by observing the changes in linguistic data over time. Drawing linguistic data from different aspects of society and entertainment (eg. food, movies, theatre and so on), the course aims to reveal to students how the Chinese community has evolved from being a community with multiple languages to a single, unified language. Influential professionals in their field of expertise will also share from their personal experience the evolution of the Chinese community, and how the Chinese Singaporean community fits into Singapore\u2019s multiracial society."
   },
   {
     "value": "GESS1028",
@@ -267,7 +296,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces a broad spectrum of performance practices that may be identified as local cultural expressions found in Singapore. Such practices occur in varied spaces and mediums, and include street opera, getai [song-stage], animal performances, theatre, film, religious festivals, national day parades, YouTube video performances and mobile gaming. Students will explore the rich performative histories of these practices and study concepts of performativity, liveness, and mediation. They will learn the ways in which technology and media play a crucial part in cultural expression and identity formation. The course is open to all students and Continuous Assessment is 100%."
   },
   {
     "value": "GESS1029",
@@ -276,7 +306,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course examines the ethical dimensions of everyday life in Singapore. It focuses on moral dilemmas that arise in the nation\u2019s pursuit of \u2018happiness, prosperity, and progress\u2019. We will explore how moral reasoning from multiple perspectives applies to local concerns such as equality, meritocracy, multiculturalism, immigration, and marriage. This will challenge us to identify moral problems created by social and technological changes, combine ethical principles with practical constraints, and balance the interests of individuals and communities. We will also consider how moral dialogue can be cultivated in Singapore\u2019s multicultural society, so as to manage diverse traditions and divergent values."
   },
   {
     "value": "GESS1030",
@@ -285,7 +316,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course delves into the history of public health issues and challenges faced in Singapore, starting from the post-colonial era when nation building began. Students can expect to explore a diverse range of public health issues within the context of Singapore\u2019s development journey, including infectious diseases, sanitation and hygiene, health promotion and emerging public health threats. Through examining real-world examples, this course provides an opportunity for students to assess the effectiveness of past and current strategies employed to manage various public health concerns and develop an appreciation of the crucial role of public health management for Singapore\u2019s progress and development."
   },
   {
     "value": "GESS1031",
@@ -294,7 +326,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course allows students to explore current musical activities across the spectrum of categories. By the end of the course, students should have an understanding of the current state of music in society, ranging from how and where it is taking place, the musical education and government systems involved, influences and trends across the industry, activities in pop and traditional music, and more. In addition to regular lectures and student-led discussions on relevant topics, students will have hands-on music making tutorials that relate to musical activities in Singapore, as well as preparing student group presentations on current affairs in music."
   },
   {
     "value": "GESS1032",
@@ -303,7 +336,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course offers students an opportunity to understand prominent Chinese pioneers and leaders in Singapore during the colonial period. Selected personalities who are either community leaders, entrepreneurs, philanthropists, patriots, war heroes, and/or social activists will be discussed and examined in historical, social, economic, cultural and political contexts of Singapore in the 19th and first half of the 20th centuries."
   },
   {
     "value": "GESS1033",
@@ -312,7 +346,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The status and legitimacy of Singlish is a hotly debated topic in Singapore society. Supporters of Singlish claim it contributes to the Singaporean identity and helps Singaporeans establish a connection with each other overseas. Detractors claim it jeopardizes Singaporeans\u2019 ability to learn Standard English and conveys a poor image of Singapore society on the global stage. This course introduces students to the various arguments and assumptions surrounding the Singlish controversy. It provides students with the conceptual tools needed to better understand the complexity behind an issue that is often presented in simplistic and emotional terms."
   },
   {
     "value": "GESS1034",
@@ -321,7 +356,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course will focus on Singapore literature in English. It will deal with selected texts in the three main genres: poetry, fiction and drama. There will also be opportunities to discuss the works with the writers. One of its main aims is to show how literature will help us gain a more comprehensive insight into our understanding of Singapore."
   },
   {
     "value": "GESS1035",
@@ -330,7 +366,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "For 700 years Singapore has been a key node on world maritime trade routes. The study of maritime culture in Singapore requires integration of data from numerous disciplines including archaeology, history, economics, engineering, and ecology, to name some of the most significant. The prosperity of Singapore depends to a major extent on its port, yet few students are aware of the importance of maritime industry to the formation of the country. This course will explore Singapore\u2019s appearance as a trading port in the 14th century, the reasons for its growth, and the sea\u2019s influence on Singaporean society and economy."
   },
   {
     "value": "GESS1036",
@@ -339,7 +376,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The course introduces students to the development of industrial relations and labour laws in Singapore. Students can thus understand why labour relations are the way they are in Singapore. In addition, the course is not purely historical. A substantial part of the course is also aimed at looking at the current legal problems faced by employees and employers in Singapore. This course will be of general relevance to all as students are in all likelihood going to be employees or employers some day."
   },
   {
     "value": "GESS1036T",
@@ -348,7 +386,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The course aims to introduce students to Employment Law in Singapore and the policies behind them. At the end of course, students should gain a good grasp of employment law in Singapore and understand the policy reasons behind, various employment laws or the lack of certain employment laws. Students will also gain an appreciation of the various and ever evolving initiatives taken by the government, some of which are unique to Singapore (such as NWC, TAFEP, Progressive Wage Model, Workfare Income Supplement and Workforce Singapore), to enhance the interests of workers but at the same time not over-burden businesses."
   },
   {
     "value": "GESS1037",
@@ -357,7 +396,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course is an introduction to gender and sexuality issues in Singapore from a historical perspective. We examine how our everyday understandings of gender have been formed in a long, complex process of negotiation over the twentieth century. In five themes 1) religion and marriage, 2) non-binary histories, 3) state morality, 4) queer stories and 5) gender troubles, we trace how state and religious authorities have shaped sexual behaviours and gender identities, with varying degrees of conformity and contestation from groups and individuals. Throughout history, gender remained fluid despite multiple attempts at restraining sexuality."
   },
   {
     "value": "GESS1038",
@@ -366,7 +406,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Why does Singapore host many different arts festivals and performers? How many different art and performance venues are there in Singapore and why do they exist? To what extent do these serve the local, regional, and global arts audiences? This course is a study of Singapore-based arts in the present, arranged in relation to its past and its relationship with the global arts community and other global arts cities. Students are required to attend multiple indoor and outdoor art events, including the street as the stage, and envision artistic business opportunities development to strengthen Singapore's stature as a global arts city."
   },
   {
     "value": "CDE2501",
@@ -375,7 +416,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "The course introduces students to how cities are governed, planned, developed and managed to achieve the liveability outcomes of quality of life, sustainable environment and a competitive economy using the case study of Singapore and other cities, through a systems thinking lens. Students will understand the role that urban systems professionals, such as urban policymakers, planners, architects, engineers, real estate consultants and managers play in achieving liveable city outcomes in an integrated way, through combining their individual expertise in different disciplines.The course introduces students to how cities are governed, planned, developed and managed to achieve the liveability outcomes of quality of life, sustainable environment and a competitive economy using the case study of Singapore and other cities, through a systems thinking lens. Students will understand the role that urban systems professionals, such as urban policymakers, planners, architects, engineers, real estate consultants and managers play in achieving liveable city outcomes in an integrated way, through combining their individual expertise in different disciplines."
   },
   {
     "value": "HSS1000",
@@ -384,7 +426,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This interdisciplinary course equips students with foundational skills for learning in the social sciences. The primary aim is to encourage critical thinking about social complexity in relation to pertinent issues affecting contemporary societies in Singapore and elsewhere. Students will learn how social scientists collect and interpret evidence to inform knowledge and practice. Through comparisons of Singapore with other cases in Asia and beyond, students will gain the ability to analyse the context-dependent nature of human behaviour and social change. The course will help students provide more nuanced responses to complex social questions and see possibilities for the future of society.This interdisciplinary course equips students with foundational skills for learning in the social sciences. The primary aim is to encourage critical thinking about social complexity in relation to pertinent issues affecting contemporary societies in Singapore and elsewhere. Students will learn how social scientists collect and interpret evidence to inform knowledge and practice. Through comparisons of Singapore with other cases in Asia and beyond, students will gain the ability to analyse the context-dependent nature of human behaviour and social change. The course will help students provide more nuanced responses to complex social questions and see possibilities for the future of society."
   },
   {
     "value": "LC1025",
@@ -393,7 +436,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This module will introduce the history of the common law and Singapore legal institutions (including Islamic law), as well as briefly situate Singapore\u2019s law and institutions in relation to other approaches, notably the civil law approach adopted in most Asian jurisdictions. The module may be complemented by field trips to court, a prison, and/or parliament. It should also include an examination of ADR mechanisms in Singapore and an introduction to professional ethics."
   },
   {
     "value": "SPH1901",
@@ -402,7 +446,8 @@
     "passFail": "True",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Health and illness are often associated with healthcare professionals, treatments, hospitals, and clinical care. However, many factors outside healthcare settings significantly influence health. In this course, we delve into the non-clinical factors that impact health. We will also discuss approaches to support people holistically through behavioural change strategies, social prescribing and advocacy. This course aims to equip students with a comprehensive overview of the myriad factors that shape people\u2019s health, enabling them to approach care in a person-centred and empathic manner."
   },
   {
     "value": "RVSS1000",
@@ -411,7 +456,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "How does our perception of space influence how we experience, interact with and value different places? This course adopts an interdisciplinary approach to consider the way that places themselves can reinforce ecological, historical, economic, political and other constructs, and how these in turn influence the way we relate to and ascribe meanings to places. Through analysis of case studies, field trips and digital tools, students will evaluate the contestations and shifting identities that arise when places undergo change and development in Singapore, and propose possibilities for the preservation, adaptation or transformation of a place of their choice."
   },
   {
     "value": "RVSS1001",
@@ -420,7 +466,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The world stands at a pivotal time of intensifying urbanization and climate change. Grounded in the lived experience of Singapore\u2019s urban spaces, this course adopts a critical approach to understanding the impact of these factors on cities. Students will understand the makings of a city, particularly in meeting the United Nation\u2019s call of Sustainable Development Goal # 11 to \u201cmake cities and communities inclusive, safe, resilient and sustainable.\u201d With these insights, students will participate in envisaging people-centric spatial ideas, as liveable cities become an increasingly important magnet for work, life, and play."
   },
   {
     "value": "RVSS1002",
@@ -429,7 +476,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Singapore\u2019s present unique combination of cultures is a rich and diverse foodscape steeped in history. Our hawker culture listing to the UNESCO List of Intangible Cultural Heritage highlights the importance and value we place in our food heritage. This course opens the doors to rethinking the role food plays in our daily lives, in our culture, in society, and globally. The various topics covered over the course of this course provide opportunities for thinking about the materiality of food (food sustainability and security), the social construction of foodways and food heritages, and how Singapore\u2019s food future should or could progress towards."
   },
   {
     "value": "RVSS1003",
@@ -438,7 +486,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Singapore is a highly urbanised country with less than 5% primary vegetation remaining. The needs of a growing urban city places tremendous stress on conserving Singapore\u2019s green spaces. In comparison, Amsterdam is working to have her residents to be 10 minutes away from a green space. Many Singaporeans have a low awareness of the importance of our natural heritage. This may lead to an inadequate understanding of tradeoffs and tensions between development and conservation. As such, learning science communication and framing of conservation messages are helpful in preserving Singapore\u2019s natural heritage and applicable to other contexts that require effective persuasion."
   },
   {
     "value": "RVSS1004",
@@ -447,7 +496,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Race has figured centrally in the discourse on Singapore\u2019s founding and existence. However, its prominence is matched by reticence towards the topic in public discourse. Through seminars, cultural immersion projects, and learning from external partners, this course adopts a critical lens to discuss the role and impact of race in societal relations in Singapore. In the process, students will learn to interrogate the notion of \u201crace\u201d through real-life examples and gain skills to respond more constructively to situations involving a cosmopolitan society such as Singapore."
   },
   {
     "value": "NHS2052",
@@ -456,7 +506,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The module focuses on the relationship between cultural heritage and contemporary political and social situations. It is designed to provide students with opportunities to explore a range of theoretical and intellectual issues from the fields of anthropology, geography and archaeology on cultural heritage and the roles that place and material culture play within the enactment of social practices. It draws upon historical and contemporary case studies provide real world problems for engaging with the theoretical components of the module. There is an emphasis upon debate, discussion, and problem oriented individual and group projects. Several day trips around Singapore, as well as an extended field trip to Cambodia are offered as part of the module."
   },
   {
     "value": "NHS2026",
@@ -465,7 +516,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "\u201cMy generation,\u201d Singaporean playwright Joel Tan remarks, \u201cis sick with nostalgia.\u201d Singapore has often seemed gripped by nostalgia\u2014post-independence, when our physical landscape drastically changed; during SG50, when the state encouraged us to look back at our past; and more recently, when immigration has transformed our demographics. What is nostalgia, and in what sense is it a \u201csickness\u201d? Can Singaporean artistic practices help us rethink the potential and power of nostalgia? This course analyzes nostalgia and its politics; its relation to progress and progressivism; and the relationships between nostalgia and memory, heritage, and heritagization; history and historicity; sentiment; and temporality."
   },
   {
     "value": "NST2026",
@@ -474,7 +526,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Clean air and water are crucial for public health and to ensure a safe supply of drinking water. Pollution to our air and water can pose health risks and increase treatment costs. This course explores topics related to environmental pollution that threatens clean air and water. What are the main air and water pollutants? From what sources do they come? How do these contaminants get transported? How do we monitor and keep tabs on the quality of the environment? Relevant examples from Singapore and other countries will be used to demonstrate concepts taught in class."
   },
   {
     "value": "NHS2030",
@@ -483,7 +536,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The course serves as an introduction to history in general and the history of modern Singapore in particular. It adopts a wide-angled approach to an understanding of national heritage, history and identity, with due attention to both international and internal developments which have together shaped present-day Singapore. These developments include the formation of a colonial plural society under British rule, the impact of the Japanese Occupation, the rise of nationalism and political contestation, statehood, merger with and separation from Malaysia, the politics and economics of survival, and the governance of an independent city-state."
   },
   {
     "value": "NHS2037",
@@ -492,7 +546,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course examines the intersections between archival materials, historical memory, and the writing of biography. It takes as a subject an archive in Singapore which has not been extensively used. Students will not only do practical work in terms of archival cataloguing and notation, but they will also study theoretical work on archives and biography, and critically examine biographical work in different media, before producing biographical work of their own. This course fulfils the Singapore Studies requirement."
   },
   {
     "value": "NHS2043",
@@ -501,7 +556,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Multiculturalism is a foundational pillar and defining feature in Singapore\u2019s history and society. At once celebrated and contested, Singapore\u2019s multiculturalism is imbued with various themes and meanings, and poses many important issues and challenges central to personal, group and national cultural identities as well as to political, economic and social life. How did it come to be a core principle in nation-building? What are state imperatives and social processes and state imperatives in its historical making and constant remaking? Why are race, language and religion its core constitutive elements and how have their saliency evolved over time? What are its main controversial features and areas of tensions, and how do these affect identities, social relations between individuals, groups and communities, and impact social cohesion, citizenship and belonging? How is it further impacted by massive immigration? Is its present official form still valid in light of immigration, changing demographics and competing claims of rights and responsibilities? What does multiculturalism mean in citizens\u2019 memories of the past, experiences in their present everyday lives, and imaginings of the future? It explores and discusses these central questions and significant dimensions, issues and problems in Singapore\u2019s contested multiculturalism through a combination of lectures, seminars, on-site learning, research projects, class presentations and personal reflections. It also has a strong research component in which students discover and understand multiculturalism through research on selected topics using a variety of research methods, and relate their research and other observations to readings drawn from various disciplines of anthropology, sociology,"
   },
   {
     "value": "NHS2046",
@@ -510,6 +566,7 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GESS",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "War crimes trials are commonly used to address mass violence and facilitate political transition. This course examines the potential and limits of war crimes trials as transitional mechanisms, comparing them with non-legal complements and alternatives. What transitional objectives do these trials seek to achieve and how do these trials contribute to a society\u2019s political transition? Given the many pressing and conflicting needs of post-war societies or societies in transition, should the organisation of such trials be prioritised? What are possible alternative transitional measures? What role should the law play, if at all? Using Singapore\u2019s Second World War experience as a central case study, this module will explore the challenges faced by societies undergoing political transition and the different legal and non-legal measures adopted."
   }
 ]

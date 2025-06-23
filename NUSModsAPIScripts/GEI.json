@@ -6,7 +6,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Computational thinking is increasingly being recognised as a fundamental problem solving method for everyone. Computational thinking involves problem formulation, solution development, and solution analysis, with a focus on computation and computational tools. This course emphasises the computational thinking thought process and the communication of the process and the solutions, rather than implementation of the solution on a computer. Students learn to apply computational thinking to solve problems and discover new questions that can be explored within and across disciplines. Students are assumed to already possess elementary critical thinking and logical thinking aptitudes, which are practised in this course."
   },
   {
     "value": "GEI1001",
@@ -15,7 +16,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GEI",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "Through a series of fun and engaging hands-on activities, this course aims to equip students with the ability to thoughtfully apply computational tools when solving complex real-world problems. In particular, this course aims to impart students with the ability to critically self-evaluate the way they apply these tools, and thus be able to reason effectively in a variety of contexts. They will learn to identify problems and design solutions, while also developing a critical awareness of the merits and limits of their methods, thereby empowering them to make better-informed decisions and to articulate the reasons for those decisions."
   },
   {
     "value": "GEI1002",
@@ -24,7 +26,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Digital technologies expand the frontiers of the humanities through interactive publishing, machine-driven analysis, media-rich platforms, online archives and crowd-sourced databases. This course invites students from across the university to consider these new approaches through a problem-based approach. In each session, the students will learn to use and critically evaluate digital approaches. Reflecting the multiple perspectives within the digital humanities, teaching combines seminar discussions with computational thinking projects that require the students to pose humanities questions in terms of data."
   },
   {
     "value": "AR2524",
@@ -33,7 +36,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Spatial Computational Thinking is increasingly being recognised as a fundamental method for various spatial disciplines. It involves idea formulation, algorithm development, solution exploration, with a focus on the manipulation of geometric and semantic datasets. Students will use parametric modelling tools for generating and analysing building elements at varying scales. Such tools use visual programming interfaces to allow complex algorithms to be developed and tested. Students will learn how to structure their ideas as algorithmic procedures that integrate data-structures, functions, and control flow. Through this process, students will also become familiar with higher-level computational concepts, such as decomposition, encapsulation and abstraction."
   },
   {
     "value": "CM3267",
@@ -42,7 +46,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces the elements of computational thinking and its application in chemistry, energy/sustainability, environment, and food science. These elements include problem formulation/abstraction, pattern recognition, decomposition, and finally algorithm design. Direct application of these elements will occur through programming specifically using Python on a Raspberry Pi computer. The Raspberry Pi will be programmed and turned into a mobile, versatile analytical instrument through use of electronic components and peripherals to make real-time observations of phenomena relevant to chemistry, the physical environment, and food sciences."
   },
   {
     "value": "COS1000",
@@ -51,7 +56,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces students to computational thinking as applied to problems in science, with special emphasis on their implementation with Python/Python Notebook (Jupyter). A selection of examples will be chosen to illustrate (a) fundamentals of algorithm design in computer programming (b) solution interpretation, as well as (c) analysis of the computational solutions and data visualization using state-of-the-art tools in Python. The selection will tackle different types of approaches typically used in scientific computational thinking, including deterministic, probabilistic and approximation methods. The course will also highlight scientific computational issues such as accuracy and convergence of numerical results."
   },
   {
     "value": "CS1010E",
@@ -60,7 +66,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course introduces the fundamental concepts of problem solving by computing and programming using an imperative programming language. It is the first and foremost introductory course to computing. Topics covered include computational thinking and computational problem solving, designing and specifying an algorithm, basic problem formulation and problem solving approaches, program development, coding, testing and debugging, fundamental programming constructs (variables, types, expressions, assignments, functions, control structures, etc.), fundamental data structures (arrays, strings, composite data types), basic sorting, and recursion."
   },
   {
     "value": "CS1010S",
@@ -69,7 +76,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces the fundamental concepts of problem solving by computing and programming using an imperative programming language. It is the first and foremost introductory course to computing and is equivalent to CS1010 and CS1010E Programming Methodology. Topics covered include problem solving by computing, writing pseudo-codes, basic problem formulation and problem solving, program development, coding, testing and debugging, fundamental programming constructs (variables, types, expressions, assignments, functions, control structures, etc.), fundamental data structures: arrays, strings and structures, simple file processing, and basic recursion. This course is appropriate for FoS students."
   },
   {
     "value": "CS1101S",
@@ -78,7 +86,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GEI",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course introduces the concepts of programming and computational problem solving, and is the first and foremost introductory course to computing. Starting from a small core of fundamental abstractions, the course introduces programming as a method for communicating computational processes. The course begins with purely functional programming based on a simple substitution-based execution model, and ends with a powerful modern imperative language based on a realistic environment-based execution model. Topics covered include: functional abstraction, recursion, higher-order functions, data abstraction, algorithmic strategies, state mutation, loops and arrays, evaluation strategies, sorting and searching, debugging and testing."
   },
   {
     "value": "CS2030",
@@ -87,7 +96,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course is a follow up to CS1010. It explores two modern programming paradigms, object-oriented programming and functional programming. Through a series of integrated assignments, students will learn to develop medium-scale software programs in the order of thousands of lines of code and tens of classes using object oriented design principles and advanced programming constructs available in the two paradigms. Topics include objects and classes, composition, association, inheritance, interface, polymorphism, abstract classes, dynamic binding, lambda expression, effect-free programming, first class functions, closures, continuations, monad, etc."
   },
   {
     "value": "CS2030S",
@@ -96,7 +106,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course is a follow up to CS1010. It explores two modern programming paradigms, object-oriented programming and functional programming. Through a series of integrated assignments, students will learn to develop medium-scale software programs in the order of thousands of lines of code and tens of classes using object-oriented design principles and advanced programming constructs available in the two paradigms. Topics include objects and classes, composition, association, inheritance, interface, polymorphism, abstract classes, dynamic binding, lambda expression, effect-free programming, first class functions, closures, continuations, monad, etc.This course is a follow up to CS1010. It explores two modern programming paradigms, object-oriented programming and functional programming. Through a series of integrated assignments, students will learn to develop medium-scale software programs in the order of thousands of lines of code and tens of classes using object-oriented design principles and advanced programming constructs available in the two paradigms. Topics include objects and classes, composition, association, inheritance, interface, polymorphism, abstract classes, dynamic binding, lambda expression, effect-free programming, first class functions, closures, continuations, monad, etc."
   },
   {
     "value": "CS2113",
@@ -105,7 +116,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "GEI",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course introduces the necessary skills for systematic and rigorous development of software systems. It covers requirements, design, implementation, quality assurance, and project management aspects of small-to-medium size multi-person software projects. The course uses the Object Oriented Programming paradigm. Students of this course will receive hands-on practice of tools commonly used in the industry, such as test automation tools, build automation tools, and code revisioning tools will be covered."
   },
   {
     "value": "CS2113T",
@@ -114,7 +126,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course introduces the necessary skills for systematic and rigorous development of software systems. It covers requirements, design, implementation, quality assurance, and project management aspects of small-to-medium size multi-person software projects. The course uses the Object Oriented Programming paradigm. Students of this course will receive hands-on practice of tools commonly used in the industry, such as test automation tools, build automation tools, and code revisioning tools will be covered."
   },
   {
     "value": "ID2116",
@@ -123,7 +136,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces the elements of computational thinking and its application in Industrial Design. Students will acquire skills and knowledge of computational problem solving, including formulating a problem, designing a solution, and prototyping the solution in the use of computational tools, logic and methods such as the Arduino Integrated Development Environment. Students learn through a hands-on approach to decompose complex problems into smaller components, solve the smaller components using elemental algorithms, and combine the solutions to solve the task at hand. They will learn the concepts of abstraction, how to encapsulate complex data and behavior into objects through object-oriented programming."
   },
   {
     "value": "LSM2302",
@@ -132,7 +146,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Computational thinking is becoming increasingly important across the life sciences, from molecular and cell biology to evolution and ecology. This course will introduce students to computational thinking and will focus on how to solve biological problems using computational approaches. How can you become a computational thinker? How do computers represent and solve problems? How can computers and computational thinking be used to solve problems of relevance to biology? The applied component of the course will teach the basics of programming in R and will focus on biological problems including population growth modelling, epidemic modelling, and analysis of biological data."
   },
   {
     "value": "ZB2201",
@@ -141,7 +156,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Computational thinking is becoming increasingly important across the life sciences, from molecular and cell biology to evolution and ecology. This course introduces students to computational thinking and focuses on how to solve biological problems using computational approaches. How can you become a computational thinker? How do computers represent and solve problems? How can computers and computational thinking be used to solve problems of relevance to biology? The applied component of the course teaches the basics of programming in R and its application in biological contexts including population growth modelling, epidemic modelling, and analysis of biological data."
   },
   {
     "value": "NM2207",
@@ -150,7 +166,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Communication, including scientific and corporate endeavours, is deeply intertwined with the world of computing. From social media to public relations campaigns, from data reporting to web design, from business decision-making to news, from democratic participation to interactive art \u2013 the ability to understand and interpret computational media is of fundamental importance. This course offers a hands-on introduction to essential concepts in computational media, focusing on web development and data visualization. Non-programmers are introduced to the fundamentals of industry-standard programming languages, tools, and best practices for web development and data analysis, through hands-on tutorials and programming exercises."
   },
   {
     "value": "SP2273",
@@ -159,7 +176,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Computing plays a crucial role in how science understands our world. It is often considered the 'third pillar' of science, alongside theory and experiments. This course will allow you to experience how computers can be used to solve fun and interesting problems (e.g. climate models, real-time measurements), in interdisciplinary science. You will also learn how to approach tackling complex problems by breaking them into smaller ones, noting similarities, identifying what data is essential and devising steps that will lead to a solution. We will then learn to use the Python programming language to implement some of these solutions."
   },
   {
     "value": "TCN1005",
@@ -168,7 +186,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "With the widespread use of computers and computational tools in industrial practice and research, it is important for students in the chemical engineering programme to gain a firm understanding and appreciation of the fundamentals of programming, algorithmic problem solving, coding and debugging. The final goal is to be able to apply these skills to solving realistic chemical engineering problems. MATLAB, a high-level computing language will be employed due to its capability to solve domain-specific computing problems more conveniently than with traditional programming languages. MATLAB also provides the platform to span a wide variety of application areas."
   },
   {
     "value": "TCX2001",
@@ -177,7 +196,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces students to common algorithms, fundamental data structures, implementation strategies, and algorithm design techniques. Data structures covered include linked lists, stacks, queues, hash tables, heap, trees, and graphs. This course covers basic algorithms such as searching, sorting, and graph manipulation. This course also introduces the concepts of running time analysis and Big-O notation to quantify the performance of different implementation strategies and algorithms."
   },
   {
     "value": "TEE2101",
@@ -186,7 +206,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course aims to introduce students to the discipline of computing and the problem solving process. It stresses on good programme design and programming styles, and structured programme development using a higher-level programming language. The topics covered in this course are: Algorithm design process, Programme development/coding/debugging. Programming concepts in a high-level language including programme structure, simple data types and structured types and various control structures (sequencing, loops, conditionals, etc.). Linear data structures such as arrays and linked-lists. The utility of recursion using a variety of sorting algorithms."
   },
   {
     "value": "TIC2001",
@@ -195,7 +216,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces students to fundamental data structures, their implementation strategies, their algorithm design, and their applications. Data structures covered include linked lists, stacks, queues, hash tables, heap, trees, and graphs. This course also introduces the concepts of running time analysis and Big-O notation to quantify the performance of different implementation strategies and algorithms."
   },
   {
     "value": "TIE2030",
@@ -204,6 +226,7 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEI",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces fundamental programming methodologies for solving real-life complex problem using Python with emphasis in industrial operations and supply chains management oriented applications. Topics include problem solving by computing, writing pseudo-codes, problem formulation and problem solving, program development, coding, testing and debugging, fundamental programming constructs (variables, types, expressions, assignments, functions, control structures, etc.), fundamental data structures: arrays, strings and structures, data processing using large scale data sets from files, visualization, facilitating a design towards solving complex problems. course will expose both Python and one or more of its variants used for scientific computations such as SciPy and NumPy."
   }
 ]

@@ -6,7 +6,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "The course provides an introduction to accounting from a user perspective. Financial reporting is covered from the viewpoint of an external investor. The focus is on how accounting can help investors make better decisions. Book-keeping and preparation of financial statements are also covered at an introductory level, as investors need to be aware of how the financial statements are derived."
   },
   {
     "value": "DAO2703",
@@ -15,7 +16,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course provides an introduction to the substantive knowledge which has developed over the years in the field of Operations and Technology Management. It builds around the foundational topics of operations and highlights the relevance and strategic significance of technology and the operations function in enterprises. Topics covered include production technology, process analysis and process technology, quality management, and the role of technology in process control in both manufacturing and service organizations. Use of coordination technology such as ERP by firms to match demand and supply efficiently and effectively, operations strategy, and sustainability will also be introduced."
   },
   {
     "value": "MNO1706X",
@@ -24,7 +26,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course is designed to introduce students to human behavior in organizational contexts. The study of organizational behavior involves examining processes at the individual, group and organizational levels. Both theoretical and applied approaches will be developed. Instructional methods include lectures, experiential exercises, group activities, videos and case studies. Extensive class participation is expected."
   },
   {
     "value": "SC1101E",
@@ -33,7 +36,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "Students are introduced to the concepts used in Sociology and Anthropology. The main objective is to train students to use Sociology in analyzing social institutions and processes. For this reason, students are encouraged to relate their experiences in society to the discipline of Sociology and Anthropology. The topics covered in the course are the logic and methods of social investigation; family, work and organization; power and the state; social inequality (including gender and ethnicity); mass communication and popular culture; values and beliefs; and deviance and social control."
   },
   {
     "value": "EL1101E",
@@ -42,7 +46,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This introductory overview of linguistics aims at equipping students with a solid foundation in the object, methods and goals of the science of spoken language, the prime tool of human communication. Through a principled analysis of patterns of sound, form and meaning at the levels of word, sentence and text, students will gain insight into what it means to say that language is a rule-governed system and an organic whole. The results of this exploration will be useful to those interested in the relationship between language and mind, society and culture."
   },
   {
     "value": "PE2101P",
@@ -51,7 +56,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course will introduce students to PPE as a endeavour, by showing them how social and political philosophy can be done in a way that is strongly informed by the findings of social science. The course will be organized around discussing a few specific issues \u2013 such as inequality, nudging, climate change, and the formation of the state. Analysing these issues will introduce students to the methods and results of philosophy, political science, and economics, and show how they could be integrated to better understand and tackle social and political phenomena. interdisciplinary"
   },
   {
     "value": "GE2103",
@@ -60,7 +66,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course is an introduction to Earth Systems Science, providing students with an understanding of the key interactions between the different spheres of planet Earth: the lithosphere, atmosphere, hydrosphere, biosphere and the anthroposphere. In particular, students will develop an understanding of the holistic view and thinking about interconnections and interrelationships in the earth\u2019s systems and subsystems. This course will highlight key concepts shaping Earth Systems Science, such as sustainability, planetary boundaries and safe operating spaces."
   },
   {
     "value": "XD3103",
@@ -69,7 +76,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The course provides an overview of geology \u2013 the science of the earth. An understanding of geology is important to many disciplines, providing information about the physical and chemical processes that determine the distribution of resources, location of hazards, operation of surface processes and the interaction between engineering structures and earth surface materials. The four components of the course begin with consideration of the earth\u2019s structure and the role of plate tectonics, before considering the nature of earth surface materials and the functioning of earth surface systems."
   },
   {
     "value": "GE3253",
@@ -78,7 +86,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Weather has an immediate effect on all of us and climate is important in human affairs on a global level. This course provides an introduction to both weather and climate. Processes underlying the behaviour of the atmospheric environment from local to global scales are discussed. The course commences with a discussion of atmospheric concepts in a visual and practical manner. Understanding and application of basic meteorological principles will help to explain environmental phenomena such as clouds and precipitation, tropical storms and global climate change. This course is appropriate for students from all Faculties."
   },
   {
     "value": "GE3255",
@@ -87,7 +96,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Water is present and moves through all parts of the Earth system; the freshwater component, amounting to about 1% of water on Earth, is fundamental to life. This course focuses on rivers, lakes, estuaries, wetlands and adjoining land (coastal and riparian zones). Taking a global perspective, with a focus on the tropics and Singapore, this course explores the reservoirs, pathways and functioning of the hydrologic cycle, and the interactions between water and land, both on and below Earth\u2019s surface. Dynamic hydrological processes and their effects, aquatic ecosystems, human interactions and impacts and ecohydrology are also covered."
   },
   {
     "value": "GE3256",
@@ -96,7 +106,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Earth's geosphere \u2013 the ground beneath our feet \u2013 may seem constant and relatively unchanging, but nothing could be further from the truth. This course examines the main processes that combine to influence the development of Earth\u2019s surface and the formation of and changes to landscapes. The origins and development of landforms, particularly in the humid tropics, is explored, as are the characteristics, functioning, dynamics and interactions within and between major associated ecosystems. Human-induced landform and ecosystem modifications are also considered. The knowledge obtained in this course is applicable to broader environmental management issues."
   },
   {
     "value": "SPH2002",
@@ -105,7 +116,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Have you ever wondered if you can trust a research study you saw in the news? That's where epidemiology comes in! It's all about understanding why certain health issues occur, how they spread, and what we can do about it. This course is your starting point for understanding epidemiology! We will learn how to measure disease burden, how we study risk factors for disease, how we evaluate interventions such as new vaccines and screening programs, and how to critically appraise research evidence to inform public health policy. Get ready to be a health detective and unlock the secrets to our well-being!"
   },
   {
     "value": "SC2226",
@@ -114,7 +126,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course introduces students to the key issues in the sociology of mental health. It emphasizes the social influences on mental disorders, especially factors associated with the family-of-origin, while acknowledging the medical aspects of mental health. The consequences of mental disorders on individuals and their ecological systems will also be discussed. Students will be equipped with the knowledge to frame mental disorders from a biopsychosocial perspective, view mental disorders as social conditions and be able to attest to the social construction of medical diagnosis of mental disorders."
   },
   {
     "value": "NUR1113A",
@@ -123,7 +136,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course aims to provide students the opportunity to focus on fostering health and well-being of seniors at different ageing milestones. Students will examine and apply theories and concepts of ageing, normal physiologic and psychosocial changes and the biopsychosocial issues associated with these processes. (44 words)"
   },
   {
     "value": "CDE2300",
@@ -132,7 +146,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This is a project-based course which focuses on developing products to meet users\u2019 latent needs. The course combines problem framing, problem solving, and product development which are important skills in current and future innovation-driven economy. Students will learn about the jobs-to-be-done (JTBD) framework, distinction between values and features, and product vision. Students can expect to develop tangible prototypes that work and to test them with users. Finally, students will learn about product presentation using analogy, metaphor, and product storytelling. They will work in teams in a studio environment and gain hands-on experience in product development."
   },
   {
     "value": "CDE2310",
@@ -141,7 +156,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course aims to introduce freshmen who are interested in the Innovation & Design Programme to the basic principles of systems design that involve mechanical, electrical, and software elements. The course will cover the fundamentals of mechanical design, electrical hardware design, as well as middleware software frameworks to create an autonomous mobile robot with add-on sensors for targeting and a mechanically actuated payload. Students will learn the essentials of individual sub-systems through hands-on exercises and homework assignments, and subsequently integrate these subsystems in a final project utilising open-source software platforms to perform a number of missions."
   },
   {
     "value": "EG2201A",
@@ -150,7 +166,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This is a design course which focuses on user needs, bringing together their perspectives along with those of various stakeholders, to deliver solutions in a collaborative manner. The key element in this course is the process that students go through to frame design problems, define a hypothesis for testing, and to build low fidelity prototypes for feedback and validation. Through an open-ended team project, students work collaboratively in a studio environment to create a shared understanding of the problem statement. Students go on to develop concept solutions which can be prototyped and tested."
   },
   {
     "value": "EG2310",
@@ -159,6 +176,7 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course aims to introduce freshmen who are interested in the Innovation & Design Programme to the basic principles of systems design that involve mechanical, electrical, and software elements. The course will cover the fundamentals of mechanical design, electrical hardware design, as well as middleware software frameworks to create an autonomous mobile robot with add-on sensors for targeting and a mechanically actuated payload. Students will learn the essentials of individual sub-systems through hands-on exercises and homework assignments, and subsequently integrate these subsystems in a final project utilising open-source software platforms to perform a number of missions."
   }
 ]

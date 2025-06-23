@@ -4,90 +4,103 @@
     "label": "MA1521",
     "exam": "mcq",
     "canSU": "True",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": "This course provides a basic foundation for calculus and its related subjects required by computing students. The objective is to train the students to be able to handle calculus techniques arising in their courses of specialisation. In addition to the standard calculus material, the course also covers simple mathematical modeling techniques and numerical methods in connection with ordinary differential equations. Major topics: Preliminaries on sets and number systems. Calculus of functions of one variable and applications. Sequences, series and power series. Functions of several variables. Extrema. First and second order differential equations. Basic numerical methods for ordinary differential equations."
   },
   {
     "value": "CS1101S",
     "label": "CS1101S",
     "exam": "mcq",
     "canSU": "True",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "desc": "This course introduces the concepts of programming and computational problem solving, and is the first and foremost introductory course to computing. Starting from a small core of fundamental abstractions, the course introduces programming as a method for communicating computational processes. The course begins with purely functional programming based on a simple substitution-based execution model, and ends with a powerful modern imperative language based on a realistic environment-based execution model. Topics covered include: functional abstraction, recursion, higher-order functions, data abstraction, algorithmic strategies, state mutation, loops and arrays, evaluation strategies, sorting and searching, debugging and testing."
   },
   {
     "value": "CS2030S",
     "label": "CS2030S",
     "exam": "mcq",
     "canSU": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": "This course is a follow up to CS1010. It explores two modern programming paradigms, object-oriented programming and functional programming. Through a series of integrated assignments, students will learn to develop medium-scale software programs in the order of thousands of lines of code and tens of classes using object-oriented design principles and advanced programming constructs available in the two paradigms. Topics include objects and classes, composition, association, inheritance, interface, polymorphism, abstract classes, dynamic binding, lambda expression, effect-free programming, first class functions, closures, continuations, monad, etc.This course is a follow up to CS1010. It explores two modern programming paradigms, object-oriented programming and functional programming. Through a series of integrated assignments, students will learn to develop medium-scale software programs in the order of thousands of lines of code and tens of classes using object-oriented design principles and advanced programming constructs available in the two paradigms. Topics include objects and classes, composition, association, inheritance, interface, polymorphism, abstract classes, dynamic binding, lambda expression, effect-free programming, first class functions, closures, continuations, monad, etc."
   },
   {
     "value": "CS2040S",
     "label": "CS2040S",
     "exam": "mcq",
     "canSU": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": "This course introduces students to the design and implementation of fundamental data structures and algorithms. The course covers basic data structures (linked lists, stacks, queues, hash tables, binary heaps, trees, and graphs), searching and sorting algorithms, and basic analysis of algorithms."
   },
   {
     "value": "CS2100",
     "label": "CS2100",
     "exam": "mcq",
     "canSU": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": "The objective of this course is to familiarise students with the fundamentals of computing devices. Through this course students will understand the basics of data representation, and how the various parts of a computer work, separately and with each other. This allows students to understand the issues in computing devices, and how these issues affect the implementation of solutions. Topics covered include data representation systems, combinational and sequential circuit design techniques, assembly language, processor execution cycles, pipelining, memory hierarchy and input/output systems."
   },
   {
     "value": "CS2103T",
     "label": "CS2103T",
     "exam": "mcq",
     "canSU": "False",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "desc": "This course introduces the necessary conceptual and analytical tools for systematic and rigorous development of software systems. It covers four main areas of software development, namely object-oriented system analysis, object-oriented system modelling and design, implementation, and testing, with emphasis on system modelling and design and implementation of software courses that work cooperatively to fulfill the requirements of the system. Tools and techniques for software development, such as Unified Modelling Language (UML), program specification, and testing methods, will be taught. Major software engineering issues such as modularisation criteria, program correctness, and software quality will also be covered."
   },
   {
     "value": "CS2101",
     "label": "CS2101",
     "exam": "mcq",
     "canSU": "True",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "desc": "This twinned course is designed specifically for undergraduate students in the field of software engineering. It aims to equip students with the ability to persuasively communicate technical and non-technical ideas to a diverse audience in spoken and written mediums by utilizing an array of communication elements and frameworks. Students will develop effective communication skills through continuous engagement, reflection, practice and feedback through independent and collaborative learning experiences."
   },
   {
     "value": "MA1522",
     "label": "MA1522",
     "exam": "mcq",
     "canSU": "True",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": "This course is targeted at students from School of Computing. It introduces basic concepts in linear algebra that are routinely applied in computer science, in the context of the Euclidean spaces, and will develop basic skills in computing with vectors and matrices with and without using computational software (MATLAB). Students are expected to acquire computational facilities and geometric intuition about vectors and matrices. Major topics: Systems of linear equations, matrices, determinants, Euclidean spaces, linear combinations and linear span, subspaces, linear independence, bases and dimension, rank of a matrix, inner products, eigenvalues and eigenvectors, diagonalisation, linear transformations between Euclidean spaces, applications."
   },
   {
     "value": "ST2334",
     "label": "ST2334",
     "exam": "mcq",
     "canSU": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": "This course introduces students to basic probability theory and statistical inference. Topics include basic concepts of probability, conditional probability, independence, random variables, joint and marginal distributions, mean and variance, some common probability distributions, sampling distributions, estimation and hypothesis testing based on a normal population."
   },
   {
     "value": "ES2660",
     "label": "ES2660",
     "exam": "mixed",
     "canSU": "True",
-    "hasGroupProject": "True"
+    "hasGroupProject": "True",
+    "desc": "In a context of prolific production and convenient access to content and innovation in the Information Age, how should one critically process and clearly communicate ideas to various audiences? Using established critical thinking and digital literacy frameworks, this course aims to help learners hone their abilities to (1) critically question, analyse, and evaluate issues related to their own discipline and profession from multiple perspectives; and (2) articulate critical analysis and evaluation in multimodal forms of communication."
   },
   {
     "value": "CS2106",
     "label": "CS2106",
     "exam": "mixed",
     "canSU": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": "This course introduces the basic concepts in operating systems and links it with contemporary operating systems (eg. Unix/Linux and Windows). It focuses on OS structuring and architecture, processes, memory management, concurrency and file systems. Topics include kernel architecture, system calls, interrupts, models of processes, process abstraction and services, scheduling, review of physical memory and memory management hardware, kernel memory management, virtual memory and paging, caches, working set, deadlock, mutual exclusion, synchronisation mechanisms, data and metadata in file systems, directories and structure, file system abstraction and operations, OS protection mechanisms, and user authentication."
   },
   {
     "value": "CS2109",
     "label": "CS2109",
     "exam": "openended",
     "canSU": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": ""
   },
   {
     "value": "CS2107",
     "label": "CS2107",
     "exam": "mixed",
     "canSU": "False",
-    "hasGroupProject": "False"
+    "hasGroupProject": "False",
+    "desc": ""
   }
 ]

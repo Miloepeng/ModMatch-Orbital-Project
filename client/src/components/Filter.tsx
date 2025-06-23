@@ -99,13 +99,23 @@ export default function Filter() {
             </select>
             </div>
             
-
-            <ol className="modules-list">
+            <div className="module-card-list">
                 {currentModules.map((module) => (
-                    <li className="search-module-item">{module.value} | {module.canSU} | {module.passFail} | {module.hasGroupProject} | {module.hasMCQ} |
-                    {module.GEPillar} </li>
-                ))}
-            </ol>
+                <div key={module.value} className="module-card horizontal">
+                    <div className="module-main">
+                        <h3>{module.value}</h3>
+                        <p className="module-desc">{module.desc}</p>
+                    </div>
+                    <div className="module-meta">
+                        <p><strong>Can SU:</strong> {module.canSU}</p>
+                        <p><strong>Pass/Fail:</strong> {module.passFail}</p>
+                        <p><strong>Group Project:</strong> {module.hasGroupProject}</p>
+                        <p><strong>MCQ:</strong> {module.hasMCQ}</p>
+                         <p><strong>GE Pillar:</strong> {module.GEPillar}</p>
+                    </div>
+                </div>
+                 ))}
+            </div>
 
             <div className="pagination">
           <button className="search-navigate" onClick={handlePrev} disabled={currentPage === 1}>Prev</button>

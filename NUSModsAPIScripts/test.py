@@ -1,11 +1,23 @@
-mods = ['GE3253', 'GE3255', 'GE3256', 'SC2226', 'CDE2300', 'SPH1904', 'TCX2002', 'GEC1000', 'GEC1008', 'GEC1009', 'GEC1010', 'GEC1011', 'GEC1012', 'GEC1014', 'GEC1018', 'GEC1019', 'GEC1020', 'GEC1025', 'GEC1026', 'GEC1027', 'GEC1028', 'GEC1033', 'GEC1034', 'GEC1034T', 'GEC1037', 'GEC1038', 'GEC1040T', 'GEC1043', 'GEC1045', 'GEC1046', 'GEC1048', 'GEC1050', 'GEC1051', 'GEC1052', 'GEC1053', 'NHS2098', 'RVC1000', 'RVC2000', 'NHS2019', 'NHS2020', 'NHS2021', 'NHS2022', 'NHS2023', 'NHS2024', 'NHS2025', 'NHS2028', 'NHS2029', 'NHS2031', 'NHS2032', 'NHS2033', 'NHS2034', 'NHS2035', 'NHS2036', 'NHS2039', 'NHS2040', 'NHS2041', 'NHS2042', 'NHS2045', 'NHS2048', 'NHS2049', 'USE2325', 'NHS2051', 'NHS3001', 'AR2524', 'CM3267', 'COS1000', 'ID2116', 'LSM2302', 'ZB2201', 'SP2273', 'TCX2001', 'TEE2101', 'TIE2030', 'GESS1000T', 'GESS1002', 'GESS1003', 'GESS1004', 'GESS1008', 'GESS1010', 'GESS1011', 'GESS1017', 'GESS1021', 'GESS1023', 'GESS1024', 'GESS1026', 'GESS1027', 'GESS1028', 'GESS1030', 'GESS1032', 'GESS1033', 'GESS1034', 'GESS1035', 'GESS1036T', 'LC1025', 'RVSS1000', 'RVSS1001', 'RVSS1002', 'RVSS1004', 'NHS2052', 'NHS2026', 'NHS2004', 'NST2026', 'NHS2030', 'NHS2037', 'NHS2038', 'NHS2043', 'NHS2044', 'NHS2046', 'NHS2047', 'NHS3002', 'GEX1000', 'GEX1001', 'GEX1002', 'GEX1003', 'GEX1005T', 'GEX1006', 'GEX1009', 'GEX1010', 'GEX1011', 'GEX1013', 'GEX1016', 'GEX1017', 'GEX1018', 'GEX1019', 'GEX1020', 'GEX1021', 'GEX1024', 'GEX1025', 'GEX1026', 'GEX1029', 'GEX1030', 'GEX1031', 'GEX1032', 'MUH1101', 'RVX1001', 'RVX1002', 'RVX1003', 'RVX1004', 'RVX1005', 'NTW2001', 'NTW2002', 'NTW2003', 'NTW2004', 'NTW2005', 'NTW2006', 'NTW2007', 'NTW2008', 'NTW2009', 'UWC2101K', 'UWC2101L', 'NTW2012', 'NTW2013', 'NTW2014', 'NTW2015', 'NTW2016', 'NTW2017', 'NTW2018', 'NTW2019', 'NTW2020', 'NTW2021', 'NTW2022', 'NTW2023', 'NTW2024', 'NTW2025', 'NTW2026', 'NTW2027', 'NTW2028', 'NTW2029', 'NTW2031', 'NTW2032', 'NTW2033', 'NTW2034', 'NTW2035', 'NTW2038', 'NTW2039', 'NHS2008', 'NHS2009', 'NHS2010', 'NHS2001', 'NHS2002', 'NHS2003', 'NHS2004', 'NHS2005', 'NHS2006', 'NHS2007', 'NHS2011', 'NHS2012', 'NHS2013', 'NHS2014', 'NHS2015', 'NHS2016', 'NHS2017', 'NHS2018', 'HSI2002', 'HSI2003', 'CS4257', 'CS5236', 'CS5238', 'CS5215', 'CS4351', 'CS5343', 'CS3221', 'CS4257', 'CS4276', 'CS5322', 'CS5332', 'CS5226', 'CS5322', 'CS5241', 'CS4344', 'CS5248', 'CS5222', 'CS4216', 'CS5215', 'CS5272', 'CS2220', 'MA1522']
+import pandas as pd
+import json
 
-from ModScrape import moduleScrape
+df = pd.read_csv('Module_Data.csv')
 
-nil = []
+with open("Modules.json", "r", encoding='utf-8') as f:
+    modules = json.load(f)
 
-for i in mods:
-    if moduleScrape(i) == "" :
-        print(i + "has no comments")
-    else:
-        nil.append(i)
+module_list =[]
+
+for mod in modules:
+    code = mod['value']
+    desc = df[df['code'] == code]['description'].dropna().tolist()
+    desc = "".join(desc)
+    module_list.append({
+        **mod,
+        "desc" : desc
+    })
+
+with open("Modules.json", "w") as f:
+    json.dump(module_list, f, indent=2)
+
+print("modules saved to Modules.json")

@@ -6,7 +6,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "'Teach SG' is an integrated service-learning coursee for the education sector to help uplift primary and secondary school students from less-privileged family circumstances. Students will learn key concepts in volunteerism. They will also be equipped with essential skills including communications & collaboration and coaching & mentorship. Students will apply these skills as they perform service work through mentoring school students in after-school care at Ministry of Education schools or Student Care Centres. Through experiential learning, students will learn to develop character, empathy, and personal effectiveness. It is a collaboration with the Ministries of Education and Social & Family Development."
   },
   {
     "value": "GEN2060X",
@@ -15,7 +16,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Many seniors are lonely or estranged, isolated from critical social networks and support structures. Volunteers provide the vital link to reconnect them with society and restore their well-being. In this course, students will learn key concepts in volunteerism, and essential skills, including communications, conflict management, needs identification and risk assessment, to support vulnerable seniors identified by the Agency for Integrated Care (AIC), checking on them regularly to provide emotional support and early intervention, if needed. Thus, students will develop empathy, and sharpen observation and decision-making skills."
   },
   {
     "value": "GEN2061X",
@@ -24,7 +26,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Silver Generation Ambassadors (SGA) play a key role in promoting healthy ageing amongst seniors in Singapore by conducting preventive health visits to them in their homes. In this course, students will learn key concepts in volunteerism, and essential skills, such as communications, conflict management, outreach, persuasion and motivation, to support their work as SGA. Students will engage seniors in assigned precinct, promote national support schemes and programmes, and encourage seniors to adopt good management practices for own health and well-being. This course is a collaboration with the Silver Generation Office (SGO)."
   },
   {
     "value": "GEN2062X",
@@ -33,7 +36,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "SG Cares is a nationwide movement to support local communities through Volunteer Centres for a more caring and inclusive society. In one aspect, these centres provide activity hubs to help keep seniors active and connected. In this course, students will learn key concepts in volunteerism and essential skills in empathy, communications, conflict management, team and activity building, and apply these to the design, coordination and conduct of activities for seniors at selected Volunteer Centres. Thus, students will sharpen their interpersonal effectiveness in communications, collaboration and engagement. This course is a partnership with MCCY through its SG Cares Office."
   },
   {
     "value": "GEN2070X",
@@ -42,7 +46,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "ComLink is a nationwide initiative to befriend disadvantaged families with young children by providing comprehensive support that would help propel them towards realizing their own aspirations. In this course, students will learn key concepts in volunteerism, and essential skills, including communications, collaboration, conflict management, and family befriending. They will then apply these skills as ComLink Befrienders through regular home visitations, needs assessment, and connecting the families with community resources, journeying with them towards stability, self-reliance and social mobility. Students will thus develop character, empathy, and personal effectiveness."
   },
   {
     "value": "GEN2050Y",
@@ -51,7 +56,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "'Teach SG' is an integrated service-learning course for the education sector to help uplift primary and secondary school students from less-privileged family circumstances. Students will learn key concepts in volunteerism. They will also be equipped with essential skills including communications & collaboration and coaching & mentorship. Students will apply these skills as they perform service work through mentoring school students in after-school care at Ministry of Education schools or Student Care Centres. Through experiential learning, students will learn to develop character, empathy, and personal effectiveness. It is a collaboration with the Ministries of Education and Social & Family Development."
   },
   {
     "value": "GEN2060Y",
@@ -60,7 +66,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Many seniors are lonely or estranged, isolated from critical social networks and support structures. Volunteers provide the vital link to reconnect them with society and restore their well-being. In this course, students will learn key concepts in volunteerism, and essential skills, including communications, conflict management, needs identification and risk assessment, to support vulnerable seniors identified by the Agency for Integrated Care (AIC), checking on them regularly to provide emotional support and early intervention, if needed. Thus, students will develop empathy, and sharpen observation and decision-making skills."
   },
   {
     "value": "GEN2061Y",
@@ -69,7 +76,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Silver Generation Ambassadors (SGA) play a key role in promoting healthy ageing amongst seniors in Singapore by conducting preventive health visits to them in their homes. In this course, students will learn key concepts in volunteerism, and essential skills, such as communications, conflict management, outreach, persuasion and motivation, to support their work as SGA. Students will engage seniors in assigned precinct, promote national support schemes and programmes, and encourage seniors to adopt good management practices for own health and well-being. This course is a collaboration with the Silver Generation Office (SGO)."
   },
   {
     "value": "GEN2062Y",
@@ -78,7 +86,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "SG Cares is a nationwide movement to support local communities through Volunteer Centres for a more caring and inclusive society. In one aspect, these centres provide activity hubs to help keep seniors active and connected. In this course, students will learn key concepts in volunteerism and essential skills in empathy, communications, conflict management, team and activity building, and apply these to the design, coordination and conduct of activities for seniors at selected Volunteer Centres. Thus, students will sharpen their interpersonal effectiveness in communications, collaboration and engagement. This course is a partnership with MCCY through its SG Cares Office."
   },
   {
     "value": "GEN2070Y",
@@ -87,6 +96,7 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "GEN",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "ComLink is a nationwide initiative to befriend disadvantaged families with young children by providing comprehensive support that would help propel them towards realizing their own aspirations. In this course, students will learn key concepts in volunteerism, and essential skills, including communications, collaboration, conflict management, and family befriending. They will then apply these skills as ComLink Befrienders through regular home visitations, needs assessment, and connecting the families with community resources, journeying with them towards stability, self-reliance and social mobility. Students will thus develop character, empathy, and personal effectiveness."
   }
 ]

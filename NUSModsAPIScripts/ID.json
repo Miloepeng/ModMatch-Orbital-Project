@@ -6,7 +6,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "The course introduces students to how cities are governed, planned, developed and managed to achieve the liveability outcomes of quality of life, sustainable environment and a competitive economy using the case study of Singapore and other cities, through a systems thinking lens. Students will understand the role that urban systems professionals, such as urban policymakers, planners, architects, engineers, real estate consultants and managers play in achieving liveable city outcomes in an integrated way, through combining their individual expertise in different disciplines.The course introduces students to how cities are governed, planned, developed and managed to achieve the liveability outcomes of quality of life, sustainable environment and a competitive economy using the case study of Singapore and other cities, through a systems thinking lens. Students will understand the role that urban systems professionals, such as urban policymakers, planners, architects, engineers, real estate consultants and managers play in achieving liveable city outcomes in an integrated way, through combining their individual expertise in different disciplines."
   },
   {
     "value": "EG2501",
@@ -15,7 +16,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "The module introduces students to how cities are governed, planned, developed and managed to achieve the liveability outcomes of quality of life, sustainable environment and a competitive economy using the case study of Singapore and other cities, through a systems thinking lens. Students will understand the role that urban systems professionals, such as urban policymakers, planners, architects, engineers, real estate consultants and managers play in achieving liveable city outcomes in an integrated way, through combining their individual expertise in different disciplines."
   },
   {
     "value": "DTK1234",
@@ -24,7 +26,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "In this course, students use design principles to develop their creative potential and practise design thinking using a people-centered approach to solve problems and create new possibilities. Through practical activities, students will discover tools and mindsets that guide them in navigating ambiguity in a creative process, observing and learning from others in unfamiliar contexts, and generating and experimenting with ideas quickly. While students draw on design thinking as a personal creative skillset, they will also value the impact of design that affords people the opportunity and privilege to shape the world that they, and others, inhabit."
   },
   {
     "value": "EG1311",
@@ -33,7 +36,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course covers the fundamentals of engineering design and prototyping. Students will learn design principles and tools through lectures and engage in experiential learning through group design projects. A stage-based design process will be covered. Students will develop skills in Arduino-controlled electronics, CAD modelling, and rapid prototyping to demonstrate their ideas."
   },
   {
     "value": "IE2141",
@@ -42,7 +46,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "The course aims to introduce students to the fundamental concepts and underlying principles of system thinking, design and dynamics. It will provide students with an understanding of systems thinking and applying systems dynamics modelling to describe and simulate real world problems. At the end of the course, students should have the necessary knowledge and abilities to define, analyse, design, and develop a system dynamics model that simulates a specific problem and recommend solutions for different scenarios."
   },
   {
     "value": "PF1101",
@@ -51,7 +56,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "The course covers the fundamental concepts of project management, identifying nine broad project management knowledge areas. Students are given an introduction to theories relating to the management of project scope, time, cost, risk, quality, human resources, communications and procurement. The overall integration of these eight knowledge areas and the management of externalities as the ninth project management knowledge area is also emphasised."
   },
   {
     "value": "IS1128",
@@ -60,7 +66,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course introduces students to information technologies (IT) in organisations and the interplay between IT, work, management, and organisations. Specifically, the course will examine the impacts of modern IT and the related artificial intelligence (AI) technologies on knowledge workers, teamwork, work design, management practices and the organization. Students will learn about the multifaceted roles that IT can play to support communication, collaboration and organizational improvements in operations, planning and decision making. They will also learn to apply strategic thinking to identify opportunities for IT-enabled innovations and issues involving information systems (IS) adoption and deployment."
   },
   {
     "value": "IS2218",
@@ -69,7 +76,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course introduces the world of digital platforms and helps understand what makes them click. From network effects to monetization strategies to metrics, students are exposed to the underlying nuts and bolts of creating successful digital platforms. Digital platforms \u2013 whose value proposition differs from the traditional 'pipeline' business paradigm \u2013 still employ certain business fundamentals such as financial statement analysis, customer lifetime value, pricing, etc. The course also curates these fundamentals and applies them to a platform setting. Overall, the course aims to equip students to critically analyze digital platforms and serve as an impetus to creating their own!"
   },
   {
     "value": "IS2238",
@@ -78,7 +86,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "Businesses have been revolutionised with the introduction of new information technologies (IT) and artificial intelligence (AI). The purpose of this course is to provide students with an understanding of the key economic concepts to operate and be a successful IT-enabled and/or AI-driven business and to impart an appreciation of the economic impacts of IT and AI at the firm, market, and societal levels. Students will learn about competitive market analysis, IT-related economic issues of pricing and bundling, information asymmetry and uncertainty, as well as AI-related topics of automated decision, and economic impacts of AI technologies."
   },
   {
     "value": "HSH1000",
@@ -87,7 +96,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "What does it mean to be human? What triumphs and struggles, hopes and responsibilities go along with calling ourselves \u201chuman\u201d? The course introduces students to creative and analytical works from various times and places that explore morality, society, and identity from different perspectives. In reading and discussing them, students hone humanistic critical thinking skills that they can apply in the classroom and beyond. They will experience how words shape worlds, and discover how enduring concerns of being human have defined us, just as we continue to redefine them through our actions and expressions.What does it mean to be human? What triumphs and struggles, hopes and responsibilities go along with calling ourselves \u201chuman\u201d? The course introduces students to creative and analytical works from various times and places that explore morality, society, and identity from different perspectives. In reading and discussing them, students hone humanistic critical thinking skills that they can apply in the classroom and beyond. They will experience how words shape worlds, and discover how enduring concerns of being human have defined us, just as we continue to redefine them through our actions and expressions."
   },
   {
     "value": "HSS1000",
@@ -96,7 +106,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This interdisciplinary course equips students with foundational skills for learning in the social sciences. The primary aim is to encourage critical thinking about social complexity in relation to pertinent issues affecting contemporary societies in Singapore and elsewhere. Students will learn how social scientists collect and interpret evidence to inform knowledge and practice. Through comparisons of Singapore with other cases in Asia and beyond, students will gain the ability to analyse the context-dependent nature of human behaviour and social change. The course will help students provide more nuanced responses to complex social questions and see possibilities for the future of society.This interdisciplinary course equips students with foundational skills for learning in the social sciences. The primary aim is to encourage critical thinking about social complexity in relation to pertinent issues affecting contemporary societies in Singapore and elsewhere. Students will learn how social scientists collect and interpret evidence to inform knowledge and practice. Through comparisons of Singapore with other cases in Asia and beyond, students will gain the ability to analyse the context-dependent nature of human behaviour and social change. The course will help students provide more nuanced responses to complex social questions and see possibilities for the future of society."
   },
   {
     "value": "HSA1000",
@@ -105,7 +116,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course adopts a multidisciplinary and comparative approach to the study of Asia and its regions. It will expose students to diverse perspectives and challenges that affect Singapore and other Asian societies such as ethnic and religious diversity, colonial histories, migration and social inequalities. The course equips students with conceptual and methodological tools to understand regional production in Asia, and emphasises experiential learning through field studies at various sites in Singapore. Students will leave the course with the critical skills necessary for a deep appreciation of the social, political and cultural diversity in Asia.This course adopts a multidisciplinary and comparative approach to the study of Asia and its regions. It will expose students to diverse perspectives and challenges that affect Singapore and other Asian societies such as ethnic and religious diversity, colonial histories, migration and social inequalities. The course equips students with conceptual and methodological tools to understand regional production in Asia, and emphasises experiential learning through field studies at various sites in Singapore. Students will leave the course with the critical skills necessary for a deep appreciation of the social, political and cultural diversity in Asia."
   },
   {
     "value": "HSI1000",
@@ -114,7 +126,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "What is Science? How does it work? Why does it work? Not only will this course help answer these questions, but it will also hone the skills needed to negotiate a world in the post-truth era. These skills derive from the scientific method; the characteristic of modern science that has made it without a doubt the most successful endeavour in human history. These questions and these skills will be woven within a rich history of scientific accomplishment, culminating in an understanding of the frightening challenges we face to mitigate climate change and biodiversity loss."
   },
   {
     "value": "HSI2001",
@@ -123,7 +136,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Given the abundance and oftentimes conflicting nature of health information and advice, how do we decide what to believe and what not to? This course aims to develop students\u2019 scientific thinking capacity to distinguish good science from bad science using interesting authentic case studies and everyday examples on selected health topics. Through a deeper appreciation of scientific inquiry in the context of health sciences, this course hones students\u2019 critical thinking skills, empowering them to be critical consumers and creators of new knowledge."
   },
   {
     "value": "HSI2002",
@@ -132,7 +146,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Modern sporting and exercise practices are mostly established based on contemporary research evidence; some, however, can just be anecdotal beliefs influenced by other non-scientific factors including those of sociocultural, media and commercial origin. This course draws on the fundamentals of sports physiology and nutrition to provide an evidence-based platform for inquiry-based evaluation of contemporary sporting practices, technologies and aids. It encourages critical analysis of contemporary sporting issues and also seeks to address common challenges faced by professional athletes. Practical classes will involve considerable participation in physical activities in the form of running and incremental exercise tests to promote experiential learning."
   },
   {
     "value": "HSI2003",
@@ -141,7 +156,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "This course examines the evolution of ideas in molecular biology, focusing on approaches to investigations, how these lead to scientific knowledge, and the practices of scientists. Students will learn how the discovery of the DNA structure ultimately led to tools for gene therapy, enabled by the interplay between disciplines beyond molecular biology. Students will embark on mini-projects, and learn how scientists function within communities in the pursuit of major discoveries. This course will equip students with the knowledge and skills needed to understand and evaluate the impact of scientific advances on society and how society in turn shapes scientific endeavours."
   },
   {
     "value": "HSI2004",
@@ -150,7 +166,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "Cell culture meat aims to serve as an alternative protein source through an unconventional meat harvesting method. It is produced via the cultivation of specific stem cells enabling the formation of bio-artificial muscles as a form, of animal proteins for consumption. The application of such technology is a promising way to increase protein production in a resource-scarce environment. The students should be able to critically evaluate the scientific merit of cell-based protein production using the industrial biotechnology method and describe how potential societal, ethical and legal factors can affect the successful introduction of such food sources to the consumers."
   },
   {
     "value": "HSI2005",
@@ -159,7 +176,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Have you ever wonder what does science have to say about our past, present and future? This course will bring to you the science stories of the origin of the universe, matter, earth, life, species, and humans, that led to our present day and eventually determine our future. It will make connections to why these stories are relevant to you. As science intersects with society, we experienced not only its transforming power but also its related ethical, societal and environmental concerns. Students will encounter ideas, innovations, warnings, and hopes ignited by science that might make them reimagine the future."
   },
   {
     "value": "HSI2007",
@@ -168,7 +186,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "Conflicting messages, inflated claims and quackery on the effects of foods/ diets often confuse our food choices. How do we separate food science facts from science fiction? We will deconstruct food at the physical, chemical and biological level and use this knowledge to examine and explain controversies that often surround food and its relationship with us. Students will be able to make informed decisions on food choices at the individual level, at the population level and appreciate what food needs to be for the future."
   },
   {
     "value": "HSI2008",
@@ -177,7 +196,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "Course is intended for all CHS students interested in the way the natural sciences (physics, mathematics and chemistry) did progress through the ages, and the cultural background and impact of these developments. The main focus will not be solely on the triumphs of science: As much as looking at success stories, we will also examine cases when things went wrong and try to learn about the reasons and conditions that lead to such problematic situations. We will examine how progress depends critically not only on conditions within the scientific communities but also on wider societal, economic and cultural influences."
   },
   {
     "value": "HSI2009",
@@ -186,7 +206,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course starts with an introduction to the historical perspective of astronomy. Planets then stood out as wanderers that moved among the stars. Over history, the study of planets has contributed much to science and the scientific method, and continues to do so today, illustrating the point that as we take in new discoveries, we may be forced to relook our old definitions and theories."
   },
   {
     "value": "HSI2010",
@@ -195,7 +216,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "The development of space technology during the mid-20th century ushered in a new age of discovery in which outer space is explored for advancing scientific research, commercial use, and ensuring the future survival of humanity. This course illustrates the use of scientific method to study Solar System objects and their physical characteristics, particularly the presence of water and potential biomarkers, and the multiple considerations required in the development of technology for launching artificial satellites, space tourism, asteroid mining, deflecting a potentially hazardous asteroid, and space colonization."
   },
   {
     "value": "HSI2011",
@@ -204,7 +226,8 @@
     "passFail": "False",
     "hasGroupProject": "True",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "Scientific description of the smallest components of matter (atoms and sub-atomic particles, light) has become known as \u201cquantum theory\u201d. It is one of the greatest triumphs of science: it is not a formalisation of evidence and intuition, but rather harnesses phenomena that are invisible to the naked eye and counter-intuitive. It shows how science can stand behind apparently outlandish claims, and put this knowledge to practical use. The \u201cexperimental metaphysics\u201d aspect of quantum physics is introduced through the description of paradigmatic phenomena. Then the history and current challenges are presented, with a special focus on the emerging quantum technologies."
   },
   {
     "value": "HSI2013",
@@ -213,7 +236,8 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "True"
+    "hasMCQ": "True",
+    "desc": "This course is intended for all CHS students interested in the application of science and scientific inquiry to a subject which is believed by most people to be far removed from science - music. The course covers the historical discovery and evolution of the musical scale systems on which all music is based, the physics and technology of musical instruments such as the modern piano, and more modern developments such as electronic music and instruments and the digitisation of music."
   },
   {
     "value": "HSI2014",
@@ -222,6 +246,7 @@
     "passFail": "False",
     "hasGroupProject": "False",
     "GEPillar": "NIL",
-    "hasMCQ": "False"
+    "hasMCQ": "False",
+    "desc": "Medical technology is one of the most important applications of science and technology; it provides the means to protect and preserve lives in today\u2019s world of ageing population, proliferation of chronic diseases, global pandemics and rising pollution. This course discusses the fusion of physics of biology that forms the basis of modern medical imaging and radiation therapy technology, and traces its roots from the foundational theories to its implementation in medical procedures. Students will learn how such technology is applied to disease management, as well as the modern innovations that pave the way towards the future of healthcare."
   }
 ]
