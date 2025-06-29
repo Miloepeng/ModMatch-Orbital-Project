@@ -5,6 +5,7 @@ import GEPillarStatus from "../components/DegReq/1_GEPillar";
 import ComputingEthics from "../components/DegReq/2_ComputingEthics";
 import CSFoundation from "../components/DegReq/4_CSFoundation";
 import MathScience from "../components/DegReq/6_MathScience";
+import CDID from "../components/DegReq/3_CDID"
 
 export default function DegReqPage() {
   const [userModules, setModules] = useState<Module[]>([]);
@@ -47,6 +48,7 @@ export default function DegReqPage() {
       <h1>Degree Requirements</h1>
       <GEPillarStatus userModules={userModules} />
       <ComputingEthics userModules={userModules} /> 
+      <CDID userModules={userModules}/>
       <CSFoundation userModules={userModules} />
       <MathScience userModules={userModules} />
     </div>
