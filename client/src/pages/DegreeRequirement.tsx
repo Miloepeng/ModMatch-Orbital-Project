@@ -102,17 +102,17 @@ export default function DegReqPage() {
       } else {
         Mods_UE.push(module);
       }
-    } else if (module && ReqState[6] + ReqState[7] < 3) {
+    } else if (module && ReqState[6] + ReqState[7] < 3 && (ID_MODULES.includes(module.name)|| CD_MODULES.includes(module.name))) {
         if (ID_MODULES.includes(module.name)) {
           Mods_CDID.push(module);
           ReqState[6]++;
-        } else if (ReqState[7] == 0 && CD_MODULES.includes(module.name)) {
+        } else if (ReqState[7] == 0) {
           Mods_CDID.push(module);
           ReqState[7] = 1;
-        } else if (ReqState[7] == 1 && CD_MODULES.includes(module.name)) {
+        } else {
           Mods_UE.push(module);
         }
-    } else {
+    } else if (module && module.name != "IS1108"){
       Mods_UE.push(module);
     }
   }
