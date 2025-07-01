@@ -94,14 +94,9 @@ export default function DegReqPage() {
       Mods_CSFoundation.push(module);
     } else if (module && MathModList.includes(module.name)) {
       Mods_MathScience.push(module);
-    } else if (module && GELookup[module.name] && GEPILLARS.includes(GELookup[module.name])) {
-      const idx: number = GEPILLARS.indexOf(GELookup[module.name]);
-      if (ReqState[idx] == 0) {
-        Mods_GEPillar.push(module);
-        ReqState[idx] = 1;
-      } else {
-        Mods_UE.push(module);
-      }
+    } else if (module && GELookup[module.name] && GEPILLARS.includes(GELookup[module.name]) && ReqState[GEPILLARS.indexOf(GELookup[module.name])] == 0) {
+      Mods_GEPillar.push(module);
+      ReqState[GEPILLARS.indexOf(GELookup[module.name])] = 1;
     } else if (module && ReqState[6] + ReqState[7] < 3 && (ID_MODULES.includes(module.name)|| CD_MODULES.includes(module.name))) {
         if (ID_MODULES.includes(module.name)) {
           Mods_CDID.push(module);
