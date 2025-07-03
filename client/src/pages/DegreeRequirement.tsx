@@ -13,7 +13,7 @@ import CSBreadthDepth from "../components/DegReq/5_CSBreadthDepth";
 import UE from "../components/DegReq/7_UE";
 
 export default function DegReqPage() {
-  const [userModules, setModules] = useState<Module[]>([]);
+  let [userModules, setModules] = useState<Module[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -111,6 +111,11 @@ export default function DegReqPage() {
       CSBDState[1] = 7;
     }
   }
+
+  // Easy fix to sort modules so that it auto balances between modules that can count towards GE or CD/ID
+  const tempA = userModules.filter(module => GEPILLARS.includes(GELookup[module.name]) && !(ID_MODULES.includes(module.name)|| CD_MODULES.includes(module.name)));
+  const tempB = userModules.filter(module => !(GEPILLARS.includes(GELookup[module.name]) && !(ID_MODULES.includes(module.name)|| CD_MODULES.includes(module.name))));
+  userModules = tempA.concat(tempB);
 
   for (let i = 0; i < userModules.length; i++) {
     const module = userModules[i];
