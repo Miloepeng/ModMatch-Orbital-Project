@@ -17,13 +17,12 @@ export default function UE({ userModules }: Props) {
   return (
     <CollapseSection
       title="UE Modules"
-      headerExtra={`🎓 ${totalMC}/${MAX_MC} MC completed`}
+      headerExtra={`${totalMC}/${MAX_MC} MC completed`}
     >
-      <p className="deg-req-subtitle">UE modules</p>
       <ul className="deg-req-list">
         {userModules.map((mod) => (
           <li key={mod.id} className="deg-req-item">
-            <strong>{mod.name}</strong>: ✅ Fulfilled
+            <strong>{mod.name}</strong>
           </li>
         ))}
       </ul>

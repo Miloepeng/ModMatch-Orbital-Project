@@ -34,12 +34,12 @@ export default function CDIDStatus({ userModules }: Props) {
   return (
     <CollapseSection
       title="CD-ID Modules"
-      headerExtra={`🎓 ${totalSelectedModules * MC_PER_MODULE}/${MAX_MC} MC completed`}
+      headerExtra={`${totalSelectedModules * MC_PER_MODULE}/${MAX_MC} MC completed`}
     >
       <p className="deg-req-subtitle">
-        {isIDCriteriaFulfilled && isTotalCriteriaFulfilled
+        {/*{isIDCriteriaFulfilled && isTotalCriteriaFulfilled
           ? "✅ Completed"
-          : "❌ Not Completed"}
+          : "❌ Not Completed"}*/}
       </p>
       {/*<p className="deg-req-description">
         The requirement is to complete:
@@ -48,6 +48,19 @@ export default function CDIDStatus({ userModules }: Props) {
         <br />
         - A total of 3 modules (from ID.json and CD.json combined)
       </p>*/}
+
+      <div className="deg-req-status">
+        <ul>
+          <li className={isIDCriteriaFulfilled ? "fulfilled" : "not-fulfilled"}>
+            <strong className = "cdid">At least 2 ID modules</strong>:{" "}
+            {isIDCriteriaFulfilled ? "✅ Fulfilled" : "❌ Not fulfilled"}
+          </li>
+          <li className={isTotalCriteriaFulfilled ? "fulfilled" : "not-fulfilled"}>
+            <strong className = "cdid">Total of 3 modules</strong>:{" "}
+            {isTotalCriteriaFulfilled ? "✅ Fulfilled" : "❌ Not fulfilled"}
+          </li>
+        </ul>
+      </div>
 
       <div className="deg-req-modules">
         <h3>Modules Completed:</h3>
@@ -62,19 +75,6 @@ export default function CDIDStatus({ userModules }: Props) {
               <strong>{mod.name}</strong> (CD module)
             </li>
           ))}
-        </ul>
-      </div>
-
-      <div className="deg-req-status">
-        <ul>
-          <li className={isIDCriteriaFulfilled ? "fulfilled" : "not-fulfilled"}>
-            <strong>At least 2 ID modules</strong>:{" "}
-            {isIDCriteriaFulfilled ? "✅ Fulfilled" : "❌ Not fulfilled"}
-          </li>
-          <li className={isTotalCriteriaFulfilled ? "fulfilled" : "not-fulfilled"}>
-            <strong>Total of 3 modules</strong>:{" "}
-            {isTotalCriteriaFulfilled ? "✅ Fulfilled" : "❌ Not fulfilled"}
-          </li>
         </ul>
       </div>
     </CollapseSection>

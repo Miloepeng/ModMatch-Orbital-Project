@@ -31,9 +31,8 @@ export default function CSFoundation({ userModules }: Props) {
   return (
     <CollapseSection
       title="Computer Science Foundation"
-      headerExtra={`🎓 ${completedMC}/${MAX_MC} MC completed`}
+      headerExtra={`${completedMC}/${MAX_MC} MC completed`}
     >
-      <p className="deg-req-subtitle">Core CS foundation modules required</p>
       <ul className="deg-req-list">
         {REQUIRED_MODULES.map((mod) => (
           <li
@@ -42,7 +41,7 @@ export default function CSFoundation({ userModules }: Props) {
               takenModules.has(mod) ? "fulfilled" : "not-fulfilled"
             }`}
           >
-            <strong>{mod}</strong>:{" "}
+            <strong className = "cs-foundation">{mod}</strong>:{" "}
             {takenModules.has(mod) ? "✅ Fulfilled" : "❌ Not fulfilled"}
           </li>
         ))}

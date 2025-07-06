@@ -11,6 +11,7 @@ import MathScience from "../components/DegReq/6_MathScience";
 import CDID from "../components/DegReq/3_CDID"
 import CSBreadthDepth from "../components/DegReq/5_CSBreadthDepth";
 import UE from "../components/DegReq/7_UE";
+import '../pages/DegreeRequirement.css';
 
 export default function DegReqPage() {
   let [userModules, setModules] = useState<Module[]>([]);
@@ -198,15 +199,22 @@ export default function DegReqPage() {
   if (loading) return <p>Loading degree requirements...</p>;
 
   return (
-    <div>
-      <h1>Degree Requirements</h1>
-      <GEPillarStatus userModules={Mods_GEPillar} />
-      <ComputingEthics userModules={userModules} /> 
-      <CDID userModules={Mods_CDID}/>
-      <CSFoundation userModules={Mods_CSFoundation} />
-      <CSBreadthDepth userModules={Mods_CSBreadthDepth} />
-      <MathScience userModules={Mods_MathScience} />
-      <UE userModules={Mods_UE}/>
-    </div>
+    <>
+      <div className="mid-section">
+        <h1 className="mid-section-title">Degree Requirements</h1>
+        <p className="mid-section-content">
+          Check what modules you need to complete your degree
+        </p>
+      </div>
+      <div>
+        <GEPillarStatus userModules={Mods_GEPillar} />
+        <ComputingEthics userModules={userModules} /> 
+        <CDID userModules={Mods_CDID}/>
+        <CSFoundation userModules={Mods_CSFoundation} />
+        <CSBreadthDepth userModules={Mods_CSBreadthDepth} />
+        <MathScience userModules={Mods_MathScience} />
+        <UE userModules={Mods_UE}/>
+      </div>
+    </>
   );
 }

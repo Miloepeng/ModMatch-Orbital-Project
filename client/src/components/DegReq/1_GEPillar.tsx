@@ -46,9 +46,8 @@ export default function GEPillarStatus({ userModules }: Props) {
   return (
     <CollapseSection
       title="General Education Pillars"
-      headerExtra={`🎓 ${completedMC}/${MAX_MC} MC completed`}
+      headerExtra={`${completedMC}/${MAX_MC} MC completed`}
     >
-      <p className="deg-req-subtitle">GE Pillar Fulfilment Status</p>
       <ul className="deg-req-list">
         {GEPILLARS.map((pillar) => (
           <li
@@ -57,7 +56,7 @@ export default function GEPillarStatus({ userModules }: Props) {
               fulfilled.has(pillar) ? "fulfilled" : "not-fulfilled"
             }`}
           >
-            <strong>{pillar}</strong>:{" "}
+            <strong className="pillar">{pillar}</strong>:{" "}
             {fulfilled.has(pillar) ? "✅ Fulfilled" : "❌ Not fulfilled"}
           </li>
         ))}

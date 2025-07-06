@@ -21,9 +21,8 @@ export default function MathScience({ userModules }: Props) {
   return (
     <CollapseSection
       title="Mathematics and Sciences"
-      headerExtra={`🎓 ${completedMC}/${MAX_MC} MC completed`}
+      headerExtra={`${completedMC}/${MAX_MC} MC completed`}
     >
-      <p className="deg-req-subtitle">Required mathematical and statistical modules</p>
       <ul className="deg-req-list">
         {REQUIRED_MODULES.map((mod) => (
           <li
@@ -32,7 +31,7 @@ export default function MathScience({ userModules }: Props) {
               takenModules.has(mod) ? "fulfilled" : "not-fulfilled"
             }`}
           >
-            <strong>{mod}</strong>:{" "}
+            <strong className="math-sci">{mod}</strong>:{" "}
             {takenModules.has(mod) ? "✅ Fulfilled" : "❌ Not fulfilled"}
           </li>
         ))}
