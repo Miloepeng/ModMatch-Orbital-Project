@@ -270,19 +270,34 @@ useEffect(() => {
   );
 
   useEffect(() => {
-  const loadUserTimetables = async () => {
-    const { data: { user } } = await supabase.auth.getUser();
-    if (user) {
-      const [a, b] = await Promise.all([
-        loadTimetable(user.id, "A"),
-        loadTimetable(user.id, "B"),
-      ]);
-      setTimetableA(a);
-      setTimetableB(b);
-    }
+  const loadUserTimetables = async (userId: string) => {
+    const [a, b] = await Promise.all([
+      loadTimetable(userId, "A"),
+      loadTimetable(userId, "B"),
+    ]);
+    setTimetableA(a);
+    setTimetableB(b);
   };
 
-  loadUserTimetables();
+  // Try getUser() immediately
+  supabase.auth.getUser().then(({ data: { user } }) => {
+    if (user) {
+      loadUserTimetables(user.id);
+    }
+  });
+
+  // Also wait for auth state to be ready if not immediately available
+  const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
+    if (event === "SIGNED_IN" || event === "INITIAL_SESSION") {
+      if (session?.user) {
+        loadUserTimetables(session.user.id);
+      }
+    }
+  });
+
+  return () => {
+    authListener.subscription.unsubscribe();
+  };
 }, []);
 
   return (
