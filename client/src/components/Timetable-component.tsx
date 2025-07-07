@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./timetable-component.css";
 import moduleData from "../utils/Timetable.json";
 import { useEffect } from "react";
+import { supabase } from "../supabaseClient";
 
 type Lesson = {
   moduleCode: string;
@@ -40,7 +41,53 @@ const MODULES: Record<string, Lesson[]> = Object.fromEntries(
 
 type ModuleCode = keyof typeof MODULES;
 
+async function saveTimetable(userId: string, name: "A" | "B", lessons: Lesson[]) {
+  await supabase
+    .from("timetables")
+    .delete()
+    .eq("user_id", userId)
+    .eq("timetable_name", name);
 
+  const { error } = await supabase.from("timetables").insert(
+    lessons.map((lesson) => ({
+      user_id: userId,
+      timetable_name: name,
+      module_code: lesson.moduleCode,
+      class_no: lesson.classNo,
+      day: lesson.day,
+      start_time: lesson.startTime,
+      end_time: lesson.endTime,
+      venue: lesson.venue,
+      lesson_type: lesson.lessonType,
+      weeks: lesson.weeks,
+      covid_zone: lesson.covidZone,
+    }))
+  );
+
+  if (error) throw error;
+}
+
+async function loadTimetable(userId: string, name: "A" | "B"): Promise<Lesson[]> {
+  const { data, error } = await supabase
+    .from("timetables")
+    .select("*")
+    .eq("user_id", userId)
+    .eq("timetable_name", name);
+
+  if (error) throw error;
+
+  return data.map((row) => ({
+    moduleCode: row.module_code,
+    classNo: row.class_no,
+    day: row.day,
+    startTime: row.start_time,
+    endTime: row.end_time,
+    venue: row.venue,
+    lessonType: row.lesson_type,
+    weeks: row.weeks,
+    covidZone: row.covid_zone,
+  }));
+}
 
 function Timetable({ lessons }: { lessons: Lesson[] }) {
   const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
@@ -121,11 +168,23 @@ useEffect(() => {
   function addToA(mod: string) {
     const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassA[mod]);
     if (selected) {
-      setTimetableA((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
+      setTimetableA((prev) => {
+        const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
+        supabase.auth.getUser().then(({ data: { user } }) => {
+          if (user) saveTimetable(user.id, "A", updated);
+          });
+        return updated;
+      });
       setAddedModulesA((prev) => Array.from(new Set([...prev, mod])));
 
       if (syncedModules.includes(mod)) {
-        setTimetableB((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
+        setTimetableB((prev) => {
+          const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
+          supabase.auth.getUser().then(({ data: { user } }) => {
+            if (user) saveTimetable(user.id, "B", updated);
+            });
+          return updated;
+          });
         setAddedModulesA((prev) => Array.from(new Set([...prev, mod])));
       }
     }
@@ -134,11 +193,23 @@ useEffect(() => {
   function addToB(mod: string) {
     const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassB[mod]);
     if (selected) {
-      setTimetableB((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
+      setTimetableB((prev) => {
+        const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
+        supabase.auth.getUser().then(({ data: { user } }) => {
+          if (user) saveTimetable(user.id, "B", updated);
+        });
+      return updated;
+});
       setAddedModulesB((prev) => Array.from(new Set([...prev, mod])));
 
       if (syncedModules.includes(mod)) {
-        setTimetableA((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
+        setTimetableA((prev) => {
+        const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
+        supabase.auth.getUser().then(({ data: { user } }) => {
+          if (user) saveTimetable(user.id, "A", updated);
+        });
+        return updated;
+});
         setAddedModulesB((prev) => Array.from(new Set([...prev, mod])));
       }
     }
@@ -157,10 +228,22 @@ useEffect(() => {
 
       if (aHas && !bHas) {
         const toAdd = timetableA.filter((l) => l.moduleCode === mod);
-        setTimetableB((prev) => [...prev.filter((l) => l.moduleCode !== mod), ...toAdd]);
+        setTimetableB((prev) => {
+          const updated = [...prev.filter((l) => l.moduleCode !== mod), ...toAdd];
+          supabase.auth.getUser().then(({ data: { user } }) => {
+            if (user) saveTimetable(user.id, "B", updated);
+          });
+          return updated;
+          });
       } else if (!aHas && bHas) {
         const toAdd = timetableB.filter((l) => l.moduleCode === mod);
-        setTimetableA((prev) => [...prev.filter((l) => l.moduleCode !== mod), ...toAdd]);
+        setTimetableA((prev) => {
+          const updated = [...prev.filter((l) => l.moduleCode !== mod), ...toAdd];
+          supabase.auth.getUser().then(({ data: { user } }) => {
+            if (user) saveTimetable(user.id, "A", updated);
+          });
+          return updated;
+          });
       }
 
       setSyncedModules((prev) => [...prev, mod]);
@@ -185,6 +268,22 @@ useEffect(() => {
   const uniqueModuleCodes = Array.from(
   new Set([...timetableA, ...timetableB].map((l) => l.moduleCode))
   );
+
+  useEffect(() => {
+  const loadUserTimetables = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (user) {
+      const [a, b] = await Promise.all([
+        loadTimetable(user.id, "A"),
+        loadTimetable(user.id, "B"),
+      ]);
+      setTimetableA(a);
+      setTimetableB(b);
+    }
+  };
+
+  loadUserTimetables();
+}, []);
 
   return (
     <div style={{ display: "flex", gap: "2rem", padding: "1rem" }}>
@@ -233,15 +332,21 @@ useEffect(() => {
               if (addedModulesA.includes(mod)) {
                 const selected = MODULES[mod]?.find((l) => l.classNo === classNo);
                 if (selected) {
-                  setTimetableA((prev) => [
-                  ...prev.filter((l) => l.moduleCode !== mod),
-                  selected,
-                  ]);
+                  setTimetableA((prev) => {
+                    const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
+                    supabase.auth.getUser().then(({ data: { user } }) => {
+                      if (user) saveTimetable(user.id, "A", updated);
+                    });
+                    return updated;
+                    });
                   if (syncedModules.includes(mod)) {
-                    setTimetableB((prev) => [
-                    ...prev.filter((l) => l.moduleCode !== mod),
-                    selected,
-                    ]);
+                    setTimetableB((prev) => {
+                      const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
+                      supabase.auth.getUser().then(({ data: { user } }) => {
+                      if (user) saveTimetable(user.id, "B", updated);
+                      });
+                      return updated;
+                      });
                     setSelectedClassB((prev) => ({
                     ...prev,
                     [mod]: selected.classNo,
@@ -261,14 +366,20 @@ useEffect(() => {
           {isAdded ? (
             <button
               onClick={() => {
-              setTimetableA((prev) => prev.filter((l) => l.moduleCode !== mod));
+              const updatedA = timetableA.filter((l) => l.moduleCode !== mod)
+              setTimetableA(updatedA);
               setAddedModulesA((prev) => prev.filter((m) => m !== mod));
 
               if (syncedModules.includes(mod)) {
-                setTimetableB((prev) => prev.filter((l) => l.moduleCode !== mod));
+                const updatedB = timetableB.filter((l) => l.moduleCode !== mod)
+                setTimetableB(updatedB);
                 setAddedModulesB((prev) => prev.filter((m) => m !== mod));
-                }
-              }}
+
+                if (updatedA.length === 0 && updatedB.length === 0) {
+                  setSyncedModules((prev) => prev.filter((m) => m !== mod));
+                  }
+              }
+            }}
             >
             Remove {mod}
             </button>
@@ -335,15 +446,21 @@ useEffect(() => {
               if (addedModulesB.includes(mod)) {
                 const selected = MODULES[mod]?.find((l) => l.classNo === classNo);
                 if (selected) {
-                  setTimetableB((prev) => [
-                  ...prev.filter((l) => l.moduleCode !== mod),
-                  selected,
-                  ]);
+                 setTimetableB((prev) => {
+                  const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
+                  supabase.auth.getUser().then(({ data: { user } }) => {
+                    if (user) saveTimetable(user.id, "B", updated);
+                  });
+                  return updated;
+                  });
                   if (syncedModules.includes(mod)) {
-                    setTimetableA((prev) => [
-                    ...prev.filter((l) => l.moduleCode !== mod),
-                    selected,
-                    ]);
+                    setTimetableA((prev) => {
+                      const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
+                      supabase.auth.getUser().then(({ data: { user } }) => {
+                        if (user) saveTimetable(user.id, "A", updated);
+                      });
+                      return updated;
+                      });
                     setSelectedClassA((prev) => ({
                     ...prev,
                     [mod]: selected.classNo,
@@ -363,12 +480,28 @@ useEffect(() => {
             {isAdded ? (
               <button
                 onClick={() => {
-                setTimetableB((prev) => prev.filter((l) => l.moduleCode !== mod));
+                const updatedB = timetableB.filter((l) => l.moduleCode !== mod);
+                setTimetableB(() => {
+                  supabase.auth.getUser().then(({ data: { user } }) => {
+                    if (user) saveTimetable(user.id, "B", updatedB);
+                  });
+                  return updatedB;
+                  });
                 setAddedModulesB((prev) => prev.filter((m) => m !== mod));
 
                 if (syncedModules.includes(mod)) {
-                  setTimetableA((prev) => prev.filter((l) => l.moduleCode !== mod));
+                  const updatedA = timetableA.filter((l) => l.moduleCode !== mod);
+                 setTimetableA(() => {
+                  supabase.auth.getUser().then(({ data: { user } }) => {
+                    if (user) saveTimetable(user.id, "A", updatedA);
+                  });
+                  return updatedA;
+                  });
                   setAddedModulesA((prev) => prev.filter((m) => m !== mod));
+
+                  if (updatedA.length === 0 && updatedB.length === 0) {
+                    setSyncedModules((prev) => prev.filter((m) => m !== mod));
+                  }
                 }
               }}
               >
