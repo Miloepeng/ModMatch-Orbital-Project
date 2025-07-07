@@ -132,6 +132,26 @@ export function TimetableComponent() {
 
   const [syncedModules, setSyncedModules] = useState<string[]>([]);
 
+  useEffect(() => {
+  const saveA = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (user) {
+      await saveTimetable(user.id, "A", timetableA);
+    }
+  };
+  saveA();
+  }, [timetableA]);
+
+useEffect(() => {
+  const saveB = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (user) {
+      await saveTimetable(user.id, "B", timetableB);
+    }
+  };
+  saveB();
+  }, [timetableB]);
+
   const moduleCodes = Object.keys(MODULES);
   const filteredModuleCodesA = searchCodeA
     ? moduleCodes.filter((code) =>
