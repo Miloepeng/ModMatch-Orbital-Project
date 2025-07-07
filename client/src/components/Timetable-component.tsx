@@ -132,6 +132,8 @@ export function TimetableComponent() {
 
   const [syncedModules, setSyncedModules] = useState<string[]>([]);
 
+  const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
   const saveA = async () => {
     const { data: { user } } = await supabase.auth.getUser();
@@ -187,6 +189,7 @@ useEffect(() => {
 
   function addToA(mod: string) {
     const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassA[mod]);
+    if (!loaded) return;
     if (selected) {
       setTimetableA((prev) => {
         const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
@@ -212,6 +215,7 @@ useEffect(() => {
 
   function addToB(mod: string) {
     const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassB[mod]);
+    if (!loaded) return;
     if (selected) {
       setTimetableB((prev) => {
         const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
@@ -301,9 +305,14 @@ useEffect(() => {
 
   // Try getUser() immediately
   supabase.auth.getUser().then(({ data: { user } }) => {
-    if (user) {
-      loadUserTimetables(user.id);
-    }
+  const loadUserTimetables = async (userId: string) => {
+    const [a, b] = await Promise.all([
+      loadTimetable(userId, "A"),
+      loadTimetable(userId, "B"),
+    ]);
+    setTimetableA(a);
+    setTimetableB(b);
+  };
   });
 
   // Also wait for auth state to be ready if not immediately available
@@ -366,6 +375,7 @@ useEffect(() => {
 
               if (addedModulesA.includes(mod)) {
                 const selected = MODULES[mod]?.find((l) => l.classNo === classNo);
+                if (!loaded) return;
                 if (selected) {
                   setTimetableA((prev) => {
                     const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
@@ -422,6 +432,7 @@ useEffect(() => {
           <button
             onClick={() => {
             const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassA[mod]);
+            if (!loaded) return;
             if (selected) {
               setTimetableA((prev) => [...prev, selected]);
               setAddedModulesA((prev) => [...prev, mod]);
@@ -480,6 +491,7 @@ useEffect(() => {
 
               if (addedModulesB.includes(mod)) {
                 const selected = MODULES[mod]?.find((l) => l.classNo === classNo);
+                if (!loaded) return;
                 if (selected) {
                  setTimetableB((prev) => {
                   const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
@@ -546,6 +558,7 @@ useEffect(() => {
               <button
                 onClick={() => {
                   const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassB[mod]);
+                  if (!loaded) return;
                   if (selected) {
                     setTimetableB((prev) => [...prev, selected]);
                     setAddedModulesB((prev) => [...prev, mod]);
