@@ -42,11 +42,18 @@ const MODULES: Record<string, Lesson[]> = Object.fromEntries(
 type ModuleCode = keyof typeof MODULES;
 
 async function saveTimetable(userId: string, name: "A" | "B", lessons: Lesson[]) {
-  await supabase
+  const deleteResp = await supabase
     .from("timetables")
     .delete()
     .eq("user_id", userId)
     .eq("timetable_name", name);
+
+  if (deleteResp.error) {
+    console.error("Supabase delete error:", deleteResp.error.message);
+    throw deleteResp.error;
+  }
+
+  console.log("Inserting these lessons:", lessons);
 
   const { error } = await supabase.from("timetables").insert(
     lessons.map((lesson) => ({
@@ -64,7 +71,10 @@ async function saveTimetable(userId: string, name: "A" | "B", lessons: Lesson[])
     }))
   );
 
-  if (error) throw error;
+  if (error) {
+    console.error("Supabase insert error:", error.message);
+    throw error;
+  }
 }
 
 async function loadTimetable(userId: string, name: "A" | "B"): Promise<Lesson[]> {
