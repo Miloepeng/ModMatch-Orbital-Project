@@ -292,26 +292,21 @@ useEffect(() => {
     setTimetableB(b);
   };
 
-  // Try getUser() immediately
+  // Immediately load if the user is already logged in
   supabase.auth.getUser().then(({ data: { user } }) => {
-  const loadUserTimetables = async (userId: string) => {
-    const [a, b] = await Promise.all([
-      loadTimetable(userId, "A"),
-      loadTimetable(userId, "B"),
-    ]);
-    setTimetableA(a);
-    setTimetableB(b);
-  };
+    if (user) {
+      loadUserTimetables(user.id);
+    }
   });
 
-  // Also wait for auth state to be ready if not immediately available
-  const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
-    if (event === "SIGNED_IN" || event === "INITIAL_SESSION") {
-      if (session?.user) {
+  // Listen for authentication changes (e.g., login)
+  const { data: authListener } = supabase.auth.onAuthStateChange(
+    (event, session) => {
+      if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user) {
         loadUserTimetables(session.user.id);
       }
     }
-  });
+  );
 
   return () => {
     authListener.subscription.unsubscribe();
