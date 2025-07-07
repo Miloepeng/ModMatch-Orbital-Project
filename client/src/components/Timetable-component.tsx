@@ -134,25 +134,38 @@ export function TimetableComponent() {
 
   const [loaded, setLoaded] = useState(false);
 
-  useEffect(() => {
-  const saveA = async () => {
-    const { data: { user } } = await supabase.auth.getUser();
-    if (user) {
-      await saveTimetable(user.id, "A", timetableA);
-    }
+ useEffect(() => {
+  const loadUserTimetables = async (userId: string) => {
+    const [a, b] = await Promise.all([
+      loadTimetable(userId, "A"),
+      loadTimetable(userId, "B"),
+    ]);
+    setTimetableA(a);
+    setTimetableB(b);
   };
-  saveA();
-  }, [timetableA]);
 
-useEffect(() => {
-  const saveB = async () => {
-    const { data: { user } } = await supabase.auth.getUser();
+  // Immediately try to load timetable
+  supabase.auth.getUser().then(({ data: { user } }) => {
     if (user) {
-      await saveTimetable(user.id, "B", timetableB);
+      loadUserTimetables(user.id);
     }
+  });
+
+  // Also listen for session hydration or login
+  const { data: authListener } = supabase.auth.onAuthStateChange(
+    (event, session) => {
+      if (event === "SIGNED_IN" || event === "INITIAL_SESSION") {
+        if (session?.user) {
+          loadUserTimetables(session.user.id);
+        }
+      }
+    }
+  );
+
+  return () => {
+    authListener.subscription.unsubscribe();
   };
-  saveB();
-  }, [timetableB]);
+}, []);
 
   const moduleCodes = Object.keys(MODULES);
   const filteredModuleCodesA = searchCodeA
@@ -189,7 +202,6 @@ useEffect(() => {
 
   function addToA(mod: string) {
     const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassA[mod]);
-    if (!loaded) return;
     if (selected) {
       setTimetableA((prev) => {
         const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
@@ -215,7 +227,6 @@ useEffect(() => {
 
   function addToB(mod: string) {
     const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassB[mod]);
-    if (!loaded) return;
     if (selected) {
       setTimetableB((prev) => {
         const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
@@ -375,7 +386,6 @@ useEffect(() => {
 
               if (addedModulesA.includes(mod)) {
                 const selected = MODULES[mod]?.find((l) => l.classNo === classNo);
-                if (!loaded) return;
                 if (selected) {
                   setTimetableA((prev) => {
                     const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
@@ -432,7 +442,6 @@ useEffect(() => {
           <button
             onClick={() => {
             const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassA[mod]);
-            if (!loaded) return;
             if (selected) {
               setTimetableA((prev) => [...prev, selected]);
               setAddedModulesA((prev) => [...prev, mod]);
@@ -491,7 +500,6 @@ useEffect(() => {
 
               if (addedModulesB.includes(mod)) {
                 const selected = MODULES[mod]?.find((l) => l.classNo === classNo);
-                if (!loaded) return;
                 if (selected) {
                  setTimetableB((prev) => {
                   const updated = [...prev.filter((l) => l.moduleCode !== mod), selected];
@@ -558,7 +566,6 @@ useEffect(() => {
               <button
                 onClick={() => {
                   const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassB[mod]);
-                  if (!loaded) return;
                   if (selected) {
                     setTimetableB((prev) => [...prev, selected]);
                     setAddedModulesB((prev) => [...prev, mod]);
