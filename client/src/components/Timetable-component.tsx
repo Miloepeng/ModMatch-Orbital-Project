@@ -144,6 +144,8 @@ export function TimetableComponent() {
 
   const [userId, setUserId] = useState<string | null>(null);
 
+  const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
     const getUser = async () => {
       const { data: { user } } = await supabase.auth.getUser();
@@ -168,21 +170,51 @@ export function TimetableComponent() {
   }, []);
 
   useEffect(() => {
-    const autosaveTimetables = async () => {
-      if (!userId) return;
+  const loadUserTimetables = async (userId: string) => {
+    const [a, b] = await Promise.all([
+      loadTimetable(userId, "A"),
+      loadTimetable(userId, "B"),
+    ]);
+    setTimetableA(a);
+    setTimetableB(b);
+    setLoaded(true);
+  };
 
-      try {
-        await Promise.all([
-          saveTimetable(userId, "A", timetableA),
-          saveTimetable(userId, "B", timetableB),
-        ]);
-      } catch (error) {
-        console.error("Autosave failed:", error);
+  supabase.auth.getUser().then(({ data: { user } }) => {
+    if (user) {
+      loadUserTimetables(user.id);
+    }
+  });
+
+  const { data: authListener } = supabase.auth.onAuthStateChange(
+    (event, session) => {
+      if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user) {
+        loadUserTimetables(session.user.id);
       }
-    };
+    }
+  );
 
-    autosaveTimetables();
-  }, [timetableA, timetableB, userId]);
+  return () => {
+    authListener.subscription.unsubscribe();
+  };
+}, []);
+
+useEffect(() => {
+  const autosaveTimetables = async () => {
+    if (!userId || !loaded) return;  // Wait for load before autosaving
+
+    try {
+      await Promise.all([
+        saveTimetable(userId, "A", timetableA),
+        saveTimetable(userId, "B", timetableB),
+      ]);
+    } catch (error) {
+      console.error("Autosave failed:", error);
+    }
+  };
+
+  autosaveTimetables();
+}, [timetableA, timetableB, userId, loaded]);
 
   const moduleCodes = Object.keys(MODULES);
   const filteredModuleCodesA = searchCodeA
