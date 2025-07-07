@@ -98,11 +98,10 @@ export default function CSBreadthDepth({ userModules }: Props) {
   return (
     <CollapseSection
       title="CS Breadth and Depth"
-      headerExtra={`🎓 ${totalMC}/${MAX_MC} MC completed`}
+      headerExtra={`${totalMC}/${MAX_MC} MC completed`}
     >
-      <p className="deg-req-subtitle">CS Breadth and Depth modules</p>
+      <p>{output}</p>
       <ul>
-        <li>{output}</li>
         <li>
           <strong>At least 3 modules at level-4k or above</strong>: {" "}
           {is3x4kFulfilled ? "✅ Fulfilled" : "❌ Not fulfilled"}
@@ -113,13 +112,16 @@ export default function CSBreadthDepth({ userModules }: Props) {
         </li>
       </ul>
       
+      <div className="deg-req-modules">
+      <h3>Modules completed:</h3>
       <ul className="deg-req-list">
         {userModules.map((mod) => (
           <li key={mod.id} className="deg-req-item">
-            <strong>{mod.name}</strong>: ✅ Fulfilled
+            <strong>{mod.name}</strong>
           </li>
         ))}
       </ul>
+      </div>
     </CollapseSection>
   );
 }

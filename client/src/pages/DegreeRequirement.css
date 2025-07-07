@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.deg-req-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin: 10px;
+    padding: 10px;
+    font-family: "Rubik";
+}
+
+.deg-req-header {
+    margin: 15px;
+    align-items: center;
+}
+
+.deg-req-title {
+    margin: 0px;
+    font-size: 22px;
+}
+
+.deg-req-toggle {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: inherit;
+    border: 1.3px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.deg-req-toggle:hover {
+    cursor: pointer;
+    color: #004aad;
+}
+
+.deg-req-mc {
+    padding-right: 8vw;
+}
+
+.deg-req-contents {
+    margin-left: 15px;
+}
+
+.pillar {
+    display: inline-block;
+    width: 48px;
+}
+
+.cdid {
+    display: inline-block;
+    width: 170px;
+}
+
+.deg-req-modules {
+    margin-top: 40px;
+}
+
+.cs-foundation {
+    display: inline-block;
+    width: 80px;
+}
+
+.math-sci {
+    display: inline-block;
+    width: 65px;
+}

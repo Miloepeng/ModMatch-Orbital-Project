@@ -18,12 +18,8 @@ export default function ComputingEthics({ userModules }: Props) {
   return (
     <CollapseSection
       title="Computing Ethics"
-      headerExtra={`🎓 ${taken ? MC : 0}/${MC} MC completed`} // 👈 always visible
+      headerExtra={`${taken ? MC : 0}/${MC} MC completed`} 
     >
-      <p className="deg-req-subtitle">
-        Required module: <strong>{REQUIRED_MODULE}</strong>
-      </p>
-
       <ul className="deg-req-list">
         <li
           className={`deg-req-item ${
