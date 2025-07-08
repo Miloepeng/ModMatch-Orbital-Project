@@ -176,7 +176,7 @@ export default function DegReqPage() {
     return getFirstDigit(b.name) - getFirstDigit(a.name);
   };
 
-  let ToSort: Module[] = [];
+  let ToSort: Module[] = Mods_CSBreadthDepth;
   let kept: Module[] = [];
   if (Mods_CSBreadthDepth.length >= 1 && (Mods_CSBreadthDepth[0].name == FYPCode || Mods_CSBreadthDepth[0].name == ATAPCode || SIP.includes(Mods_CSBreadthDepth[0].name))) {
     ToSort = Mods_CSBreadthDepth.slice(1, Mods_CSBreadthDepth.length);
