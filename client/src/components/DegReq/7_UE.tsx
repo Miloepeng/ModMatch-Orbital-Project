@@ -8,11 +8,10 @@ type Props = {
 };
 
 export default function UE({ userModules }: Props) {
-  const MODULE_MC = 4;
   const MAX_MC = 40;
 
   // Calculate the total MCs based on the number of modules
-  const totalMC = userModules.length * MODULE_MC;
+  const totalMC = userModules.map(mod => mod.mc).reduce((a, b) => a + b);
 
   return (
     <CollapseSection

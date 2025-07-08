@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+.dashboard {
+    padding: 30px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-mc {
+    padding-left: 10vw;
+    font-family: "Rubik";
+    font-size: 35px;
+}
+
 .deg-req-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -8,6 +22,11 @@
     margin: 10px;
     padding: 10px;
     font-family: "Rubik";
+}
+
+.CircularProgressbar {
+    width: 250px;
+    margin-left: 10vw;
 }
 
 .deg-req-header {
@@ -37,7 +56,9 @@
 }
 
 .deg-req-mc {
-    padding-right: 8vw;
+    padding-right: 5vw;
+    width: 200px;
+    text-align: left;
 }
 
 .deg-req-contents {

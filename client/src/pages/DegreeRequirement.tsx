@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import 'react-circular-progressbar/dist/styles.css';
 import { supabase } from "../supabaseClient";
 import { Module } from "../types";
 import {
@@ -46,6 +48,12 @@ export default function DegReqPage() {
         };
     fetchModules();
   }, []);
+
+  const totalMC = userModules.map(mod => mod.mc).reduce((a, b) => a + b, 0);
+  const colour = totalMC < 40 ? "#9B1313"
+                   : totalMC < 80 ? "#EC9706"
+                   : totalMC < 120 ? "#EFBF04"
+                   : "#4CAF50";
 
   const GEPILLARS = ["GEA", "GEC", "GEI", "GEN", "GESS", "GEX"];
   const ReqState: number[] = [0, 0, 0, 0, 0, 0, 0, 0];  //gea, gec, gei, gen, gess, gex, id, cd
@@ -207,6 +215,16 @@ export default function DegReqPage() {
         </p>
       </div>
       <div>
+        <div className = "dashboard container">
+          <CircularProgressbar 
+            value={totalMC/160 * 100}
+            strokeWidth={15}
+            styles={buildStyles({
+              pathColor: colour,
+            })}
+          />
+          <div className = "dashboard-mc"><strong>{totalMC}/160 MC completed</strong></div>
+        </div>
         <GEPillarStatus userModules={Mods_GEPillar} />
         <ComputingEthics userModules={userModules} /> 
         <CDID userModules={Mods_CDID}/>
