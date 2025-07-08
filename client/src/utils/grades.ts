@@ -23,7 +23,7 @@ export function calculateCAP(modules: Module[]): string {
 
   for (const mod of modules) {
     const points = gradePoints[mod.grade];
-    const mcs = mod.is2MC ? 2 : 4;
+    const mcs = mod.mc || 4;
 
     if (!mod.su && points >= 0) {
       totalPoints += points * mcs;

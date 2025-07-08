@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/ds-digital');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 .lcd-text {
   font-family: "DS-Digital", monospace;
@@ -11,6 +12,7 @@
   margin: 5vh;
   min-width: 1000px;
   padding: 2%;
+  font-family: "Rubik";
 }
 
 .CAPValue {
@@ -26,9 +28,16 @@
   font-size: 2rem;
 }
 
-.numSUInput {
+.num-su-input {
   width: 1.8em;
-  margin-left: 0.5vw;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.num-su-input::-webkit-inner-spin-button, 
+.num-su-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .gridContainer {
@@ -46,7 +55,6 @@
   margin-left: 1vw;
   margin-right: 1vw;
   text-align: center;
-  font-family: sans-serif;
 }
 
 .calc-input {
@@ -63,24 +71,39 @@
   width: 12vw;
   min-width: 140px;
   height: 25px;
+  font-family: inherit;
+  text-align: center;
 }
 
 .gradeSelector {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px;
   height: 30px;
+  font-family: inherit;
+}
+
+.mc-input {
+  margin: 5px;
+  width: 25px;
+  text-align: center;
+}
+
+.mc-input::-webkit-inner-spin-button, 
+.mc-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .toggle-row {
+  display: inline-flex;  
+  align-items: center;   
+  height: 28px;  
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .toggle-desc {
   display: inline-block;
-  width: 40px;
-  text-align: right;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .switch input {
@@ -93,7 +116,7 @@
   position: relative;
   display: inline-block;
   width: 50px;
-  height: 28px;
+  height: inherit;
 }
 
 .slider {
@@ -106,6 +129,7 @@
   right: 0;
   bottom: 0;
   transition: 0.4s;
+  height: inherit;
 }
 
 .slider::before {
@@ -126,6 +150,11 @@ input:checked + .slider {
 
 input:checked + .slider::before {
   transform: translateX(22px);
+}
+
+.removeButton {
+  font-family: inherit;
+  margin-top: 5px;
 }
 
 #addModButton {

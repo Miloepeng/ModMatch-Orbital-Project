@@ -13,8 +13,8 @@ export default function CAPDisplay({ modules }: Props) {
   const totalSUUsed = modules.filter((m) => m.su).length;
 
   const totalMCs = modules.reduce((sum, mod) => {
-    const mc = mod.is2MC ? 2 : 4;
-    return sum + (mod.su ? 0 : mc); // count only non-SUed modules
+    const mc = mod.mc || 4;
+    return sum + mc; 
   }, 0);
 
   return (
@@ -23,8 +23,8 @@ export default function CAPDisplay({ modules }: Props) {
 
       <div className="CAPValue">
         <p className="lcd-text"> <strong>CAP:</strong> {cap}</p>
-        <p className="lcd-text"> <strong>Modules:</strong> {totalModules}</p>
-        {/*<p> <strong>Total MCs (excluding SU):</strong> {totalMCs}</p>*/}
+        {/*<p className="lcd-text"> <strong>Modules:</strong> {totalModules}</p>*/}
+        <p className="lcd-text"> <strong>MCs Completed:</strong> {totalMCs}</p>
         {/*<p> <strong>SU Used:</strong> {totalSUUsed}</p>*/}
       </div>
     </div>

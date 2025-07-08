@@ -4,5 +4,5 @@ export interface Module {
     name: string;
     grade: string;
     su: boolean;
-    is2MC: boolean;
+    mc: number;
 }

@@ -1,108 +1,116 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ModuleCard from "./ModuleCard";
 import { Module } from "../types";
-import { calculateCAP } from "../utils/grades";
 import CAPDisplay from "./CAPDisplay";
-import { useEffect, useCallback } from "react";
 import { supabase } from "../supabaseClient";
 
 const isGuest = localStorage.getItem("guest") === "true";
 
 export default function Calculator() {
   const [userModules, setModules] = useState<Module[]>([]);
-  const [idCounter, setIdCounter] = useState(0); //counter state
-  const [suLimit, setSuLimit] = useState<number>(0);; 
+  const [idCounter, setIdCounter] = useState(0);
+  const [suLimit, setSuLimit] = useState<number>(0);
 
-  //retrieve user data
+  // Load user data on mount
   useEffect(() => {
-  if (isGuest) return;
-  const checkUserAndLoad = async () => {
-    const { data: { user } } = await supabase.auth.getUser();
+    if (isGuest) return;
 
-    if (!user) {
-      console.log("No user logged in. Skipping load.");
-      return;
+    const checkUserAndLoad = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+
+      if (!user) {
+        console.log("No user logged in. Skipping load.");
+        return;
+      }
+
+      const { data, error } = await supabase
+        .from("module_selections")
+        .select("modules_json, su_limit")
+        .eq("user_id", user.id)
+        .single();
+
+      if (error) {
+        console.error("Error loading data:", error.message);
+        return;
+      }
+
+      if (data?.modules_json) {
+        setModules(data.modules_json);
+
+        const maxId = data.modules_json.reduce((max: number, mod: Module) => {
+          const idNum = Number(mod.id);
+          return !isNaN(idNum) && idNum > max ? idNum : max;
+        }, -1);
+        setIdCounter(maxId + 1);
+      }
+
+      if (typeof data?.su_limit === "number") {
+        setSuLimit(data.su_limit);
+      }
+    };
+
+    checkUserAndLoad();
+  }, []);
+
+  // Autosave modules and suLimit
+  useEffect(() => {
+    if (isGuest) return;
+
+    const saveModules = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+
+      const { error } = await supabase
+        .from("module_selections")
+        .upsert(
+          [
+            {
+              user_id: user.id,
+              modules_json: userModules,
+              su_limit: suLimit,
+              updated_at: new Date().toISOString(),
+            },
+          ],
+          { onConflict: "user_id" }
+        );
+
+      if (error) {
+        console.error("Auto-save failed:", error.message);
+      }
+    };
+
+    if (userModules.length > 0 || suLimit !== 0) {
+      saveModules();
     }
+  }, [userModules, suLimit]);
 
-    const { data, error } = await supabase
-      .from("module_selections")
-      .select("modules_json")
-      .eq("user_id", user.id)
-      .single();
-
-    if (data?.modules_json) {
-      setModules(data.modules_json);
-      const maxId = data.modules_json.reduce((max: number, mod: Module) => {
-      const idNum = Number(mod.id);
-      return !isNaN(idNum) && idNum > max ? idNum : max;
-      }, -1);
-    setIdCounter(maxId + 1);
-    }
-  };
-  checkUserAndLoad();
-}, []);
-
-//autosave
-useEffect(() => {
-  if (isGuest) return;
-  const saveModules = async () => {
-    const user = await supabase.auth.getUser();
-    if (!user.data.user) return;
-
-    const { error } = await supabase
-      .from("module_selections")
-      .upsert([
-        {
-          user_id: user.data.user.id,
-          modules_json: userModules,
-          updated_at: new Date().toISOString(),
-        },
-      ], { onConflict: "user_id" });
-
-    if (error) {
-      console.error("Auto-save failed:", error.message);
-    }
-  };
-
-  // Avoid saving on first render with empty modules array
-  if (userModules.length > 0) {
-    saveModules();
-  }
-}, [userModules]);
-
-    
-//Adds a new modulecard
   const handleAddModule = () => {
     const newModule: Module = {
-      id: String(idCounter), //use counter as ID
+      id: String(idCounter),
       name: "",
       grade: "",
       su: false,
-      is2MC: false,
+      mc: 4,
     };
     setModules((prev) => [newModule, ...prev]);
-    setIdCounter((prev) => prev + 1); //increment for next use
+    setIdCounter((prev) => prev + 1);
   };
 
-  //handles selecting module name in modulecard
   const handleUpdateModule = (id: string, updated: Module) => {
     const updatedName = updated.name.toUpperCase().trim();
-    const isDuplicate = 
-    updatedName &&
-    userModules.some(
-    (mod) => mod.id !== id && mod.name === updated.name
-  );
+    const isDuplicate =
+      updatedName &&
+      userModules.some((mod) => mod.id !== id && mod.name === updated.name);
 
-  if (isDuplicate) {
-    alert("This module has already been selected.");
-    return;
-  }
+    if (isDuplicate) {
+      alert("This module has already been selected.");
+      return;
+    }
 
-  setModules((prev) =>
-    prev.map((mod) => (mod.id === id ? updated : mod))
-  );
-};
-
+    setModules((prev) =>
+      prev.map((mod) => (mod.id === id ? updated : mod))
+    );
+  };
 
   const handleDeleteModule = (id: string) => {
     setModules((prev) => prev.filter((mod) => mod.id !== id));
@@ -112,25 +120,24 @@ useEffect(() => {
 
   return (
     <>
-      <div className = "mid-section">
-        <h1 className = "mid-section-title">Home</h1>
-        <p className = "mid-section-content">Input your results and calculate your CAP</p>
+      <div className="mid-section">
+        <h1 className="mid-section-title">Home</h1>
+        <p className="mid-section-content">
+          Input your results and calculate your CAP
+        </p>
       </div>
-      <div className="calculatorContainer">
-        {/*<h1 className="CAPCalculator">GPA / CAP Calculator</h1>*/}
 
-        {/*Display CAP */}
+      <div className="calculatorContainer">
         <CAPDisplay modules={userModules} />
 
-        {/*User input no. of SU */}
         <div className="calc-input-container gridContainer">
           <div className="calc-button calc-input">
-            <label className="numSU">Max SUs:</label>
+            <label className="num-su">Max SUs:</label>
             <input
               type="number"
               value={suLimit}
               onChange={(e) => setSuLimit(Number(e.target.value))}
-              className="numSUInput"
+              className="num-su-input"
               min={0}
             />
           </div>
@@ -139,16 +146,8 @@ useEffect(() => {
           </div>
         </div>
 
-        {/*No. of SU used 
-        <div className="SUUsedContainer">
-          {currentSUUsed} / {suLimit} SUs used
-        </div>*/}
-
         <div className="gridContainer">
-          <button
-          onClick={handleAddModule} 
-          id="addModButton"
-          >
+          <button onClick={handleAddModule} id="addModButton">
             +
           </button>
           {userModules.map((mod) => (
@@ -157,11 +156,11 @@ useEffect(() => {
               module={mod}
               onChange={(updated) => handleUpdateModule(mod.id, updated)}
               onDelete={() => handleDeleteModule(mod.id)}
-              disableSU = {!mod.su && currentSUUsed >= suLimit}
+              disableSU={!mod.su && currentSUUsed >= suLimit}
             />
           ))}
         </div>
-    </div>
+      </div>
     </>
   );
 }

@@ -17,7 +17,7 @@ const grades = [
 
 export default function ModuleCard({module, onChange, onDelete, disableSU} : Props) {
     //To edit the module
-    const handleChange = (field: keyof Module, value: string | boolean) => {
+    const handleChange = (field: keyof Module, value: string | boolean | number) => {
         onChange({ ...module, [field]: value });
   };
 
@@ -51,6 +51,22 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
         </select>
       </label>
 
+      {/* Modular Credits input */}
+      <div>
+        <label>
+          MCs:
+          <input
+            type="number"
+            min={1}
+            max={12}
+            step={1}
+            value={module.mc}
+            onChange={(e) => handleChange("mc", Number(e.target.value))}
+            className="mc-input"
+          />
+        </label>
+      </div>
+
       {/* SU toggle */}
       <div className="toggle-row">
       <span className="toggle-desc">SU:  </span>
@@ -67,24 +83,12 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
       </label>
       </div>
 
-      {/* 2MC toggle */}
-      <div className="toggle-row">
-      <span className="toggle-desc">2MC:  </span>
-      <label className="switch">
-        <input
-          type="checkbox"
-          checked={module.is2MC}
-          onChange={(e) => handleChange("is2MC", e.target.checked)} // Update is2MC on toggle
-          className="mcSelector"
-        />
-        <span className ="slider"></span>
-      </label>
-      </div>
-
       {/* Remove button */}
-      <button onClick={onDelete} className="removeButton">
-        Remove
-      </button>
+      <div>
+        <button onClick={onDelete} className="removeButton">
+          Remove
+        </button>
+      </div>
     </div>
   );
 }
