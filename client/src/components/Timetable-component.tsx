@@ -42,37 +42,31 @@ const MODULES: Record<string, Lesson[]> = Object.fromEntries(
 type ModuleCode = keyof typeof MODULES;
 
 async function saveTimetable(userId: string, name: "A" | "B", lessons: Lesson[]) {
-  const deleteResp = await supabase
+  if (!lessons.length) return; // Do not save empty data
+
+  const { error } = await supabase
     .from("timetables")
-    .delete()
-    .eq("user_id", userId)
-    .eq("timetable_name", name);
-
-  if (deleteResp.error) {
-    console.error("Supabase delete error:", deleteResp.error.message);
-    throw deleteResp.error;
-  }
-
-  console.log("Inserting these lessons:", lessons);
-
-  const { error } = await supabase.from("timetables").insert(
-    lessons.map((lesson) => ({
-      user_id: userId,
-      timetable_name: name,
-      module_code: lesson.moduleCode,
-      class_no: lesson.classNo,
-      day: lesson.day,
-      start_time: lesson.startTime,
-      end_time: lesson.endTime,
-      venue: lesson.venue,
-      lesson_type: lesson.lessonType,
-      weeks: lesson.weeks,
-      covid_zone: lesson.covidZone,
-    }))
-  );
+    .upsert(
+      lessons.map((lesson) => ({
+        user_id: userId,
+        timetable_name: name,
+        module_code: lesson.moduleCode,
+        class_no: lesson.classNo,
+        day: lesson.day,
+        start_time: lesson.startTime,
+        end_time: lesson.endTime,
+        venue: lesson.venue,
+        lesson_type: lesson.lessonType,
+        weeks: lesson.weeks,
+        covid_zone: lesson.covidZone,
+      })),
+      {
+        onConflict: "user_id, timetable_name, module_code, class_no"
+      }
+    );
 
   if (error) {
-    console.error("Supabase insert error:", error.message);
+    console.error("Supabase upsert error:", error.message);
     throw error;
   }
 }
