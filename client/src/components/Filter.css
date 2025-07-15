@@ -13,8 +13,8 @@
   border-radius: 20px;
   border: 1.5px solid black;
   padding: 10px;
-  width: 18vw;
-  min-width: 200px;
+  width: 15.5vw;
+  min-width: 190px;
   justify-content: center;
 }
 
@@ -22,7 +22,8 @@
     margin: 20px;
     margin-left: 15px;
     height: 30px;
-    width: 61vw;
+    width: 55vw;
+    min-width: 450px;
 }
 
 .modules-list {
