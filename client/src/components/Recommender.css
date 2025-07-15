@@ -1,10 +1,11 @@
 .search-container {
-  width: 70vw;
+  width: 60vw;
   height: 69vh;
+  min-width: 500px;
 }
 
 .reco-container {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .reco-title {
@@ -15,9 +16,31 @@
   display: flex;
   align-items: center;
   position: relative;
-  width: 320px;
+  width: 500px;
   height: 150px;
 }
+
+.horizontal-scroll-wrapper::before,
+.horizontal-scroll-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.horizontal-scroll-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, white 0%, transparent 100%);
+}
+
+.horizontal-scroll-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, white 0%, transparent 100%);
+}
+
 
 .scrollable-container {
   display: flex;
@@ -28,6 +51,7 @@
   max-width: 100%;
   height: inherit;
   scrollbar-width: none;
+  scroll-snap-type: x mandatory;
 }
 
 .scrollable-container::-webkit-scrollbar {
@@ -35,11 +59,21 @@
 }
 
 .scroll-card {
-  width: 215px;
+  width: 245px;
   background-color: #f0f0f0;
   padding: 1rem;
   border-radius: 8px;
   flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5;
+  
+}
+
+.scrollable-container .scroll-card:focus,
+.scrollable-container .scroll-card:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .scroll-btn {

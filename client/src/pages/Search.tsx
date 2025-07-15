@@ -134,7 +134,7 @@ export default function Search() {
   const scroll = (direction: number) => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
-        left: direction * 265,
+        left: direction * 290,
         behavior: "smooth",
       });
     }
