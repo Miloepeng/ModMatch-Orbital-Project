@@ -163,7 +163,7 @@ export function TimetableComponent() {
     };
   }, []);
 
-  useEffect(() => {
+useEffect(() => {
   const loadUserTimetables = async (userId: string) => {
     const [a, b] = await Promise.all([
       loadTimetable(userId, "A"),
@@ -171,27 +171,40 @@ export function TimetableComponent() {
     ]);
     setTimetableA(a);
     setTimetableB(b);
+    
+    setAddedModulesA(a.map((lesson) => lesson.moduleCode));  
+    setAddedModulesB(b.map((lesson) => lesson.moduleCode));
+
+    // Make sure to set selectedClass states after loading the modules
+    setSelectedClassA((prev) => {
+      const updatedClass = { ...prev };
+      a.forEach((lesson) => {
+        updatedClass[lesson.moduleCode] = lesson.classNo;
+      });
+      return updatedClass;
+    });
+
+    setSelectedClassB((prev) => {
+      const updatedClass = { ...prev };
+      b.forEach((lesson) => {
+        updatedClass[lesson.moduleCode] = lesson.classNo;
+      });
+      return updatedClass;
+    });
+
+    setActiveModulesA(Array.from(new Set(a.map((l) => l.moduleCode))));
+    setActiveModulesB(Array.from(new Set(b.map((l) => l.moduleCode))));
+
     setLoaded(true);
   };
 
+  // Fetch data when the user is logged in
   supabase.auth.getUser().then(({ data: { user } }) => {
     if (user) {
       loadUserTimetables(user.id);
     }
   });
-
-  const { data: authListener } = supabase.auth.onAuthStateChange(
-    (event, session) => {
-      if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user) {
-        loadUserTimetables(session.user.id);
-      }
-    }
-  );
-
-  return () => {
-    authListener.subscription.unsubscribe();
-  };
-}, []);
+}, [userId]);
 
 useEffect(() => {
   const autosaveTimetables = async () => {
@@ -339,6 +352,7 @@ useEffect(() => {
   };
 }, []);
 
+
   return (
     <div style={{ display: "flex", gap: "2rem", padding: "1rem" }}>
       {/* Timetable A */}
@@ -352,6 +366,7 @@ useEffect(() => {
           onChange={(e) => setSearchCodeA(e.target.value)}
           style={{ marginBottom: "0.5rem" }}
         />
+
         <ul style={{ listStyle: "none", paddingLeft: 0 }}>
         {filteredModuleCodesA.map((code) => (
         <li key={code}>
@@ -378,6 +393,7 @@ useEffect(() => {
           return (
             <div key={mod} style={{ marginTop: "0.5rem" }}>
             <select
+              key={mod}
               value={selectedClassA[mod] || ""}
               onChange={(e) => {
               const classNo = e.target.value;
@@ -407,24 +423,40 @@ useEffect(() => {
 
           {isAdded ? (
             <button
-              onClick={() => {
-              const updatedA = timetableA.filter((l) => l.moduleCode !== mod)
+              onClick={async () => {
+              const updatedA = timetableA.filter((l) => l.moduleCode !== mod);
               setTimetableA(updatedA);
               setAddedModulesA((prev) => prev.filter((m) => m !== mod));
 
+              if (userId) {
+                await supabase
+                  .from("timetables")
+                  .delete()
+                  .eq("user_id", userId)
+                  .eq("timetable_name", "A")
+                  .eq("module_code", mod);
+              }
+
               if (syncedModules.includes(mod)) {
-                const updatedB = timetableB.filter((l) => l.moduleCode !== mod)
+                const updatedB = timetableB.filter((l) => l.moduleCode !== mod);
                 setTimetableB(updatedB);
                 setAddedModulesB((prev) => prev.filter((m) => m !== mod));
 
-                if (updatedA.length === 0 && updatedB.length === 0) {
-                  setSyncedModules((prev) => prev.filter((m) => m !== mod));
-                  }
+                if (userId) {
+                  await supabase
+                    .from("timetables")
+                    .delete()
+                    .eq("user_id", userId)
+                    .eq("timetable_name", "B")
+                    .eq("module_code", mod);
+                }
+
+                setSyncedModules((prev) => prev.filter((m) => m !== mod));
               }
             }}
-            >
+          >
             Remove {mod}
-            </button>
+          </button>
           ) : (
           <button
             onClick={() => {
@@ -508,25 +540,41 @@ useEffect(() => {
             </select>
 
             {isAdded ? (
-              <button
-                onClick={() => {
-                const updatedB = timetableB.filter((l) => l.moduleCode !== mod);
-                setTimetableB(updatedB);
-                setAddedModulesB((prev) => prev.filter((m) => m !== mod));
+            <button
+              onClick={async () => {
+              const updatedB = timetableB.filter((l) => l.moduleCode !== mod);
+              setTimetableB(updatedB);
+              setAddedModulesB((prev) => prev.filter((m) => m !== mod));
 
-                if (syncedModules.includes(mod)) {
-                  const updatedA = timetableA.filter((l) => l.moduleCode !== mod);
-                 setTimetableA(updatedA);
-                  setAddedModulesA((prev) => prev.filter((m) => m !== mod));
+              if (userId) {
+                await supabase
+                  .from("timetables")
+                  .delete()
+                  .eq("user_id", userId)
+                  .eq("timetable_name", "B")
+                  .eq("module_code", mod);
+              }
 
-                  if (updatedA.length === 0 && updatedB.length === 0) {
-                    setSyncedModules((prev) => prev.filter((m) => m !== mod));
-                  }
+              if (syncedModules.includes(mod)) {
+                const updatedA = timetableA.filter((l) => l.moduleCode !== mod);
+                setTimetableA(updatedA);
+                setAddedModulesA((prev) => prev.filter((m) => m !== mod));
+
+                if (userId) {
+                  await supabase
+                    .from("timetables")
+                    .delete()
+                    .eq("user_id", userId)
+                    .eq("timetable_name", "A")
+                    .eq("module_code", mod);
                 }
-              }}
-              >
-                Remove {mod}
-              </button>
+
+                setSyncedModules((prev) => prev.filter((m) => m !== mod));
+              }
+            }}
+          >
+            Remove {mod}
+          </button>
               ) : (
               <button
                 onClick={() => {
