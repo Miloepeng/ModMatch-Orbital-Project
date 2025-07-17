@@ -61,14 +61,20 @@ async function saveTimetable(userId: string, name: "A" | "B", lessons: Lesson[])
         covid_zone: lesson.covidZone,
       })),
       {
-        onConflict: "user_id, timetable_name, module_code, class_no"
+        onConflict: "user_id, timetable_name, module_code, lesson_type"
       }
     );
 
   if (error) {
-    console.error("Supabase upsert error:", error.message);
-    throw error;
-  }
+  console.error("Supabase upsert error:", {
+    message: error.message,
+    details: error.details,
+    hint: error.hint,
+    code: error.code,
+  });
+  alert(`Save failed: ${error.message}`);
+  throw error;
+}
 }
 
 async function loadTimetable(userId: string, name: "A" | "B"): Promise<Lesson[]> {
@@ -256,9 +262,10 @@ useEffect(() => {
   }
 }, [searchCodeB]);
 
-  function addToA(mod: string) {
+  async function addToA(mod: string) {
     const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassA[mod]);
     if (selected) {
+      const updated = [...timetableA.filter((l) => l.moduleCode !== mod), selected];
       setTimetableA((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
       setAddedModulesA((prev) => Array.from(new Set([...prev, mod])));
 
@@ -266,12 +273,17 @@ useEffect(() => {
         setTimetableB((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
         setAddedModulesA((prev) => Array.from(new Set([...prev, mod])));
       }
+
+      if (userId) {
+      await saveTimetable(userId, "A", updated);
+      }
     }
   }
 
-  function addToB(mod: string) {
+  async function addToB(mod: string) {
     const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassB[mod]);
     if (selected) {
+      const updated = [...timetableB.filter((l) => l.moduleCode !== mod), selected];
       setTimetableB((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
       setAddedModulesB((prev) => Array.from(new Set([...prev, mod])));
 
@@ -279,6 +291,11 @@ useEffect(() => {
         setTimetableA((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
         setAddedModulesB((prev) => Array.from(new Set([...prev, mod])));
       }
+
+      if (userId) {
+      await saveTimetable(userId, "B", updated);
+      }
+      
     }
   }
 
@@ -459,13 +476,7 @@ useEffect(() => {
           </button>
           ) : (
           <button
-            onClick={() => {
-            const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassA[mod]);
-            if (selected) {
-              setTimetableA((prev) => [...prev, selected]);
-              setAddedModulesA((prev) => [...prev, mod]);
-            }
-          }}
+            onClick={() => addToA(mod)}
           >
             Add {mod}
           </button>
@@ -577,13 +588,7 @@ useEffect(() => {
           </button>
               ) : (
               <button
-                onClick={() => {
-                  const selected = MODULES[mod]?.find((l) => l.classNo === selectedClassB[mod]);
-                  if (selected) {
-                    setTimetableB((prev) => [...prev, selected]);
-                    setAddedModulesB((prev) => [...prev, mod]);
-                  }
-                }}
+                onClick={() => addToB(mod)}
                 >
                 Add {mod}
               </button>
