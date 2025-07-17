@@ -406,81 +406,110 @@ useEffect(() => {
       </ul>
 
         {activeModulesA.map((mod) => {
-          const isAdded = addedModulesA.includes(mod);
-          return (
-            <div key={mod} style={{ marginTop: "0.5rem" }}>
-            <select
-              key={mod}
-              value={selectedClassA[mod] || ""}
-              onChange={(e) => {
-              const classNo = e.target.value;
-              setSelectedClassA((prev) => ({ ...prev, [mod]: classNo }));
+  const lessonsByType = MODULES[mod].reduce<Record<string, Lesson[]>>((acc, lesson) => {
+    if (!acc[lesson.lessonType]) acc[lesson.lessonType] = [];
+    acc[lesson.lessonType].push(lesson);
+    return acc;
+  }, {});
 
-              if (addedModulesA.includes(mod)) {
-                const selected = MODULES[mod]?.find((l) => l.classNo === classNo);
-                if (selected) {
-                 setTimetableA((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
-                  if (syncedModules.includes(mod)) {
-                    setTimetableB((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
-                    setSelectedClassB((prev) => ({
-                    ...prev,
-                    [mod]: selected.classNo,
-                }));
-                }
-                }
+  return (
+    <div key={mod} style={{ marginTop: "0.5rem" }}>
+      <h4>{mod}</h4>
+      {Object.entries(lessonsByType).map(([lessonType, lessons]) => {
+        const key = `${mod}-${lessonType}`;
+        const classNo = selectedClassA[key] || lessons[0].classNo;
+        const isAdded = timetableA.some(
+          (l) => l.moduleCode === mod && l.lessonType === lessonType
+        );
+
+        return (
+          <div key={key} style={{ marginBottom: "0.5rem" }}>
+            <label><strong>{lessonType}</strong></label>
+            <select
+              value={classNo}
+              onChange={(e) =>
+                setSelectedClassA((prev) => ({
+                  ...prev,
+                  [key]: e.target.value,
+                }))
               }
-              }}
-              >
-              {MODULES[mod].map((l) => (
-              <option key={l.classNo} value={l.classNo}>
-                {mod} {l.classNo} ({l.day} {l.startTime}–{l.endTime})
-              </option>
+            >
+              {lessons.map((l) => (
+                <option key={l.classNo} value={l.classNo}>
+                  {mod} {l.classNo} ({l.day} {l.startTime}–{l.endTime})
+                </option>
               ))}
             </select>
 
-          {isAdded ? (
-            <button
-              onClick={async () => {
-              const updatedA = timetableA.filter((l) => l.moduleCode !== mod);
-              setTimetableA(updatedA);
-              setAddedModulesA((prev) => prev.filter((m) => m !== mod));
+            {isAdded ? (
+              <button
+                onClick={async () => {
+                  const updatedA = timetableA.filter(
+                    (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
+                  );
+                  setTimetableA(updatedA);
 
-              if (userId) {
-                await supabase
-                  .from("timetables")
-                  .delete()
-                  .eq("user_id", userId)
-                  .eq("timetable_name", "A")
-                  .eq("module_code", mod);
-              }
+                  if (userId) {
+                    await supabase
+                      .from("timetables")
+                      .delete()
+                      .eq("user_id", userId)
+                      .eq("timetable_name", "A")
+                      .eq("module_code", mod)
+                      .eq("lesson_type", lessonType);
+                  }
 
-              if (syncedModules.includes(mod)) {
-                const updatedB = timetableB.filter((l) => l.moduleCode !== mod);
-                setTimetableB(updatedB);
-                setAddedModulesB((prev) => prev.filter((m) => m !== mod));
+                  if (syncedModules.includes(mod)) {
+                    const updatedB = timetableB.filter(
+                      (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
+                    );
+                    setTimetableB(updatedB);
 
-                if (userId) {
-                  await supabase
-                    .from("timetables")
-                    .delete()
-                    .eq("user_id", userId)
-                    .eq("timetable_name", "B")
-                    .eq("module_code", mod);
-                }
+                    if (userId) {
+                      await supabase
+                        .from("timetables")
+                        .delete()
+                        .eq("user_id", userId)
+                        .eq("timetable_name", "B")
+                        .eq("module_code", mod)
+                        .eq("lesson_type", lessonType);
+                    }
+                  }
+                }}
+              >
+                Remove {lessonType}
+              </button>
+            ) : (
+              <button
+                onClick={() => {
+                  const selected = lessons.find((l) => l.classNo === classNo);
+                  if (selected) {
+                    setTimetableA((prev) => [
+                      ...prev.filter(
+                        (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
+                      ),
+                      selected,
+                    ]);
+                    setAddedModulesA((prev) => Array.from(new Set([...prev, mod])));
 
-                setSyncedModules((prev) => prev.filter((m) => m !== mod));
-              }
-            }}
-          >
-            Remove {mod}
-          </button>
-          ) : (
-          <button
-            onClick={() => addToA(mod)}
-          >
-            Add {mod}
-          </button>
-        )}
+                    if (syncedModules.includes(mod)) {
+                      setTimetableB((prev) => [
+                        ...prev.filter(
+                          (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
+                        ),
+                        selected,
+                      ]);
+                      setAddedModulesB((prev) => Array.from(new Set([...prev, mod])));
+                    }
+                  }
+                }}
+              >
+                Add {lessonType}
+              </button>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 })}
@@ -519,83 +548,113 @@ useEffect(() => {
       </ul>
 
         {activeModulesB.map((mod) => {
-          const isAdded = addedModulesB.includes(mod);
-          return (
-            <div key={mod} style={{ marginTop: "0.5rem" }}>
-              <select
-              value={selectedClassB[mod] || ""}
-              onChange={(e) => {
-              const classNo = e.target.value;
-              setSelectedClassB((prev) => ({ ...prev, [mod]: classNo }));
+  const lessonsByType = MODULES[mod].reduce<Record<string, Lesson[]>>((acc, lesson) => {
+    if (!acc[lesson.lessonType]) acc[lesson.lessonType] = [];
+    acc[lesson.lessonType].push(lesson);
+    return acc;
+  }, {});
 
-              if (addedModulesB.includes(mod)) {
-                const selected = MODULES[mod]?.find((l) => l.classNo === classNo);
-                if (selected) {
-                 setTimetableB((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
-                  if (syncedModules.includes(mod)) {
-                    setTimetableA((prev) => [...prev.filter((l) => l.moduleCode !== mod), selected]);
-                    setSelectedClassA((prev) => ({
-                    ...prev,
-                    [mod]: selected.classNo,
-                }));
-                }
-                }
+  return (
+    <div key={mod} style={{ marginTop: "0.5rem" }}>
+      <h4>{mod}</h4>
+      {Object.entries(lessonsByType).map(([lessonType, lessons]) => {
+        const key = `${mod}-${lessonType}`;
+        const classNo = selectedClassB[key] || lessons[0].classNo;
+        const isAdded = timetableB.some(
+          (l) => l.moduleCode === mod && l.lessonType === lessonType
+        );
+
+        return (
+          <div key={key} style={{ marginBottom: "0.5rem" }}>
+            <label><strong>{lessonType}</strong></label>
+            <select
+              value={classNo}
+              onChange={(e) =>
+                setSelectedClassB((prev) => ({
+                  ...prev,
+                  [key]: e.target.value,
+                }))
               }
-              }}
-              >
-              {MODULES[mod].map((l) => (
-              <option key={l.classNo} value={l.classNo}>
-                {mod} {l.classNo} ({l.day} {l.startTime}–{l.endTime})
-              </option>
+            >
+              {lessons.map((l) => (
+                <option key={l.classNo} value={l.classNo}>
+                  {mod} {l.classNo} ({l.day} {l.startTime}–{l.endTime})
+                </option>
               ))}
             </select>
 
             {isAdded ? (
-            <button
-              onClick={async () => {
-              const updatedB = timetableB.filter((l) => l.moduleCode !== mod);
-              setTimetableB(updatedB);
-              setAddedModulesB((prev) => prev.filter((m) => m !== mod));
-
-              if (userId) {
-                await supabase
-                  .from("timetables")
-                  .delete()
-                  .eq("user_id", userId)
-                  .eq("timetable_name", "B")
-                  .eq("module_code", mod);
-              }
-
-              if (syncedModules.includes(mod)) {
-                const updatedA = timetableA.filter((l) => l.moduleCode !== mod);
-                setTimetableA(updatedA);
-                setAddedModulesA((prev) => prev.filter((m) => m !== mod));
-
-                if (userId) {
-                  await supabase
-                    .from("timetables")
-                    .delete()
-                    .eq("user_id", userId)
-                    .eq("timetable_name", "A")
-                    .eq("module_code", mod);
-                }
-
-                setSyncedModules((prev) => prev.filter((m) => m !== mod));
-              }
-            }}
-          >
-            Remove {mod}
-          </button>
-              ) : (
               <button
-                onClick={() => addToB(mod)}
-                >
-                Add {mod}
+                onClick={async () => {
+                  const updatedB = timetableB.filter(
+                    (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
+                  );
+                  setTimetableB(updatedB);
+
+                  if (userId) {
+                    await supabase
+                      .from("timetables")
+                      .delete()
+                      .eq("user_id", userId)
+                      .eq("timetable_name", "B")
+                      .eq("module_code", mod)
+                      .eq("lesson_type", lessonType);
+                  }
+
+                  if (syncedModules.includes(mod)) {
+                    const updatedA = timetableA.filter(
+                      (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
+                    );
+                    setTimetableA(updatedA);
+
+                    if (userId) {
+                      await supabase
+                        .from("timetables")
+                        .delete()
+                        .eq("user_id", userId)
+                        .eq("timetable_name", "A")
+                        .eq("module_code", mod)
+                        .eq("lesson_type", lessonType);
+                    }
+                  }
+                }}
+              >
+                Remove {lessonType}
               </button>
-                )}
-        </div>
-          );
-          })}
+            ) : (
+              <button
+                onClick={() => {
+                  const selected = lessons.find((l) => l.classNo === classNo);
+                  if (selected) {
+                    setTimetableB((prev) => [
+                      ...prev.filter(
+                        (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
+                      ),
+                      selected,
+                    ]);
+                    setAddedModulesB((prev) => Array.from(new Set([...prev, mod])));
+
+                    if (syncedModules.includes(mod)) {
+                      setTimetableA((prev) => [
+                        ...prev.filter(
+                          (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
+                        ),
+                        selected,
+                      ]);
+                      setAddedModulesA((prev) => Array.from(new Set([...prev, mod])));
+                    }
+                  }
+                }}
+              >
+                Add {lessonType}
+              </button>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+})}
       </div>
 
       {/* Sync */}
