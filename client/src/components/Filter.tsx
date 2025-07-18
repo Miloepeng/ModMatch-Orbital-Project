@@ -10,7 +10,20 @@ export default function Filter() {
     const [groupFilter, setGroupFilter] = useState('all');
     const [GEFilter, setGEFilter] = useState('all');
 
-    const allModules = [Modules, GEN, CD, ID, GEI, GEA, GEX, GEC, GESS].flat();
+    const allRawModules = [Modules, GEN, CD, ID, GEI, GEA, GEX, GEC, GESS].flat();
+    const preferredPillars = ['GEA', 'GEC', 'GEI', 'GEN', 'GESS', 'GEX'];
+
+    const allModules = Array.from(
+    new Map(
+        [...allRawModules]
+        .sort((a, b) => {
+            const aPreferred = preferredPillars.includes(a.GEPillar);
+            const bPreferred = preferredPillars.includes(b.GEPillar);
+            return Number(aPreferred) - Number(bPreferred);
+        })
+        .map((mod) => [mod.value, mod])
+    ).values()
+    );
 
     const filteredModules = allModules.filter((module) => {
         const matchesSearch = module.label.toUpperCase().includes(searchQuery.toUpperCase());
