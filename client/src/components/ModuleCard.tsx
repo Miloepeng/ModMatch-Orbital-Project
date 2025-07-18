@@ -23,12 +23,12 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
 
 
     return (
-    <div className="calc-button moduleCard">
+    <div className="calc-button module-card">
      {/* Module name selector */}
       <label className="modSelectorContainer">
       Module:
       <input
-        className="modSelector"
+        className="mod-selector"
         type="text"
         placeholder="Enter module code..."
         value={module.name}
@@ -42,7 +42,7 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
         <select
           value={module.grade}
           onChange={(e) => handleChange("grade", e.target.value)} // Update grade on change
-          className="gradeSelector"
+          className="grade-selector"
         >
           <option value="">--</option>
           {grades.map((g) => (
@@ -85,7 +85,7 @@ export default function ModuleCard({module, onChange, onDelete, disableSU} : Pro
 
       {/* Remove button */}
       <div>
-        <button onClick={onDelete} className="removeButton">
+        <button onClick={onDelete} className="remove-button">
           Remove
         </button>
       </div>

@@ -18,7 +18,7 @@ export default function CAPDisplay({ modules }: Props) {
   }, 0);
 
   return (
-    <div className="CAPContainer">
+    <div className="cap-container">
       {/*<h2 className="CAPTitle">Summary</h2>*/}
 
       <div className="CAPValue">

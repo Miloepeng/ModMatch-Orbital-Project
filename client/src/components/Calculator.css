@@ -6,29 +6,43 @@
   margin: 20px;
 }
 
-.calculatorContainer {
-  border: 3px solid black;
+.calculator-container {
+  border: 2px solid rgb(130, 130, 130);
   border-radius: 5vw;
   margin: 5vh;
   min-width: 1000px;
   padding: 2%;
   font-family: "Rubik";
+  background-color: rgb(236, 236, 236);
+}
+
+.brand-label {
+  margin: 0px;
+  margin-left: 30px;
+}
+
+.cap-container {
+  border-bottom: 1.5px solid rgb(130, 130, 130);
+  padding-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .CAPValue {
-  border: 3px solid black;
+  border: 2px solid #028d04;
   border-radius: 20px;
   margin: 2vh 0;
-  margin-bottom: 10px;
   text-shadow: 
     0 0 5px #00ff00,
     0 0 10px #00ff00,
     0 0 20px #00ff00;
-  background-color: #4CAF50;
+  background-color: #1ab11f;
+  
   font-size: 2rem;
 }
 
 .num-su-input {
+  background-color: rgb(237, 237, 237);
+  border-color: white;
   width: 1.8em;
   margin-left: 5px;
   text-align: center;
@@ -40,14 +54,15 @@
   margin: 0;
 }
 
-.gridContainer {
+.grid-container {
   display:grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
 .calc-button {
-  background-color: white;
-  border: 3px solid black;
+  background-color: rgb(215, 215, 215);
+  border: 1px solid rgb(184, 184, 184);
+  box-shadow: 0 1px 3px rgb(0, 0, 0);
   border-radius: 1.5em;
   padding: 1em;
   min-width: 10vw;
@@ -57,15 +72,22 @@
   text-align: center;
 }
 
-.calc-input {
-  height: 20px;
+.calc-input-container {
+  margin-bottom: 15px;
 }
 
-.moduleCard {
+.calc-input {
+  height: 20px;
+  border-radius: 1em;
+}
+
+.module-card {
   height: 200px;
 }
 
-.modSelector {
+.mod-selector {
+  background-color: rgb(237, 237, 237);
+  border-color: white;
   margin-top: 5px;
   margin-bottom: 5px;
   width: 12vw;
@@ -75,13 +97,17 @@
   text-align: center;
 }
 
-.gradeSelector {
+.grade-selector {
+  background-color: rgb(237, 237, 237);
+  border: 0px;
   margin: 5px;
   height: 30px;
   font-family: inherit;
 }
 
 .mc-input {
+  background-color: rgb(237, 237, 237);
+  border: 0px;
   margin: 5px;
   width: 25px;
   text-align: center;
@@ -122,7 +148,7 @@
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: #ccc;
+  background-color: #e9e9e9;
   border-radius: 34px;
   top: 0;
   left: 0;
@@ -145,16 +171,24 @@
 }
 
 input:checked + .slider {
-  background-color: #4CAF50;
+  background-color: #39d13e;
 }
 
 input:checked + .slider::before {
   transform: translateX(22px);
 }
 
-.removeButton {
+.remove-button {
   font-family: inherit;
   margin-top: 5px;
+  background-color: rgb(237, 237, 237);
+  border: 0px;
+  border-radius: 5px;
+}
+
+.remove-button:hover {
+  cursor: pointer;
+  background-color: rgb(252, 237, 237);
 }
 
 #addModButton {
@@ -172,5 +206,5 @@ input:checked + .slider::before {
 
 #addModButton:hover {
   cursor: pointer;
-  color: #004aad;
+  color: #1aff44;
 }

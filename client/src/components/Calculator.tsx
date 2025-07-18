@@ -127,10 +127,14 @@ export default function Calculator() {
         </p>
       </div>
 
-      <div className="calculatorContainer">
+      <div className="calculator-container">
+        <div>
+          <h1 className="brand-label">ModMatch</h1>
+        </div>
+
         <CAPDisplay modules={userModules} />
 
-        <div className="calc-input-container gridContainer">
+        <div className="calc-input-container grid-container">
           <div className="calc-button calc-input">
             <label className="num-su">Max SUs:</label>
             <input
@@ -146,7 +150,7 @@ export default function Calculator() {
           </div>
         </div>
 
-        <div className="gridContainer">
+        <div className="grid-container">
           <button onClick={handleAddModule} id="addModButton">
             +
           </button>
