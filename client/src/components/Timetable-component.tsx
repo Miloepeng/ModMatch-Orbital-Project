@@ -108,6 +108,7 @@ function Timetable({ lessons }: { lessons: Lesson[] }) {
           <h4>{day}</h4>
           {lessons
             .filter((l) => l.day === day)
+            .sort((a, b) => a.startTime.localeCompare(b.startTime))
             .map((lesson, idx) => (
               <div key={idx} className="lesson-block">
                 <strong>{lesson.moduleCode}</strong> ({lesson.lessonType})<br />
