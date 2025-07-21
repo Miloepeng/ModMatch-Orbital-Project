@@ -106,6 +106,7 @@ function Timetable({ lessons }: { lessons: Lesson[] }) {
       {days.map((day) => (
         <div key={day} className="day-column">
           <h4>{day}</h4>
+          <div className = "lesson-container">
           {lessons
             .filter((l) => l.day === day)
             .sort((a, b) => a.startTime.localeCompare(b.startTime))
@@ -119,6 +120,7 @@ function Timetable({ lessons }: { lessons: Lesson[] }) {
                 Zone: {lesson.covidZone}
               </div>
             ))}
+            </div>
         </div>
       ))}
     </div>
@@ -374,21 +376,22 @@ useEffect(() => {
   return (
     <div style={{ display: "flex", gap: "2rem", padding: "1rem" }}>
       {/* Timetable A */}
-      <div>
+      <div className = "timetable-container">
         <h2>Timetable A</h2>
         <Timetable lessons={timetableA} />
 
         <input
+          className = "module-searchbar"
           placeholder="Search module (e.g. CS2030S)"
           value={searchCodeA}
           onChange={(e) => setSearchCodeA(e.target.value)}
-          style={{ marginBottom: "0.5rem" }}
         />
 
         <ul style={{ listStyle: "none", paddingLeft: 0 }}>
         {filteredModuleCodesA.map((code) => (
         <li key={code}>
         <button
+          className = "searchbar-result"
           onClick={() => {
             if (!activeModulesA.includes(code)) {
               setActiveModulesA((prev) => [...prev, code]);
@@ -414,7 +417,7 @@ useEffect(() => {
   }, {});
 
   return (
-    <div key={mod} style={{ marginTop: "0.5rem" }}>
+    <div key={mod} className = "mod-slots-container">
       <h4>{mod}</h4>
       {Object.entries(lessonsByType).map(([lessonType, lessons]) => {
         const key = `${mod}-${lessonType}`;
@@ -424,9 +427,10 @@ useEffect(() => {
         );
 
         return (
-          <div key={key} style={{ marginBottom: "0.5rem" }}>
-            <label><strong>{lessonType}</strong></label>
+          <div key={key} className = "lesson-type-row">
+            <label className = "lesson-type">{lessonType}</label>
             <select
+              className = "slot-dropdown"
               value={classNo}
               onChange={(e) =>
                 setSelectedClassA((prev) => ({
@@ -444,6 +448,7 @@ useEffect(() => {
 
             {isAdded ? (
               <button
+                className = "slot-button"
                 onClick={async () => {
                   const updatedA = timetableA.filter(
                     (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
@@ -482,6 +487,7 @@ useEffect(() => {
               </button>
             ) : (
               <button
+                className = "slot-button"
                 onClick={() => {
                   const selected = lessons.find((l) => l.classNo === classNo);
                   if (selected) {
@@ -517,11 +523,12 @@ useEffect(() => {
       </div>
 
       {/* Timetable B */}
-      <div>
+      <div className = "timetable-container">
         <h2>Timetable B</h2>
         <Timetable lessons={timetableB} />
 
         <input
+          className = "module-searchbar"
           placeholder="Search module (e.g. CS2030S)"
           value={searchCodeB}
           onChange={(e) => setSearchCodeB(e.target.value)}
@@ -531,6 +538,7 @@ useEffect(() => {
         {filteredModuleCodesB.map((code) => (
         <li key={code}>
         <button
+          className = "searchbar-result"
           onClick={() => {
             if (!activeModulesB.includes(code)) {
               setActiveModulesB((prev) => [...prev, code]);
@@ -556,7 +564,7 @@ useEffect(() => {
   }, {});
 
   return (
-    <div key={mod} style={{ marginTop: "0.5rem" }}>
+    <div key={mod} className = "mod-slots-container">
       <h4>{mod}</h4>
       {Object.entries(lessonsByType).map(([lessonType, lessons]) => {
         const key = `${mod}-${lessonType}`;
@@ -566,9 +574,10 @@ useEffect(() => {
         );
 
         return (
-          <div key={key} style={{ marginBottom: "0.5rem" }}>
-            <label><strong>{lessonType}</strong></label>
+          <div key={key} className = "lesson-type-row">
+            <label className = "lesson-type">{lessonType}</label>
             <select
+              className = "slot-dropdown"
               value={classNo}
               onChange={(e) =>
                 setSelectedClassB((prev) => ({
@@ -586,6 +595,7 @@ useEffect(() => {
 
             {isAdded ? (
               <button
+                className = "slot-button"
                 onClick={async () => {
                   const updatedB = timetableB.filter(
                     (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
@@ -624,6 +634,7 @@ useEffect(() => {
               </button>
             ) : (
               <button
+                className = "slot-button"
                 onClick={() => {
                   const selected = lessons.find((l) => l.classNo === classNo);
                   if (selected) {
@@ -659,8 +670,8 @@ useEffect(() => {
       </div>
 
       {/* Sync */}
-      <div>
-        <h2>Sync</h2>
+      <div className = "sync-container">
+        <h2>Sync modules</h2>
         {uniqueModuleCodes.map((mod: string) => (
       <button key={mod} onClick={() => toggleSync(mod)}>
         {syncedModules.includes(mod) ? `Unsync ${mod}` : `Sync ${mod}`}
