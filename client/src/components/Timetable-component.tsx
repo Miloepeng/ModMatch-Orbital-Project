@@ -448,7 +448,7 @@ useEffect(() => {
 
             {isAdded ? (
               <button
-                className = "slot-button"
+                className = "slot-button remove-button"
                 onClick={async () => {
                   const updatedA = timetableA.filter(
                     (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
@@ -483,11 +483,11 @@ useEffect(() => {
                   }
                 }}
               >
-                Remove {lessonType}
+                Remove {/*lessonType*/}
               </button>
             ) : (
               <button
-                className = "slot-button"
+                className = "slot-button add-button"
                 onClick={() => {
                   const selected = lessons.find((l) => l.classNo === classNo);
                   if (selected) {
@@ -511,7 +511,7 @@ useEffect(() => {
                   }
                 }}
               >
-                Add {lessonType}
+                Add {/*lessonType*/}
               </button>
             )}
           </div>
@@ -595,7 +595,7 @@ useEffect(() => {
 
             {isAdded ? (
               <button
-                className = "slot-button"
+                className = "slot-button remove-button"
                 onClick={async () => {
                   const updatedB = timetableB.filter(
                     (l) => !(l.moduleCode === mod && l.lessonType === lessonType)
@@ -630,11 +630,11 @@ useEffect(() => {
                   }
                 }}
               >
-                Remove {lessonType}
+                Remove {/*lessonType*/}
               </button>
             ) : (
               <button
-                className = "slot-button"
+                className = "slot-button add-button"
                 onClick={() => {
                   const selected = lessons.find((l) => l.classNo === classNo);
                   if (selected) {
@@ -658,7 +658,7 @@ useEffect(() => {
                   }
                 }}
               >
-                Add {lessonType}
+                Add {/*lessonType*/}
               </button>
             )}
           </div>
@@ -673,7 +673,7 @@ useEffect(() => {
       <div className = "sync-container">
         <h2>Sync modules</h2>
         {uniqueModuleCodes.map((mod: string) => (
-      <button key={mod} onClick={() => toggleSync(mod)}>
+      <button key={mod} onClick={() => toggleSync(mod)} className = {syncedModules.includes(mod) ? `unsync-button` : `sync-button`}>
         {syncedModules.includes(mod) ? `Unsync ${mod}` : `Sync ${mod}`}
       </button>
         ))}

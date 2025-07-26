@@ -1,5 +1,7 @@
 .filter-box {
+  background-color: rgb(250, 250, 250);
     border-radius: 5px;
+    border: 0px;
     margin-left: 5px;
     text-align: center;
     width: 80px;
@@ -10,8 +12,10 @@
   margin: 5px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 20px;
-  border: 1.5px solid black;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(184, 184, 184);
+  box-shadow: 0 1px 1px rgb(172, 172, 172);
+  border-radius: 1.5em;
   padding: 10px;
   width: 15.5vw;
   min-width: 190px;
@@ -55,6 +59,10 @@
   flex-direction: column;
   gap: 16px;
   padding: 16px;
+}
+
+.module-card {
+  height: auto;
 }
 
 .module-card.horizontal {

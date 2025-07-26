@@ -25,6 +25,7 @@
 }
 
 .forgot-password:hover {
+    color: black;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -46,7 +47,7 @@
 
 .rounded-button {
     border-radius: 8px;
-    border-width: 1px;
+    border: 1px solid rgb(176, 176, 176);
     background-color: white;
     padding: 10px;
     padding-top: 5px;
@@ -56,6 +57,8 @@
 
 .rounded-button:hover {
     cursor: pointer;
+    background-color: rgb(165, 221, 255);
+    border: 1px solid rgb(130, 207, 255);
 }
 
 .logo{

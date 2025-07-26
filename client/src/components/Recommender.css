@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 .search-container {
+  font-family: "Rubik";
   width: 60vw;
   height: 69vh;
   min-width: 500px;
 }
 
 .reco-container {
+  font-family: "Rubik";
   margin-right: 10px;
 }
 

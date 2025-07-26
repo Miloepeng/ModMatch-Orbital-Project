@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 .timetable-container {
-  width: 38vw;
+  font-family: "Rubik";
+  width: 35vw;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .timetable {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(153, 153, 153);
   border-radius: 10px;
   padding: 10px;
   width: inherit;
 }
 
 .day-column {
-  border: 1px solid black;
+  border: 1px solid rgb(179, 179, 179);
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -21,8 +24,8 @@
   border-radius: inherit;
   margin-top: 0px;
   margin-bottom: 10px;
-  padding: 5px;
-  padding-bottom: 10px;
+  padding: 10px;
+  padding-left: 15px;
   background-color: rgb(230, 230, 230);
 }
 
@@ -35,7 +38,7 @@
 .lesson-block {
   background-color: #e6f7ff;
   border: 1px solid #91d5ff;
-  width: 15vw;
+  width: 14vw;
   min-width: 120px;
   padding: 5px;
   margin: 10px;
@@ -43,6 +46,7 @@
 }
 
 .module-searchbar {
+  font-family: inherit;
   margin: 15px;
   margin-left: 0px;
   width: inherit;
@@ -50,6 +54,7 @@
 }
 
 .searchbar-result {
+  font-family: inherit;
   background-color: inherit;
   border: 1px solid black;
   border-radius: 5px;
@@ -68,36 +73,81 @@
 }
 
 .lesson-type-row {
+  display: flex;
   margin-bottom: 10px;
   height: 25px;
 }
 
 .lesson-type {
   display: inline-block;
-  width: 85px;
+  width: 100px;
 }
 
 .slot-dropdown {
   width: 18vw;
   height: inherit;
+  font-family: inherit;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
 }
 
 .slot-button {
-  width: 135px;
+  font-family: inherit;
+  border-radius: 5px; 
+  width: 85px;
   height: inherit;
   margin-left: 10px;
+  overflow: hidden;
+}
+
+.remove-button {
+  margin-top: 0px;
+  background-color: rgb(252, 228, 228);
+  border: 2px solid rgb(253, 217, 217);
+}
+
+.remove-button:hover {
+  background-color: rgb(253, 217, 217);
+}
+
+.add-button {
+  margin-top: 0px;
+  background-color: rgb(213, 255, 213);
+  border: 2px solid rgb(189, 255, 189);
+}
+
+.add-button:hover {
+  background-color: rgb(189, 255, 189);
 }
 
 .slot-button:hover {
   cursor: pointer;
 }
 
+.sync-container {
+  font-family: "Rubik";
+  margin-left: 20px;
+}
+
 .sync-container button {
+  font-family: inherit;
   height: 30px;
   width: 130px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .sync-container button:hover { 
   cursor: pointer;
+  background-color: rgb(165, 221, 255);
+}
+
+.sync-button {
+  background-color: white;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.unsync-button {
+  background-color: #b7e8ff;
+  border: 1px solid rgb(165, 221, 255);
 }
