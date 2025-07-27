@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 .center-align {
     text-align: center;
 }
@@ -8,14 +10,39 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: "Rubik";
 }
 
 .email-row {
+    height: 20px;
     padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.email-row label {
+    display: inline-block;
+    width: 100px;
+}
+
+.input-email {
+    height: inherit;
+    width: 200px;
 }
 
 .password-row {
+    height: 20px;
     padding-left: 50px;
+    padding-bottom: 0px;
+}
+
+.password-row label {
+    display: inline-block;
+    width: 100px;
+}
+
+.input-password {
+    height: inherit;
+    width: 200px;
 }
 
 .forgot-password {
@@ -34,7 +61,7 @@
     color: blue;
     text-decoration: underline;
     margin: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .register-text:hover {
@@ -52,7 +79,10 @@
     padding: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin: 10px;
+    margin: 20px;
+    font-family: inherit;
+    font-size: 17px;
+    height: 40px;
 }
 
 .rounded-button:hover {
@@ -61,16 +91,13 @@
     border: 1px solid rgb(130, 207, 255);
 }
 
-.logo{
+.logo {
     width:200px;
     height:400x;
     margin-bottom: 30px;
 }
 
-.input-email {
-    margin-left: 48.5px;
-}
-
-.input-password{
-    margin-left: 20px;
+.error-msg {
+    color: red;
+    margin-bottom: 0px;
 }
