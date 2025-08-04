@@ -19,6 +19,7 @@ export default function ComputingEthics({ userModules }: Props) {
     <CollapseSection
       title="Computing Ethics"
       headerExtra={`${taken ? MC : 0}/${MC} MC completed`} 
+      completed = {taken}
     >
       <ul className="deg-req-list">
         <li

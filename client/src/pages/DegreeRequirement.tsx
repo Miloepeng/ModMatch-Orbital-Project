@@ -203,6 +203,8 @@ export default function DegReqPage() {
     Mods_UE.push(leftoverCSBD[i]);
   }
 
+  const excluded = ["CFG1002", "CFG1004", "CFG1500", "CFG1600", "ES1103"];
+  const mod1k = userModules.filter(mod => mod.name.charAt(mod.name.search(/\d/)) === "1" && !excluded.includes(mod.name)).length;
 
   if (loading) return <p>Loading degree requirements...</p>;
 
@@ -225,6 +227,7 @@ export default function DegReqPage() {
           />
           <div className = "dashboard-mc"><strong>{totalMC}/160 MC completed</strong></div>
         </div>
+        <div className="deg-req-card">Count of 1k modules: {mod1k}/15</div>
         <GEPillarStatus userModules={Mods_GEPillar} />
         <ComputingEthics userModules={userModules} /> 
         <CDID userModules={Mods_CDID}/>

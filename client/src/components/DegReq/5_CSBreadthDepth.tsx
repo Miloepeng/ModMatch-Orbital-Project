@@ -95,10 +95,13 @@ export default function CSBreadthDepth({ userModules }: Props) {
     }
   }
 
+  const completed = totalMC >= MAX_MC;
+
   return (
     <CollapseSection
       title="CS Breadth and Depth"
       headerExtra={`${totalMC}/${MAX_MC} MC completed`}
+      completed={completed}
     >
       <p>{output}</p>
       <ul>

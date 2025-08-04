@@ -43,10 +43,13 @@ export default function GEPillarStatus({ userModules }: Props) {
 
   const completedMC = fulfilled.size * MC_PER_MODULE;
 
+  const completed = completedMC === 24;
+
   return (
     <CollapseSection
       title="General Education Pillars"
       headerExtra={`${completedMC}/${MAX_MC} MC completed`}
+      completed={completed}
     >
       <ul className="deg-req-list">
         {GEPILLARS.map((pillar) => (

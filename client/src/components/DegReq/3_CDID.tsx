@@ -31,10 +31,13 @@ export default function CDIDStatus({ userModules }: Props) {
   const isIDCriteriaFulfilled = selectedIDModules.length >= 2;
   const isTotalCriteriaFulfilled = totalSelectedModules === 3;
 
+  const completed = totalSelectedModules === 3;
+
   return (
     <CollapseSection
       title="CD-ID Modules"
       headerExtra={`${totalSelectedModules * MC_PER_MODULE}/${MAX_MC} MC completed`}
+      completed={completed}
     >
       <p className="deg-req-subtitle">
         {/*{isIDCriteriaFulfilled && isTotalCriteriaFulfilled
