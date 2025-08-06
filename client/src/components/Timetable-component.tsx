@@ -39,8 +39,6 @@ const MODULES: Record<string, Lesson[]> = Object.fromEntries(
   })
 );
 
-type ModuleCode = keyof typeof MODULES;
-
 async function saveTimetable(userId: string, name: "A" | "B", lessons: Lesson[]) {
   if (!lessons.length) return; // Do not save empty data
 
