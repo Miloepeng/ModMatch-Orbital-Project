@@ -88,3 +88,7 @@
     display: inline-block;
     width: 65px;
 }
+
+.green {
+    background-color: rgb(222, 255, 222);
+}

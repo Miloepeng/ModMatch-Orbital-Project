@@ -4,13 +4,14 @@ type Props = {
   title: string;
   headerExtra?: React.ReactNode; // 👈 new prop for MC or status
   children: React.ReactNode;
+  completed: boolean;
 };
 
-export default function CollapseSection({ title, headerExtra, children }: Props) {
+export default function CollapseSection({ title, headerExtra, children, completed }: Props) {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div className = "deg-req-card">
+    <div className = {completed ? "deg-req-card green" : "deg-req-card"}>
       <div className = "container deg-req-header">
         <h1 className="deg-req-title">{title}</h1>
         <button

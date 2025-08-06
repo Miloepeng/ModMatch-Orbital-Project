@@ -118,7 +118,9 @@ const handleResendConfirmation = async () => {
 
       </div>
 
-      {errorMsg && <p className="error-msg">{errorMsg}</p>}
+      <div className="center-align">
+        {errorMsg && <p className="error-msg">{errorMsg}</p>}
+      </div>
 
       <div className="center-align">
         <button type="submit" className="rounded-button">
@@ -148,7 +150,7 @@ const handleResendConfirmation = async () => {
       </div>
 
       {isRegistering && (
-        <>
+        <div className="center-align">
         <p className="register-text">
           <span onClick={() => setIsRegistering(false)}>Already have an account? Login</span>
         </p>
@@ -156,11 +158,10 @@ const handleResendConfirmation = async () => {
             type="button"
             onClick={handleResendConfirmation}
             className="rounded-button"
-            style={{ marginTop: "10px" }}
           >
       Resend Confirmation Email
     </button>
-        </>
+        </div>
       )}
     </form>
   </div>

@@ -13,10 +13,13 @@ export default function UE({ userModules }: Props) {
   // Calculate the total MCs based on the number of modules
   const totalMC = userModules.map(mod => mod.mc).reduce((a, b) => a + b, 0);
 
+  const completed = totalMC >= MAX_MC;
+
   return (
     <CollapseSection
       title="UE Modules"
       headerExtra={`${totalMC}/${MAX_MC} MC completed`}
+      completed={completed}
     >
       <ul className="deg-req-list">
         {userModules.map((mod) => (

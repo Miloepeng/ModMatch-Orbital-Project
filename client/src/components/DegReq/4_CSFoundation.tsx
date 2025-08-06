@@ -28,10 +28,13 @@ export default function CSFoundation({ userModules }: Props) {
   ).length;
   const completedMC = completedCount * MC_PER_MODULE;
 
+  const completed = completedMC == MAX_MC;
+
   return (
     <CollapseSection
       title="Computer Science Foundation"
       headerExtra={`${completedMC}/${MAX_MC} MC completed`}
+      completed={completed}
     >
       <ul className="deg-req-list">
         {REQUIRED_MODULES.map((mod) => (
