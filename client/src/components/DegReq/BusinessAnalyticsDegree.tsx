@@ -69,7 +69,8 @@ export default function BusinessAnalyticsDegree({
   //let Mods_BzaElective: Module[] = [];
   const Mods_UE: Module[] = [];
   
-  const BzaCoreMods: string[] = ["BT2101", "BT2102", "CS2030", "CS2040", "IS2101", "BT3103", "IS3103"];
+  const BzaCoreMods: string[] = ["BT2101", "BT2102", "CS2030", "CS2040", "IS2101", "BT3103", "IS3103", "BT4103"];
+  const IndustryExp: string[] = ["BT4101", "IS4010", "CP3880"]
   //const CSFoundationList: string[] = ["CS1231S", "CS2030S", "CS2040S", "CS2100", "CS2101", "CS2103T", "CS2106", "CS2109S", "CS3230"];
   const MathModList: string[] = ["MA1521", "MA1522", "ST2334"];
   
@@ -79,6 +80,16 @@ export default function BusinessAnalyticsDegree({
   const IDData = require("./ID.json");
   const CD_MODULES = CDData.map((mod: { value: string }) => mod.value);
   const ID_MODULES = IDData.map((mod: { value: string }) => mod.value);
+
+  let filteredIE: Module[] = userModules.filter(mod => IndustryExp.includes(mod.name));
+  for (let i = 0; i < filteredIE.length; i++) {
+    if (i == 0) {
+      Mods_BzaCore.push(filteredIE[i])
+    } else {
+      Mods_UE.push(filteredIE[i])
+    }
+  }
+  userModules = userModules.filter(mod => !IndustryExp.includes(mod.name));
 
   /*const FYPCode = "CP4101";
   const ATAPCode = "CP3880";
