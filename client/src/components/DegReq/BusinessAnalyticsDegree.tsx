@@ -62,6 +62,7 @@ export default function BusinessAnalyticsDegree({
     );
 
   //const Mods_CSFoundation: Module[] = [];
+  const Mods_BzaCore: Module[] = [];
   const Mods_MathScience: Module[] = [];
   const Mods_GEPillar: Module[] = [];
   const Mods_CDID: Module[] = [];
@@ -127,7 +128,7 @@ export default function BusinessAnalyticsDegree({
 
     if (BzaCoreMods.includes(module.name)) {
       //Mods_CSFoundation.push(module);
-      //Mods_BzaElective.push(module);
+      Mods_BzaCore.push(module);
     } else if (MathModList.includes(module.name)) {
       Mods_MathScience.push(module);
     } else if (GELookup[module.name] && GEPILLARS.includes(GELookup[module.name]) && ReqState[GEPILLARS.indexOf(GELookup[module.name])] == 0) {
@@ -200,7 +201,7 @@ export default function BusinessAnalyticsDegree({
       <GEPillarStatus userModules={Mods_GEPillar} />
       <ComputingEthics userModules={userModules} /> 
       <CDID userModules={Mods_CDID}/>
-      <BzaCore userModules={userModules}/>
+      <BzaCore userModules={Mods_BzaCore}/>
       <MathScience userModules={Mods_MathScience} />
       <UE userModules={Mods_UE}/>
     </div>
