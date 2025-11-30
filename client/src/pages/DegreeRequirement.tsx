@@ -9,7 +9,7 @@ import '../pages/DegreeRequirement.css';
 export default function DegReqPage() {
   let [userModules, setModules] = useState<Module[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedDegree, setSelectedDegree] = useState<"CS" | "BZA" | "Filler">("CS");
+  const [selectedDegree, setSelectedDegree] = useState<"CS" | "BZA">("CS");
 
   useEffect(() => {
     const fetchModules = async () => {
@@ -57,11 +57,10 @@ export default function DegReqPage() {
           <select
             id="degree-select"
             value={selectedDegree}
-            onChange={(e) => setSelectedDegree(e.target.value as "CS" | "BZA" | "Filler")}
+            onChange={(e) => setSelectedDegree(e.target.value as "CS" | "BZA")}
           >
             <option value="CS">BComp (Computer Science)</option>
             <option value="BZA">BSc (Business Analytics)</option>
-            <option value="Filler">Filler</option>
           </select>
         </div>
 
