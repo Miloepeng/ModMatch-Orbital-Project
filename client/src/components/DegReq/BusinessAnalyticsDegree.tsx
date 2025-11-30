@@ -11,7 +11,7 @@ import GEPillarStatus from "./1_GEPillar";
 import ComputingEthics from "./2_ComputingEthics";
 import CDID from "./3_CDID";
 import BzaCore from "./4_BzaCore";
-import CSBreadthDepth from "./5_CSBreadthDepth";
+import BzaElective from "./5_BzaElective";
 import MathScience from "./6_MathScience";
 import UE from "./7_UE";
 import "../../pages/DegreeRequirement.css";
@@ -23,7 +23,7 @@ interface BusinessAnalyticsDegreeProps {
 export default function BusinessAnalyticsDegree({
   userModules: initialModules,
 }: BusinessAnalyticsDegreeProps) {
-  // 👇 this lets us keep using the exact name `userModules` and mutate it like before
+  // this lets us keep using the exact name `userModules` and mutate it like before
   let userModules = initialModules;
 
   const totalMC = userModules.map(mod => mod.mc).reduce((a, b) => a + b, 0);
@@ -61,19 +61,20 @@ export default function BusinessAnalyticsDegree({
       enrichedModules.map((mod) => mod.GEPillar).filter((x) => x !== "NIL")
     );
 
-  //const Mods_CSFoundation: Module[] = [];
   const Mods_BzaCore: Module[] = [];
   const Mods_MathScience: Module[] = [];
   const Mods_GEPillar: Module[] = [];
   const Mods_CDID: Module[] = [];
-  //let Mods_BzaElective: Module[] = [];
+  const Mods_BzaElective: Module[] = [];
   const Mods_UE: Module[] = [];
   
   const BzaCoreMods: string[] = ["BT2101", "BT2102", "CS2030", "CS2040", "IS2101", "BT3103", "IS3103", "BT4103"];
   const IndustryExp: string[] = ["BT4101", "IS4010", "CP3880"]
-  //const CSFoundationList: string[] = ["CS1231S", "CS2030S", "CS2040S", "CS2100", "CS2101", "CS2103T", "CS2106", "CS2109S", "CS3230"];
   const MathModList: string[] = ["MA1521", "MA1522", "ST2334"];
-  
+  const FinSpecList: string[] = ["BT3102", "BT4012", "BT4013", "BT4016", "BT4221", "IS4226", "IS4228", "IS4234", "IS4302", "IS4303"];
+  const MLSpecList: string[] = ["BT3017", "BT4012", "BT4014", "BT4221", "BT4222", "BT4240", "BT4241", "BT4301", "CS3243", "CS4248", "IS4246"];
+  const MktSpecList: string[] = ["BT3017", "BT4014", "BT4015", "BT4211", "BT4212", "BT4222", "IS3150", "IS4241", "IS4262"];
+  const BzaSpecList = new Set(FinSpecList.concat(MLSpecList).concat(MktSpecList));
 
   // Dynamically require the JSON files
   const CDData = require("./CD.json");
@@ -81,6 +82,16 @@ export default function BusinessAnalyticsDegree({
   const CD_MODULES = CDData.map((mod: { value: string }) => mod.value);
   const ID_MODULES = IDData.map((mod: { value: string }) => mod.value);
 
+  function getFirstDigit(name: string): number {
+    const match = name.match(/\d/);
+    return parseInt(match![0], 10); 
+  }
+  
+  const compareByFirstDigitDesc = (a: Module, b: Module): number => {
+    return getFirstDigit(b.name) - getFirstDigit(a.name);
+  };
+
+  // Deal with industry experience first
   let filteredIE: Module[] = userModules.filter(mod => IndustryExp.includes(mod.name));
   for (let i = 0; i < filteredIE.length; i++) {
     if (i == 0) {
@@ -91,25 +102,86 @@ export default function BusinessAnalyticsDegree({
   }
   userModules = userModules.filter(mod => !IndustryExp.includes(mod.name));
 
-  /*const FYPCode = "CP4101";
-  const ATAPCode = "CP3880";
-  const SIP = ["CP3200", "CP3202"];
-  const hasFYP = userModules.map(mod => mod.name).includes(FYPCode);
-  const hasATAP = userModules.map(mod => mod.name).includes(ATAPCode);
-  // Instantly push FYP or ATAP. If neither present, push SIP if present
-  if (hasFYP || hasATAP) {
-    CSBDState[1] = 6;
-    if (hasFYP) {
-      Mods_BzaElective.push(userModules.filter(mod => mod.name == FYPCode)[0]);
-    } else {
-      Mods_BzaElective.push(userModules.filter(mod => mod.name == ATAPCode)[0]);
-    }
+  // Deal with electives
+  let ElectiveMods: Module[] = userModules.filter(mod => BzaSpecList.has(mod.name));
+  ElectiveMods.sort(compareByFirstDigitDesc);
+  if (ElectiveMods.length <= 5) {
+    ElectiveMods.forEach(mod => Mods_BzaElective.push(mod));
+    userModules = userModules.filter(mod => !ElectiveMods.includes(mod));
   } else {
-    Mods_BzaElective = userModules.filter(mod => SIP.includes(mod.name));
-    if (Mods_BzaElective.length == 2) {
-      CSBDState[1] = 7;
+    const counts = [0, 0, 0];
+    const ModList: Module[][] = [];
+    const ModNameList: string[][] = [FinSpecList, MLSpecList, MktSpecList];
+    counts[0] = ElectiveMods.filter(mod => FinSpecList.includes(mod.name)).length;
+    counts[1] = ElectiveMods.filter(mod => MLSpecList.includes(mod.name)).length;
+    counts[2] = ElectiveMods.filter(mod => MktSpecList.includes(mod.name)).length;
+    ModList.push(ElectiveMods.filter(mod => FinSpecList.includes(mod.name)));
+    ModList.push(ElectiveMods.filter(mod => MLSpecList.includes(mod.name)));
+    ModList.push(ElectiveMods.filter(mod => MktSpecList.includes(mod.name)));
+
+    let completed = false;
+    for (let i = 0; i < counts.length; i++) {
+      if (counts[i] >= 5) {   
+        ModList[i].slice(0, 5)
+            .filter(mod => !Mods_BzaElective.includes(mod))
+            .forEach(mod => Mods_BzaElective.push(mod));
+        completed = true;
+      }
     }
-  }*/
+    
+    if (completed) {
+      for (let i = 0; i < counts.length; i++) {
+        if (counts[i] >= 5) {
+          userModules = userModules.filter(mod => !ModList[i].slice(0, 5).includes(mod));
+          break;
+        }
+      }
+    } else {
+      // If no specialization completed
+      let maxIndex = 0;
+      if (counts[1] > counts[0]) {
+        maxIndex = 1;
+        if (counts[2] > counts[1]) {
+          maxIndex = 2;
+        }
+      } else if (counts[2] > counts[0]) {
+        maxIndex = 2;
+      }
+
+      ModList[maxIndex].forEach(mod => Mods_BzaElective.push(mod));
+      userModules = userModules.filter(mod => !ModList[maxIndex].includes(mod));
+      ElectiveMods = ElectiveMods.filter(mod => !ModNameList[maxIndex].includes(mod.name));
+      const needed = 5 - Mods_BzaElective.length;
+      for (let i = 0; i < needed; i++) {
+        Mods_BzaElective.push(ElectiveMods[0]);
+        userModules = userModules.filter(mod => mod != ElectiveMods[0]);
+        ElectiveMods.splice(0, 1);
+      }
+      ElectiveMods.forEach(mod => Mods_UE.push(mod));
+    }
+
+    
+    }
+    const temp1 = Mods_BzaElective.filter(mod => {
+          const match = mod.name.match(/\d/);
+          return match !== null && match[0] === "4";
+    }).length;
+  if (temp1 < 3) {
+    ElectiveMods.filter(mod => {
+            const match = mod.name.match(/\d/);
+            return match !== null && match[0] === "4";
+      })
+      .filter(mod => !Mods_BzaElective.includes(mod))
+      .forEach(mod => Mods_BzaElective.push(mod));
+    }
+    
+    if (Mods_BzaElective.filter(mod => mod.name.startsWith("BT")).length < 3) {
+      ElectiveMods.filter(mod => mod.name.startsWith("BT"))
+          .filter(mod => !Mods_BzaElective.includes(mod))
+          .forEach(mod => Mods_BzaElective.push(mod));
+    }
+
+  Mods_BzaElective.sort(compareByFirstDigitDesc);
 
   // Easy fix to sort modules so that it auto balances between modules that can count towards GE or CD/ID
   const tempA = userModules.filter(module => GEPILLARS.includes(GELookup[module.name]) && !(ID_MODULES.includes(module.name)|| CD_MODULES.includes(module.name)));
@@ -119,26 +191,7 @@ export default function BusinessAnalyticsDegree({
   for (let i = 0; i < userModules.length; i++) {
     const module = userModules[i];
 
-    // If there is FYP, all internship modules go to UE
-    // If there is no FYP, if there is ATAP, the other internship modules go to UE
-    /*if (module.name == FYPCode) continue;
-    else if (hasFYP) {
-      if (module.name == ATAPCode || SIP.includes(module.name)) {
-        Mods_UE.push(module);
-        continue;
-      } 
-    } else if (hasATAP) {
-      if (module.name == ATAPCode) continue;
-      else if (SIP.includes(module.name)) {
-        Mods_UE.push(module);
-        continue;
-      }
-    } else {
-      if (SIP.includes(module.name)) continue;
-    }*/
-
     if (BzaCoreMods.includes(module.name)) {
-      //Mods_CSFoundation.push(module);
       Mods_BzaCore.push(module);
     } else if (MathModList.includes(module.name)) {
       Mods_MathScience.push(module);
@@ -155,43 +208,10 @@ export default function BusinessAnalyticsDegree({
         } else {
           Mods_UE.push(module);
         }
-    //} else if (module.name.substring(0, 2) == "CS" || module.name.substring(0, 3)  == "IFS") {
-      //Mods_BzaElective.push(module);
-    //} else if (module.name.substring(0, 2) == "CP" && CSBDState[0] < 3) {
-      //Mods_BzaElective.push(module);
-      //CSBDState[0]++;
     } else if (module.name != "IS1108") {
       Mods_UE.push(module);
     }
   }
-
-  function getFirstDigit(name: string): number {
-    const match = name.match(/\d/);
-    return parseInt(match![0], 10); 
-  }
-
-  const compareByFirstDigitDesc = (a: Module, b: Module): number => {
-    return getFirstDigit(b.name) - getFirstDigit(a.name);
-  };
-
-  /*let ToSort: Module[] = Mods_BzaElective;
-  let kept: Module[] = [];
-  if (Mods_BzaElective.length >= 1 && (Mods_BzaElective[0].name == FYPCode || Mods_BzaElective[0].name == ATAPCode || SIP.includes(Mods_BzaElective[0].name))) {
-    ToSort = Mods_BzaElective.slice(1, Mods_BzaElective.length);
-    kept = Mods_BzaElective.slice(0, 1);
-    if (Mods_BzaElective.length >= 2 && SIP.includes(Mods_BzaElective[1].name)) {
-      ToSort = Mods_BzaElective.slice(2, Mods_BzaElective.length);
-      kept = Mods_BzaElective.slice(0, 2);
-    }
-  }
-
-  ToSort = [...ToSort].sort(compareByFirstDigitDesc);
-  Mods_BzaElective = kept.concat(ToSort);
-
-  const leftoverCSBD = Mods_BzaElective.filter(mod => !BzaCore.includes(mod.name));
-  for (let i = CSBDState[1]; i < leftoverCSBD.length; i++) {
-    Mods_UE.push(leftoverCSBD[i]);
-  }*/
 
   const excluded = ["CFG1002", "CFG1004", "CFG1500", "CFG1600", "ES1103"];
   const mod1k = userModules.filter(mod => mod.name.charAt(mod.name.search(/\d/)) === "1" && !excluded.includes(mod.name)).length;
@@ -213,6 +233,7 @@ export default function BusinessAnalyticsDegree({
       <ComputingEthics userModules={userModules} /> 
       <CDID userModules={Mods_CDID}/>
       <BzaCore userModules={Mods_BzaCore}/>
+      <BzaElective userModules={Mods_BzaElective}/>
       <MathScience userModules={Mods_MathScience} />
       <UE userModules={Mods_UE}/>
     </div>
