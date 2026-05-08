@@ -10,6 +10,7 @@ export default function Calculator() {
   const [userModules, setModules] = useState<Module[]>([]);
   const [idCounter, setIdCounter] = useState(0);
   const [suLimit, setSuLimit] = useState<number>(0);
+  const [userId, setUserId] = useState<string | null>(null);
 
   // Load user data on mount
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function Calculator() {
         console.log("No user logged in. Skipping load.");
         return;
       }
+      setUserId(user.id);
 
       const { data, error } = await supabase
         .from("module_selections")
@@ -55,17 +57,15 @@ export default function Calculator() {
   // Autosave modules and suLimit
   useEffect(() => {
     if (isGuest) return;
+    if (!userId) return;
 
     const saveModules = async () => {
-      const { data: { user } } = await supabase.auth.getUser();
-      if (!user) return;
-
       const { error } = await supabase
         .from("module_selections")
         .upsert(
           [
             {
-              user_id: user.id,
+              user_id: userId,
               modules_json: userModules,
               su_limit: suLimit,
               updated_at: new Date().toISOString(),
@@ -82,7 +82,7 @@ export default function Calculator() {
     if (userModules.length > 0 || suLimit !== 0) {
       saveModules();
     }
-  }, [userModules, suLimit]);
+  }, [userModules, suLimit, userId]);
 
   const handleAddModule = () => {
     const newModule: Module = {
