@@ -206,11 +206,9 @@ useEffect(() => {
   };
 
   // Fetch data when the user is logged in
-  supabase.auth.getUser().then(({ data: { user } }) => {
-    if (user) {
-      loadUserTimetables(user.id);
-    }
-  });
+  if (userId) {
+    loadUserTimetables(userId);
+  }
 }, [userId]);
 
 useEffect(() => {
@@ -338,38 +336,6 @@ useEffect(() => {
   const uniqueModuleCodes = Array.from(
   new Set([...timetableA, ...timetableB].map((l) => l.moduleCode))
   );
-
-  useEffect(() => {
-  const loadUserTimetables = async (userId: string) => {
-    const [a, b] = await Promise.all([
-      loadTimetable(userId, "A"),
-      loadTimetable(userId, "B"),
-    ]);
-    setTimetableA(a);
-    setTimetableB(b);
-  };
-
-  // Immediately load if the user is already logged in
-  supabase.auth.getUser().then(({ data: { user } }) => {
-    if (user) {
-      loadUserTimetables(user.id);
-    }
-  });
-
-  // Listen for authentication changes (e.g., login)
-  const { data: authListener } = supabase.auth.onAuthStateChange(
-    (event, session) => {
-      if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user) {
-        loadUserTimetables(session.user.id);
-      }
-    }
-  );
-
-  return () => {
-    authListener.subscription.unsubscribe();
-  };
-}, []);
-
 
   return (
     <div style={{ display: "flex", gap: "2rem", padding: "1rem" }}>
