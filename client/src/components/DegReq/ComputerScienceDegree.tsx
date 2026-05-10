@@ -14,6 +14,7 @@ import CSFoundation from "./4_CSFoundation";
 import CSBreadthDepth from "./5_CSBreadthDepth";
 import MathScience from "./6_MathScience";
 import UE from "./7_UE";
+import CSDependencyGraph from "./CSDependencyGraph";
 
 import "../../pages/DegreeRequirement.css";
 
@@ -196,6 +197,7 @@ export default function ComputerScienceDegree({
         />
         <div className="dashboard-mc"><strong>{totalMC}/160 MC completed</strong></div>
       </div>
+      <CSDependencyGraph userModules={userModules} />
       <div className="deg-req-card">Count of 1k modules: {mod1k}/15</div>
       <GEPillarStatus userModules={Mods_GEPillar} />
       <ComputingEthics userModules={userModules} /> 
