@@ -95,7 +95,7 @@ export default function CSBreadthDepth({ userModules }: Props) {
     }
   }
 
-  const completed = totalMC >= MAX_MC;
+  const completed = totalMC >= MAX_MC && is3x4kFulfilled && internFulfilled;
 
   return (
     <CollapseSection
